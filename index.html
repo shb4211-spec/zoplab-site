@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ZOP LAB · 부업연구소</title>
+<meta name="description" content="몸으로 버는 하루를 살면서, 몸 없이도 버는 내일을 실험합니다. ZOP LAB 부업연구소의 수험 전자책과 부업 실험 기록.">
+<meta name="theme-color" content="#1f2a24">
+<link rel="canonical" href="https://zoplab.co.kr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZOP LAB">
+<meta property="og:url" content="https://zoplab.co.kr/">
+<meta property="og:title" content="ZOP LAB · 부업연구소">
+<meta property="og:description" content="몸으로 버는 하루를 살면서, 몸 없이도 버는 내일을 실험합니다. ZOP LAB 부업연구소의 수험 전자책과 부업 실험 기록.">
+<meta property="og:image" content="https://zoplab.co.kr/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+KR:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--fo:#1f2a24;--gd:#b39c6d;--iv:#f3efe6;--iv2:#ebe5d7;--ink:#1f2a24;--mute:#6d726c;--txt:#3b433e;--soft:#d9d5ca;
+--sans:'Pretendard','Noto Sans KR','Noto Sans CJK KR',sans-serif;--ser:'Noto Serif KR','Noto Serif CJK KR',serif;--wm:'Cormorant Garamond','Cormorant',serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);background:var(--iv);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wm{font-family:var(--wm);font-weight:500;font-variant-numeric:lining-nums}
+.ser{font-family:var(--ser)}
+.wrap{max-width:720px;margin:0 auto;padding:0 32px}
+.lab{font-size:12px;font-weight:500;letter-spacing:4px;color:var(--gd)}
+.rule{width:40px;height:1px;background:var(--gd)}
+.dark{background:var(--fo);color:var(--iv)}
+section{padding:72px 0}
+h2.big{font-family:var(--ser);font-weight:600;font-size:30px;line-height:1.45;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 26px;font-size:15px;font-weight:500;letter-spacing:1px;border:1px solid var(--gd);transition:.2s}
+.btn.gold{background:var(--gd);color:var(--fo)}
+.btn.gold:hover{background:#c4ae80}
+.btn.line{color:var(--gd)}
+.btn.line:hover{background:rgba(179,156,109,.12)}
+.btn.ink{border-color:var(--fo);color:var(--fo)}
+.btn.ink:hover{background:var(--fo);color:var(--iv)}
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(31,42,36,.97);border-bottom:1px solid rgba(179,156,109,.25);backdrop-filter:blur(6px)}
+header .in{height:56px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 20px}
+header .logo{font-size:19px;letter-spacing:6px;color:var(--gd)}
+header .btn{height:32px;padding:0 16px;font-size:13px}
+/* hero */
+.hero{min-height:calc(100svh - 56px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px 64px;position:relative}
+.hero h1{font-size:64px;line-height:1;letter-spacing:12px;padding-left:12px;color:var(--gd)}
+.hero .rule{margin:34px auto 26px}
+.hero .ko{font-size:19px;font-weight:300;letter-spacing:10px;padding-left:10px}
+.hero .en{font-family:var(--wm);font-style:italic;font-size:17px;letter-spacing:2px;color:var(--gd);opacity:.9;margin-top:18px}
+.hero .btn{margin-top:52px;min-width:200px}
+/* one line */
+.oneline .q{font-family:var(--ser);font-size:27px;line-height:1.65;margin-top:30px}
+.oneline .by{font-family:var(--wm);font-style:italic;font-size:17px;color:var(--mute);letter-spacing:1px;margin-top:40px}
+/* why */
+.why{padding-top:0}
+.why .tl{margin-top:40px}
+.step{position:relative;padding:0 0 44px 44px}
+.step:last-child{padding-bottom:0}
+.step .dot{position:absolute;left:0;top:6px;width:11px;height:11px;border-radius:50%;border:1px solid var(--gd);background:var(--iv)}
+.step:last-child .dot{background:var(--gd)}
+.step:not(:last-child)::after{content:"";position:absolute;left:5px;top:24px;bottom:-4px;width:1px;background:var(--gd);opacity:.55}
+.step .k{font-size:12px;font-weight:500;letter-spacing:3px;color:var(--gd)}
+.step .t{font-size:18px;font-weight:500;margin-top:6px}
+.step .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
+/* name */
+.row{display:flex;align-items:flex-start;padding:28px 0;border-top:1px solid rgba(179,156,109,.28)}
+.row:first-of-type{border-top:0}
+.row .ini{width:84px;flex:none;color:var(--gd);font-size:64px;line-height:.9}
+.row .ini.s{font-size:26px;line-height:2.2;letter-spacing:2px;opacity:.75}
+.row .w{font-family:var(--wm);font-size:24px;font-weight:500;letter-spacing:1px}
+.row .w b{color:var(--gd);font-weight:500}
+.row .d{font-size:14.5px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:4px}
+.name .rows{margin-top:36px}
+/* what */
+.what .lead{font-size:17px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:22px}
+.what .now{margin-top:56px}
+.work{border-top:1px solid rgba(31,42,36,.18);padding-top:26px;margin-top:22px}
+.work .h{display:flex;align-items:baseline;gap:14px}
+.work .h .n{font-size:20px;color:var(--gd)}
+.work .h .t{font-size:18px;font-weight:500}
+.work .tag,.work .d{margin-left:36px}
+.work .tag{font-size:13px;letter-spacing:1px;color:var(--gd);margin-top:6px}
+.work .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
+/* books */
+.books{background:var(--iv2)}
+.books .sub{font-size:15px;font-weight:300;color:var(--txt);margin-top:14px;line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:32px}
+.card{background:#faf8f2;border:1px solid rgba(179,156,109,.35);padding:20px 20px 18px;display:flex;flex-direction:column}
+.card .cat{font-size:11.5px;font-weight:500;letter-spacing:2px;color:var(--gd)}
+.card .t{font-size:17px;font-weight:600;line-height:1.5;margin-top:10px}
+.card .d{font-size:14px;font-weight:300;line-height:1.7;color:var(--txt);margin-top:8px;flex:1}
+.card .btn{margin-top:16px;height:40px;font-size:14px;width:100%}
+.books .more{display:flex;justify-content:space-between;align-items:center;margin-top:28px;font-size:13.5px;color:var(--mute)}
+.books .more a{color:var(--fo);font-weight:500;border-bottom:1px solid var(--gd);padding-bottom:2px;white-space:nowrap}
+/* log */
+.log .d{font-size:17px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:22px}
+.log .btn{margin-top:36px}
+.log .url{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.8;margin-top:14px;letter-spacing:1px}
+/* promise */
+.plist{margin-top:44px;border-bottom:1px solid rgba(31,42,36,.18)}
+.prom{display:flex;align-items:baseline;gap:22px;border-top:1px solid rgba(31,42,36,.18);padding:24px 0}
+.prom .n{width:26px;flex:none;font-size:20px;color:var(--gd)}
+.prom .t{font-size:18px}
+.promise .end{font-family:var(--ser);font-size:23px;margin-top:48px}
+.promise .end span{color:var(--gd)}
+/* footer */
+footer{text-align:center;padding:88px 24px 48px}
+footer .logo{font-size:44px;letter-spacing:9px;padding-left:9px;color:var(--gd);line-height:1}
+footer .ko{font-size:15px;font-weight:300;letter-spacing:8px;padding-left:8px;margin-top:18px}
+footer .rule{margin:30px auto}
+footer .links{font-size:14px;font-weight:300;line-height:2;color:var(--soft);letter-spacing:1px}
+footer .en{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.85;letter-spacing:2px;margin-top:40px}
+footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(179,156,109,.22);font-size:12px;color:#9aa096;line-height:1.9;letter-spacing:.5px}
+@media (min-width:760px){
+ section{padding:128px 0}
+ h2.big{font-size:40px}
+ .hero h1{font-size:120px;letter-spacing:22px;padding-left:22px}
+ .hero .ko{font-size:26px;letter-spacing:16px;padding-left:16px}
+ .hero .en{font-size:22px}
+ .oneline .q{font-size:40px}
+ .grid{grid-template-columns:1fr 1fr}
+ .row .ini{width:130px;font-size:96px}
+ .row .ini.s{font-size:38px}
+ .row .w{font-size:30px}
+ .row .d{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header><div class="in">
+ <a href="#top" class="logo wm">ZOP LAB</a>
+ <a href="https://blog.naver.com/shb4698" class="btn line" target="_blank" rel="noopener">블로그</a>
+</div></header>
+
+<main id="top">
+<!-- HERO (deck 01 cover) -->
+<section class="hero dark">
+ <h1 class="wm">ZOP LAB</h1>
+ <div class="rule"></div>
+ <div class="ko">부업연구소</div>
+ <div class="en">Zero-cost Online Pipeline LAB</div>
+ <a href="#books" class="btn gold">책 보러 가기</a>
+</section>
+
+<!-- ONE LINE (deck 02) -->
+<section class="oneline"><div class="wrap">
+ <div class="lab">ONE LINE</div>
+ <div class="rule" style="margin-top:16px"></div>
+ <p class="q">몸으로 버는 하루를 살면서,<br>몸 없이도 버는 내일을<br>실험합니다.</p>
+ <p class="by">— ZOP LAB, 부업연구소</p>
+</div></section>
+
+<!-- WHY (deck 03) -->
+<section class="why"><div class="wrap">
+ <div class="lab">WHY · 시작한 이유</div>
+ <h2 class="big">몸이 멈추면,<br>돈도 멈췄습니다.</h2>
+ <div class="tl">
+  <div class="step"><span class="dot"></span><div class="k">01</div><div class="t">겨울, 에어컨 보조 일용직</div><div class="d">돈이 떨어져 일을 나갔지만,<br>비수기라 일이 거의 없었습니다.</div></div>
+  <div class="step"><span class="dot"></span><div class="k">02</div><div class="t">배송기사</div><div class="d">몸으로 하는 일은<br>몸이 멈추면 돈도 같이 멈춥니다.</div></div>
+  <div class="step"><span class="dot"></span><div class="k">03</div><div class="t">그래서, 지금</div><div class="d">몸 쓰는 일은 당장 피할 수 없어도<br>몸을 쓰지 않고 조금씩 돈이 들어오는<br>파이프라인을 하나씩 깔고 있습니다.</div></div>
+ </div>
+</div></section>
+
+<!-- NAME (deck 04) -->
+<section class="name dark"><div class="wrap">
+ <div class="lab">NAME · 이름의 뜻</div>
+ <div class="rows">
+  <div class="row"><div class="ini wm">Z</div><div><div class="w"><b>Z</b>ero-cost</div><div class="d">모아 둔 돈이 없어도 시작합니다.<br>만드는 데 돈이 거의 들지 않는 전자책부터 시작했습니다.</div></div></div>
+  <div class="row"><div class="ini wm">O</div><div><div class="w"><b>O</b>nline</div><div class="d">출퇴근도, 가게도 없이.<br>자는 동안에도 팔립니다.</div></div></div>
+  <div class="row"><div class="ini wm">P</div><div><div class="w"><b>P</b>ipeline</div><div class="d">한 번의 대박보다,<br>작아도 계속 흐르는 수입을 만듭니다.</div></div></div>
+  <div class="row"><div class="ini wm s">LAB</div><div><div class="w">LAB</div><div class="d">정답을 아는 척하지 않습니다.<br>직접 해 보고, 실패까지 솔직하게 기록합니다.</div></div></div>
+ </div>
+</div></section>
+
+<!-- WHAT (deck 05) -->
+<section class="what"><div class="wrap">
+ <div class="lab">WHAT · 하는 일</div>
+ <h2 class="big">귀찮은 걸 쉽게<br>만드는 연구소</h2>
+ <p class="lead">제가 직접 해 본 것만,<br>쉽고 웃기게 설명합니다.</p>
+ <div class="now">
+  <div class="lab">NOW · 지금 하고 있는 일</div>
+  <div class="work"><div class="h"><span class="n wm">01</span><span class="t">수험 전자책</span></div><div class="tag">ZOP LAB · 외워지게 만드는 수험서</div><div class="d">조리기능사 · 식육처리기능사<br>쉽게 외워지는 수험 전자책을 만듭니다.</div></div>
+  <div class="work"><div class="h"><span class="n wm">02</span><span class="t">ZOP LAB 부업 실험</span></div><div class="tag">실험 기록</div><div class="d">직접 해 보는 부업 과정을<br>잘된 것도 안 된 것도 그대로 기록합니다.</div></div>
+ </div>
+</div></section>
+
+<!-- BOOKS — titles verified against Groble product pages 2026-10-08 -->
+<section class="books" id="books"><div class="wrap">
+ <div class="lab">BOOKS · 책</div>
+ <h2 class="big">ZOP LAB의 책</h2>
+ <p class="sub">외워지게 만드는 수험서와 부업 가이드.<br>가격과 구성은 상품 페이지에서 확인하세요.</p>
+ <div class="grid">
+  <div class="card"><div class="cat">식육처리기능사 · 필기</div><div class="t">돼지도 놀란 식육처리기능사 필기 요약+암기송</div><div class="d">표로 정리한 필기 요약 + 폰으로 넘겨 보는 암기송 부록집</div><a href="https://www.groble.im/products/YWS7Az" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+  <div class="card"><div class="cat">식육처리기능사 · 실기</div><div class="t">식육처리기능사 실기 한 권 요약 (발골 사진)</div><div class="d">위생 · 감별 · 분할발골정형을 발골 과정 사진과 함께</div><a href="https://www.groble.im/products/CLXrEY" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+  <div class="card"><div class="cat">식육처리기능사 · 실기</div><div class="t">식육처리기능사 실기 요약+육가공 부록</div><div class="d">실기 한 권 요약 + 부록 E 육가공 공정 사진 노트</div><a href="https://www.groble.im/products/LF2DJS" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+  <div class="card"><div class="cat">식육처리기능사 · 세트</div><div class="t">돼지도 놀란 식육처리기능사 필기+실기 세트</div><div class="d">필기 요약 · 암기송 부록집 + 실기 한 권 요약</div><a href="https://www.groble.im/products/Shpvy5" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+  <div class="card"><div class="cat">조리기능사</div><div class="t">아기도 외우는 조리기능사 필기+실기 3권</div><div class="d">필기 한 권 요약 + 암기송 부록집 + 실기 시험 당일 한 권</div><a href="https://www.groble.im/products/e7Y4iv" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+  <div class="card"><div class="cat">부업 가이드</div><div class="t">ZOP LAB 부업 가이드 4권 세트</div><div class="d">시작 → 판매 → 콘텐츠 → 반복 줄이기 순서로 정리한 방법 가이드 4권</div><a href="https://www.groble.im/products/6HhmWn" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
+ </div>
+ <div class="more"><span>필기 암기송 0원 무료 샘플도 있어요.</span></div>
+</div></section>
+
+<!-- LOG (new) -->
+<section class="log dark"><div class="wrap">
+ <div class="lab">LOG · 실험 기록</div>
+ <h2 class="big">잘된 것도, 안 된 것도.</h2>
+ <p class="d">실험 과정은 블로그에 그대로 기록합니다.</p>
+ <a href="https://blog.naver.com/shb4698" class="btn line" target="_blank" rel="noopener">블로그에서 기록 보기 →</a>
+ <p class="url">blog.naver.com/shb4698</p>
+</div></section>
+
+<!-- PROMISE (deck 06) -->
+<section class="promise"><div class="wrap">
+ <div class="lab">PROMISE · 약속</div>
+ <h2 class="big">솔직한 것만<br>보여드립니다.</h2>
+ <div class="plist">
+  <div class="prom"><span class="n wm">I</span><span class="t">과장하지 않습니다.</span></div>
+  <div class="prom"><span class="n wm">II</span><span class="t">가짜 후기를 쓰지 않습니다.</span></div>
+  <div class="prom"><span class="n wm">III</span><span class="t">가짜 마감으로 서두르게 하지 않습니다.</span></div>
+ </div>
+ <p class="end">진짜 기록, <span>진짜 결과.</span></p>
+</div></section>
+</main>
+
+<!-- FOOTER (deck 07 closing) -->
+<footer class="dark">
+ <div class="logo wm">ZOP LAB</div>
+ <div class="ko">부업연구소</div>
+ <div class="rule"></div>
+ <div class="links"><a href="https://zoplab.co.kr">zoplab.co.kr</a><br><a href="https://blog.naver.com/shb4698" target="_blank" rel="noopener">blog.naver.com/shb4698</a></div>
+ <div class="en">Zero-cost Online Pipeline LAB</div>
+ <div class="legal">ZOP LAB · 대표 서홍빈 · zoplab.co.kr<br>© 2026 ZOP LAB</div>
+</footer>
+</body>
+</html>
