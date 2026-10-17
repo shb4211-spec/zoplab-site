@@ -1,7 +1,7 @@
 (function(){
 const $=s=>document.querySelector(s);
 const S=window.SCENES,SRC=window.SRC,FB=window.FEEDBACK;
-const NAME={t:'한소금 쌤',z:'조피',n:'내레이션'};
+const NAME={t:'솔솔 쌤',z:'조피',n:'내레이션'};
 const ZIMG={neutral:'zopi_cook_neutral',thinking:'zopi_cook_thinking',oops:'zopi_cook_oops',happy:'zopi_cook_happy',mask:'zopi_cook_neutral_mask'};
 const TIMG={smile:'hansogeum_smile',show:'hansogeum_show',wait:'hansogeum_wait'};
 const LAB={field:'현장 기억 · 공식 아님',zop:'ZOP LAB 팁 · 공식 아님'};
@@ -120,7 +120,7 @@ function finish(){
   const li=a=>a.map(x=>`<li>${x}</li>`).join('');
   const miss=missed.map(s=>`<details><summary>${s.id==='S8b'?'S8-다시':s.id}. ${s.title}</summary>${s.explain.map(e=>`<p>${e[1].replace(/\n/g,'<br>')}${e[3]?` <span class="lab">${LAB[e[3]]}</span>`:''}</p>`).join('')}<p class="small">출처: ${s.src.map(id=>SRC[id].t+(SRC[id].k!=='off'?' ('+KLAB[SRC[id].k]+')':'')).join(' / ')}</p></details>`).join('');
   $('#result').innerHTML=`
-   <p class="kicker">학원식 실기연습 · 북어구이</p><h2>한소금 쌤 피드백</h2>
+   <p class="kicker">학원식 실기연습 · 북어구이</p><h2>솔솔 쌤 피드백</h2>
    <div class="say"><img src="img/hansogeum_show.png" alt=""><p>${FB.intro}</p></div>
    <div class="fb good"><h3>잘한 점</h3><ul>${li(FB.good)}</ul></div>
    <div class="fb fix"><h3>고칠 점</h3><ul>${li(FB.fix)}</ul></div>
