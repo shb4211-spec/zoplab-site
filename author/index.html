@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ZOP LAB 작가 실험 — 내 인생 한 권 프로젝트 | 잡랩(ZOP LAB)</title>
+<meta name="description" content="내 이야기를 3번의 1:1 만남으로 작은 전자책 한 권으로. 잡랩(ZOP LAB) 소장과 함께하는 1:1 예비작가 프로그램. 회당 60분 × 3회, 실비 1만 원.">
+<meta name="theme-color" content="#1f2a24">
+<link rel="canonical" href="https://zoplab.co.kr/author/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZOP LAB">
+<meta property="og:url" content="https://zoplab.co.kr/author/">
+<meta property="og:title" content="ZOP LAB 작가 실험 — 내 인생 한 권 프로젝트">
+<meta property="og:description" content="내 이야기를 3번의 1:1 만남으로 작은 전자책 한 권으로.">
+<meta property="og:image" content="https://zoplab.co.kr/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+KR:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--fo:#1f2a24;--gd:#b39c6d;--iv:#f3efe6;--iv2:#ebe5d7;--ink:#1f2a24;--mute:#6d726c;--txt:#3b433e;--soft:#d9d5ca;
+--sans:'Pretendard','Noto Sans KR','Noto Sans CJK KR',sans-serif;--ser:'Noto Serif KR','Noto Serif CJK KR',serif;--wm:'Cormorant Garamond','Cormorant',serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);background:var(--iv);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wm{font-family:var(--wm);font-weight:500;font-variant-numeric:lining-nums}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+.lab{font-size:12px;font-weight:500;letter-spacing:4px;color:var(--gd)}
+.rule{width:40px;height:1px;background:var(--gd)}
+.dark{background:var(--fo);color:var(--iv)}
+section{padding:64px 0}
+h2.big{font-family:var(--ser);font-weight:600;font-size:26px;line-height:1.45;margin-top:16px}
+.lead{font-size:16px;font-weight:300;line-height:1.8;color:var(--txt);margin-top:20px}
+.dark .lead{color:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 26px;font-size:15px;font-weight:500;letter-spacing:1px;border:1px solid var(--gd);transition:.2s}
+.btn.gold{background:var(--gd);color:var(--fo)}
+.btn.gold:hover{background:#c4ae80}
+.btn.line{color:var(--gd)}
+.btn.line:hover{background:rgba(179,156,109,.12)}
+.btn.cta{height:58px;width:100%;max-width:360px;font-size:17px;font-weight:600;letter-spacing:2px}
+.note{font-size:13px;font-weight:300;color:var(--mute);margin-top:12px;line-height:1.7}
+.dark .note{color:#a9ada6}
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(31,42,36,.97);border-bottom:1px solid rgba(179,156,109,.25);backdrop-filter:blur(6px)}
+header .in{height:56px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 20px}
+header .logo{font-size:19px;letter-spacing:6px;color:var(--gd)}
+header .btn{height:32px;padding:0 16px;font-size:13px}
+/* hero */
+.hero{text-align:center;padding:72px 24px 72px}
+.hero .en{font-family:var(--wm);font-style:italic;font-size:17px;letter-spacing:2px;color:var(--gd)}
+.hero h1{font-family:var(--ser);font-weight:600;font-size:22px;line-height:1.5;margin-top:22px;color:var(--iv)}
+.hero h1 .s{display:block;font-size:31px;color:var(--gd);margin-top:6px}
+.hero .rule{margin:30px auto 26px}
+.hero .hook{font-family:var(--ser);font-size:19px;line-height:1.7}
+.promo{width:100%;max-width:720px;margin:28px auto 0}
+.promo video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid rgba(179,156,109,.45);background:#000}
+@media(max-width:720px){.promo{max-width:300px}.promo video{aspect-ratio:9/16}}
+.hero .facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:28px}
+.hero .facts span{font-size:13px;border:1px solid rgba(179,156,109,.45);color:var(--soft);padding:5px 12px;letter-spacing:.5px}
+.hero .btn{margin-top:40px}
+/* who */
+.who .pt{margin-top:32px;border-bottom:1px solid rgba(31,42,36,.18)}
+.who .pt div{display:flex;gap:18px;align-items:baseline;border-top:1px solid rgba(31,42,36,.18);padding:18px 0;font-size:16px;line-height:1.7}
+.who .pt .n{width:22px;flex:none;font-size:19px;color:var(--gd)}
+/* sessions */
+.sessions{background:var(--iv2)}
+.tl{margin-top:40px}
+.step{position:relative;padding:0 0 40px 40px}
+.step:last-child{padding-bottom:0}
+.step .dot{position:absolute;left:0;top:6px;width:11px;height:11px;border-radius:50%;border:1px solid var(--gd);background:var(--iv2)}
+.step:last-child .dot{background:var(--gd)}
+.step:not(:last-child)::after{content:"";position:absolute;left:5px;top:24px;bottom:-4px;width:1px;background:var(--gd);opacity:.55}
+.step .k{font-size:12px;font-weight:500;letter-spacing:3px;color:var(--gd)}
+.step .t{font-family:var(--ser);font-size:19px;font-weight:600;margin-top:6px}
+.step .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
+.step .left{font-size:13.5px;color:var(--mute);margin-top:8px;line-height:1.7}
+/* get */
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:32px}
+.card{background:#faf8f2;border:1px solid rgba(179,156,109,.35);padding:20px}
+.card .cat{font-size:11.5px;font-weight:500;letter-spacing:2px;color:var(--gd)}
+.card .t{font-size:17px;font-weight:600;line-height:1.5;margin-top:8px}
+.card .d{font-size:14.5px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:8px}
+/* info */
+.info dl{margin-top:32px;border-bottom:1px solid rgba(179,156,109,.28)}
+.info dl div{display:flex;gap:16px;border-top:1px solid rgba(179,156,109,.28);padding:18px 0}
+.info dt{width:76px;flex:none;font-size:13px;letter-spacing:2px;color:var(--gd);padding-top:2px}
+.info dd{font-size:16px;line-height:1.7}
+.info dd small{display:block;font-size:13.5px;font-weight:300;color:#a9ada6;margin-top:2px}
+/* faq */
+.faq .list{margin-top:32px;border-bottom:1px solid rgba(31,42,36,.18)}
+.faq details{border-top:1px solid rgba(31,42,36,.18)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:16.5px;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--wm);font-size:24px;line-height:1;color:var(--gd);flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq .a{font-size:15px;font-weight:300;line-height:1.8;color:var(--txt);padding:0 0 22px}
+.faq .a p+p{margin-top:8px}
+/* closing */
+.closing{text-align:center}
+.closing .q{font-family:var(--ser);font-size:21px;line-height:1.7;margin-top:22px}
+.closing .by{font-family:var(--ser);font-size:15px;color:var(--gd);margin-top:16px}
+.closing .btn{margin-top:40px}
+.closing .mail{margin-top:22px;font-size:14px;color:var(--soft)}
+.closing .mail a{border-bottom:1px solid var(--gd);padding-bottom:1px}
+/* footer */
+footer{text-align:center;padding:72px 24px 48px;border-top:1px solid rgba(179,156,109,.22)}
+footer .logo{font-size:40px;letter-spacing:9px;padding-left:9px;color:var(--gd);line-height:1}
+footer .ko{font-size:15px;font-weight:300;letter-spacing:8px;padding-left:8px;margin-top:18px}
+footer .rule{margin:30px auto}
+footer .links{font-size:14px;font-weight:300;line-height:2;color:var(--soft);letter-spacing:1px}
+footer .en{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.85;letter-spacing:2px;margin-top:40px}
+footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(179,156,109,.22);font-size:12px;color:#9aa096;line-height:1.9;letter-spacing:.5px}
+footer .legal a{color:#9aa096}
+@media (min-width:760px){
+ section{padding:112px 0}
+ h2.big{font-size:36px}
+ .hero{padding:120px 24px 120px}
+ .hero h1{font-size:26px}
+ .hero h1 .s{font-size:48px}
+ .hero .hook{font-size:24px}
+ .lead{font-size:17px}
+ .grid{grid-template-columns:1fr 1fr}
+ .closing .q{font-size:28px}
+}
+</style>
+</head>
+<body>
+
+<header><div class="in">
+ <a href="/" class="logo wm">ZOP LAB</a>
+ <a href="https://blog.naver.com/zoplab" class="btn line" target="_blank" rel="noopener">블로그</a>
+</div></header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero dark">
+ <div class="en">ZOP LAB · Author Experiment</div>
+ <h1>ZOP LAB 작가 실험 —<span class="s">내 인생 한 권 프로젝트</span></h1>
+ <div class="rule"></div>
+ <p class="hook">내 이야기를 3번의 1:1 만남으로<br>작은 전자책 한 권으로.</p>
+ <div class="facts"><span>1:1 · 회당 60분 × 3회</span><span>실비 1만 원</span><span>동시에 최대 2명</span><span>만 32세 미만</span></div>
+ <div class="promo"><video id="promoVideo" autoplay muted loop playsinline controls preload="metadata" poster="promo_h.jpg">
+  <source src="promo_v.mp4" type="video/mp4" media="(max-width: 720px)">
+  <source src="promo_h.mp4" type="video/mp4">
+ </video></div>
+ <script>(function(){var v=document.getElementById('promoVideo');if(window.matchMedia('(max-width: 720px)').matches){v.poster='promo_v.jpg';}})();</script>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-gkOF4KQcktopZOfSOIq1HI0RNiyc4F5ex3F8J6s6EYYjFg/viewform" class="btn gold cta" style="margin-top:24px" target="_blank" rel="noopener">참여 신청하기</a>
+ <p class="note">구글폼 신청서가 새 창으로 열려요. 신청해 주시면 잡랩 소장이 직접 연락드려요.</p>
+</section>
+
+<!-- WHO -->
+<section class="who"><div class="wrap">
+ <div class="lab">WHO · 이런 분께</div>
+ <h2 class="big">책은 작가만 쓰는 게<br>아니라고 생각해요.</h2>
+ <p class="lead">일과 살림에서 직접 해 보고 배운 것, 살아온 이야기를<br>한 권의 책으로 남겨 보고 싶은 분이면 누구나 괜찮아요.<br>(참여 대상: 만 32세 미만)</p>
+ <div class="pt">
+  <div><span class="n wm">I</span><span>주인공이자 작가는 처음부터 끝까지 <b>참여자 본인</b>이에요. 원고의 권리도 본인에게 있어요.</span></div>
+  <div><span class="n wm">II</span><span>잡랩은 <b>옆에서</b> 질문하고, 받아 적고, 책의 꼴을 갖추도록 도와요.</span></div>
+  <div><span class="n wm">III</span><span>글솜씨보다 이야기가 먼저예요. 목차 5개 안팎의 작은 책으로 시작해요.</span></div>
+ </div>
+</div></section>
+
+<!-- SESSIONS (names/goals from proposal §6) -->
+<section class="sessions"><div class="wrap">
+ <div class="lab">3 SESSIONS · 세 번의 만남</div>
+ <h2 class="big">한 시간씩, 세 번.</h2>
+ <p class="lead">회당 60분, 1~2주 간격으로 만나요.<br>세 번 모두 잡랩 소장이 직접 곁에 앉아요.</p>
+ <div class="tl">
+  <div class="step"><span class="dot"></span><div class="k">1회차 · 60분</div><div class="t">「만나서 듣기」</div><div class="d">이야기를 듣고, 책의 주제 한 줄과 목차를 정합니다.</div><div class="left">남는 것 — 주제 한 줄, 목차 5개 안팎, 다음 만남 날짜</div></div>
+  <div class="step"><span class="dot"></span><div class="k">2회차 · 60분</div><div class="t">「함께 해보기」</div><div class="d">써 온 원고를 함께 다듬고, 나머지 원고와 표지를 함께 준비합니다.</div><div class="left">남는 것 — 원고 대부분, 표지 사진</div></div>
+  <div class="step"><span class="dot"></span><div class="k">3회차 · 60분</div><div class="t">「혼자 설 수 있게 세우기」</div><div class="d">책을 완성해 내 인생 한 권 기획전(작은 전시)에서 선보이고, 그 뒤 유페이퍼 등록 여부를 참여자가 정합니다.</div><div class="left">남는 것 — 완성한 내 전자책, 기획전에서 선보인 경험, 혼자 이어 갈 4주 걸음표</div></div>
+ </div>
+</div></section>
+
+<!-- WHAT YOU GET -->
+<section class="get"><div class="wrap">
+ <div class="lab">WHAT YOU GET · 받는 것</div>
+ <h2 class="big">세 번이 끝나면<br>내 책 한 권이 남아요.</h2>
+ <div class="grid">
+  <div class="card"><div class="cat">01 · 완성한 전자책</div><div class="t">내 이름이 적힌 작은 전자책 한 권</div><div class="d">ZOP LAB이 자체 보유한 전자책 제작 도구로, 내 원고를 완성된 전자책 꼴로 다듬어요. 도구는 진행에만 쓰고, 판매하거나 권하지 않아요.</div></div>
+  <div class="card"><div class="cat">02 · 작가 체험</div><div class="t">제목 · 표지 · 작가 소개 · 작가의 말</div><div class="d">책 제목을 짓고, 표지를 고르고, 작가 소개와 작가의 말을 직접 써 봐요. 작가가 하는 일을 처음부터 끝까지 해 보는 시간이에요.</div></div>
+  <div class="card"><div class="cat">03 · 기획전</div><div class="t">내 인생 한 권 기획전</div><div class="d">3회차에 완성한 책의 표지·제목·대표 문장 한 줄을 세워 처음 선보여요. 이름·사진·문장의 공개 범위는 동의서로 직접 고르고, 동의하지 않으셔도 참여에는 아무 차이가 없어요.</div></div>
+  <div class="card"><div class="cat">04 · 선택</div><div class="t">원하시면 유페이퍼 등록까지</div><div class="d">기획전 뒤에, 원하시는 분만 본인 계정으로 등록 신청을 함께해요. 승인은 유페이퍼의 검수로 결정되고, 거절되면 사유를 함께 보고 고쳐서 다시 신청해요. 등록하지 않으셔도 완성한 책은 PDF로 남아요.</div></div>
+ </div>
+</div></section>
+
+<!-- INFO -->
+<section class="info dark"><div class="wrap">
+ <div class="lab">INFO · 안내</div>
+ <h2 class="big">참여 안내</h2>
+ <dl>
+  <div><dt>참여 대상</dt><dd>만 32세 미만</dd></div>
+  <div><dt>진행</dt><dd>1:1 · 회당 60분 × 3회<small>1~2주 간격</small></dd></div>
+  <div><dt>참여비</dt><dd>실비 1만 원<small>원고·음료비, 3회 전체. 그 밖에 받는 돈은 없어요.</small></dd></div>
+  <div><dt>인원</dt><dd>동시에 최대 2명<small>잡랩 소장이 혼자 운영해서, 한 분 한 분 정확하게 함께하려고 정한 숫자예요.</small></dd></div>
+  <div><dt>일정</dt><dd>평일 저녁 · 주말<small>신청 후 함께 정해요.</small></dd></div>
+  <div><dt>장소</dt><dd>개별 안내<small>조용하고 이야기 나누기 좋은 곳으로 따로 알려 드려요.</small></dd></div>
+  <div><dt>문의</dt><dd><a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></dd></div>
+ </dl>
+</div></section>
+
+<!-- FAQ -->
+<section class="faq"><div class="wrap">
+ <div class="lab">FAQ · 자주 묻는 질문</div>
+ <h2 class="big">미리 궁금하실 것들</h2>
+ <div class="list">
+  <details><summary>글을 잘 못 써도 되나요?</summary><div class="a"><p>네, 괜찮아요. 말로 풀어 주시면 잡랩 소장이 질문하면서 받아 적어요. 숙제를 못 써 오셔도 괜찮고, 목차 5개 안팎의 작은 책이라 분량도 무리 없게 함께 정해요.</p></div></details>
+  <details><summary>책이 꼭 출간되나요?</summary><div class="a"><p>책은 3회차에 완성해서 기획전에서 선보이고, PDF로 남아요. 유페이퍼 등록은 원하실 때만 하는 선택이에요.</p><p>승인은 유페이퍼의 검수로 결정되기 때문에 잡랩이 출간을 보장해 드릴 수는 없어요. 대신 거절되면 사유를 함께 확인하고 고쳐서 다시 신청해요.</p></div></details>
+  <details><summary>비용이 더 드나요?</summary><div class="a"><p>3회 전체 실비 1만 원(원고·음료비)이 전부예요. 상품 판매나 유료 자료 권유는 하지 않고, 나중에 책을 판매하시더라도 잡랩은 수수료나 수익 배분을 받지 않아요.</p><p>유페이퍼 등록을 고르셨는데 유페이퍼 쪽에서 비용이 필요한 것으로 확인되면, 미리 그대로 말씀드리고 등록 여부는 직접 정하시면 돼요.</p></div></details>
+  <details><summary>개인정보는요?</summary><div class="a"><p>신청서에는 이름(닉네임), 연락처, 이메일, 연령대만 받고, 프로그램 안내와 일정 연락에만 써요. 프로그램이 끝나고 1년 뒤 파기해요.</p><p>유페이퍼 등록에 필요한 정보는 본인이 직접 입력하고, 잡랩 소장은 그 화면을 보지도 기록하지도 않아요.</p></div></details>
+ </div>
+</div></section>
+
+<!-- CLOSING CTA -->
+<section class="closing dark"><div class="wrap">
+ <div class="lab">JOIN · 참여 신청</div>
+ <p class="q">처음부터 크게 하지 않고,<br>먼저 한 사람의 이야기를<br>한 권의 책으로 완성해 보겠습니다.</p>
+ <p class="by">— 잡랩 소장</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-gkOF4KQcktopZOfSOIq1HI0RNiyc4F5ex3F8J6s6EYYjFg/viewform" class="btn gold cta" target="_blank" rel="noopener">참여 신청하기</a>
+ <p class="mail">궁금한 점은 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a>로 편하게 물어봐 주세요.</p>
+</div></section>
+</main>
+
+<footer class="dark">
+ <div class="logo wm">ZOP LAB</div>
+ <div class="ko">부업연구소</div>
+ <div class="rule"></div>
+ <div class="links"><a href="https://zoplab.co.kr/link">zoplab.co.kr/link</a><br><a href="https://blog.naver.com/zoplab" target="_blank" rel="noopener">블로그</a> · <a href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener">유튜브</a> · <a href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener">카페</a> · <a href="https://instagram.com/zoplab" target="_blank" rel="noopener">인스타그램</a> · <a href="https://www.threads.com/@zoplab" target="_blank" rel="noopener">스레드</a> · <a href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener">틱톡</a><br>문의 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></div>
+ <div class="en">Zero-inventory Online Pipeline LAB</div>
+ <div class="legal"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br>상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 서홍빈<br>호스팅서비스 제공자 GitHub Inc.<br>© 2026 ZOP LAB</div>
+</footer>
+</body>
+</html>
