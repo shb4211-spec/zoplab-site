@@ -56,6 +56,12 @@ header .btn{height:32px;padding:0 16px;font-size:13px}
 .hero .ko{font-size:19px;font-weight:300;letter-spacing:10px;padding-left:10px}
 .hero .en{font-family:var(--wm);font-style:italic;font-size:17px;letter-spacing:2px;color:var(--gd);opacity:.9;margin-top:18px}
 .hero .btn{margin-top:52px;min-width:200px}
+/* intro video */
+.intro{padding:24px 16px 32px;text-align:center}
+.intro .vbox{position:relative;width:100%;max-width:min(360px,calc(80vh * 9 / 16));margin:0 auto}
+.intro video{display:block;width:100%;aspect-ratio:9/16;height:auto;max-height:80vh;border-radius:18px;background:#1f2a24;object-fit:cover;border:1px solid rgba(179,156,109,.35)}
+.intro .snd{position:absolute;right:12px;bottom:12px;height:34px;padding:0 14px;font-family:var(--sans);font-size:13px;letter-spacing:1px;color:var(--gd);background:rgba(31,42,36,.78);border:1px solid var(--gd);border-radius:17px;cursor:pointer}
+@media (min-width:760px){.intro{padding:40px 24px 48px}.intro .vbox{max-width:min(400px,calc(80vh * 9 / 16))}}
 /* one line */
 .oneline .q{font-family:var(--ser);font-size:27px;line-height:1.65;margin-top:30px}
 .oneline .by{font-family:var(--wm);font-style:italic;font-size:17px;color:var(--mute);letter-spacing:1px;margin-top:40px}
@@ -154,6 +160,15 @@ footer .legal a{color:#9aa096}</style>
 </div></header>
 
 <main id="top">
+<!-- INTRO VIDEO -->
+<section class="intro dark">
+ <div class="vbox">
+  <video id="zoplabIntro" src="/img/intro/zoplab_intro.mp4" poster="/img/intro/zoplab_intro_poster.jpg" width="720" height="1280" autoplay muted loop playsinline preload="metadata" aria-label="잡랩 소개 영상"></video>
+  <button type="button" class="snd" id="zoplabIntroSnd" aria-label="소리 켜기">🔇 소리 켜기</button>
+ </div>
+ <script>(function(v,b){if(!v||!b)return;b.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.play()}b.textContent=v.muted?'🔇 소리 켜기':'🔊 소리 끄기';b.setAttribute('aria-label',v.muted?'소리 켜기':'소리 끄기')})})(document.getElementById('zoplabIntro'),document.getElementById('zoplabIntroSnd'))</script>
+</section>
+
 <!-- HERO (deck 01 cover) -->
 <section class="hero dark">
  <h1 class="wm">ZOP LAB</h1>
