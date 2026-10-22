@@ -1,0 +1,12 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 25분,/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""무, 오이, 당근, 달걀지단을 썰기 하여 전량 제출하시오.""",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E01,문제지 요구사항 가 단서,"""(단, 재료별 써는 방법이 틀렸을 경우 실격 처리됩니다.)""",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""무는 채썰기, 오이는 돌려깍기하여 채썰기, 당근은 골패썰기를 하시오.""",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""…지단을 부쳐 완자(마름모꼴)모양으로 각 10개를 썰고, 나머지는 채썰기를 하시오.""",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""1) 채썰기 - 0.2 cm x 0.2 cm x 5 cm 2) 골패썰기 - 0.2 cm x 1.5 cm x 5 cm 3) 마름모형 썰기 – 한 면의 길이가 1.5 cm""",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"무 · 오이 · 당근 · 달걀 · 식용유 · 소금 (6개, 이름만)",/workspace/research/qnet2026/hansik/31.재료썰기.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 재료썰기,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 재료썰기 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+I10,일반적인 해석,「각 10개」 = 흰자(백) 지단 마름모 10개 + 노른자(황) 지단 마름모 10개로 읽는 것이 학원 레시피·합격자 후기의 일반적 해석 (공식 풀이 아님). 출처: 만개의레시피 6898932 「황백지단은 마름모꼴 1.5cm 각각 10개」 / zlwmzksnakak.tistory.com/6 「마름모 꼴로 각각 10개씩」 / richdobby.tistory.com/23 「각각 10개 이상」(‘이상’으로 적은 곳도 있음),https://www.10000recipe.com/recipe/6898932 ; https://zlwmzksnakak.tistory.com/6 ; https://richdobby.tistory.com/23 (조회 2026-10-22),일반적인 해석 (잡랩 팁 · 공식 풀이 아님)
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

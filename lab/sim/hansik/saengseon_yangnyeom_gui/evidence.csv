@@ -1,0 +1,10 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 30분,/workspace/research/qnet2026/hansik/10.생선양념구이.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""생선은 머리와 꼬리를 포함하여 통째로 사용하고 내장은 아가미쪽으로 제거하시오.""",/workspace/research/qnet2026/hansik/10.생선양념구이.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""칼집 넣은 생선은 유장으로 초벌구이하고, 고추장양념으로 석쇠에 구우시오.""",/workspace/research/qnet2026/hansik/10.생선양념구이.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""생선구이는 머리 왼쪽, 배 앞쪽 방향으로 담아내시오.""",/workspace/research/qnet2026/hansik/10.생선양념구이.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"조기 · 진간장 · 대파 · 마늘 · 고추장 · 흰설탕 · 깨소금 · 참기름 · 소금 · 검은후춧가루 · 식용유 (11개, 이름만)",/workspace/research/qnet2026/hansik/10.생선양념구이.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 생선양념구이,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 생선양념구이 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+I11,일반적인 해석,"「배 앞쪽」 = 생선 배가 접시 앞쪽(보는 사람 쪽, 사진으로 보면 아래쪽), 등지느러미가 위(뒤)쪽으로 담는 것이 학원 레시피·합격자 후기의 일반적 해석 (공식 풀이 아님). 출처: 1percenthome.tistory.com/196 「배가 앞쪽으로 오도록」 / young23.linkwe.kr/101 「배가 아래쪽(등이 위쪽)」 / 만개의레시피 6890198 「배가 아래로」",https://1percenthome.tistory.com/196 ; https://young23.linkwe.kr/101 ; https://www.10000recipe.com/recipe/6890198 (조회 2026-10-22),일반적인 해석 (잡랩 팁 · 공식 풀이 아님)
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—
