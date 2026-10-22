@@ -1,0 +1,12 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 50분,/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""채소, 소고기, 황·백지단의 크기는 0.3cm x 0.3cm x 5cm…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""호박은 돌려깎기하여 0.3cm x 0.3cm x 5cm…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""청포묵의 크기는 0.5cm x 0.5cm x 5cm…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""소고기는 고추장 볶음과 고명에 사용…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 요구사항 마,"""…색 맞추어 돌려 담으시오…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E06,문제지 요구사항 바,"""볶은 고추장은 완성된 밥 위에 얹어내시오…""",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"쌀 · 애호박 · 도라지 · 고사리 · 청포묵 · 소고기 · 달걀 · 건다시마 · 고추장 · 식용유 · 대파 · 마늘 · 진간장 · 흰설탕 · 깨소금 · 검은후춧가루 · 참기름 · 소금 (18개, 이름만)",/workspace/research/qnet2026/hansik/1.비빔밥.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 비빔밥,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 비빔밥 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

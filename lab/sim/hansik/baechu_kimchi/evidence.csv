@@ -1,0 +1,12 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 35분,/workspace/research/qnet2026/hansik/32.배추김치.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""배추는 씻어 물기를 빼시오…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""찹쌀가루로 찹쌀풀을 쑤어 식혀…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""무는 0.3cm× 0.3cm× 5cm…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""실파, 갓, 미나리, 대파(채썰기)는 4cm…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 요구사항 마,"""소의 재료를 양념하여 버무려…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E06,문제지 요구사항 바,"""소를 배춧잎 사이사이에 고르게…""",/workspace/research/qnet2026/hansik/32.배추김치.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"절임배추 · 무 · 실파 · 갓 · 미나리 · 찹쌀가루 · 새우젓 · 멸치액젓 · 대파 · 마늘 · 생강 · 고춧가루 · 소금 · 흰설탕 (14개, 이름만)",/workspace/research/qnet2026/hansik/32.배추김치.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 배추김치,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 배추김치 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

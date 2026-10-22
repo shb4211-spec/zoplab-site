@@ -1,0 +1,8 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 20분,/workspace/research/qnet2026/hansik/24.더덕생채.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""더덕은 5cm로 썰어 두들겨 편 후 찢어서 쓴맛을 제거…""",/workspace/research/qnet2026/hansik/24.더덕생채.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""고춧가루로 양념하고, 전량 제출…""",/workspace/research/qnet2026/hansik/24.더덕생채.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"통더덕 · 마늘 · 흰설탕 · 식초 · 대파 · 소금 · 깨소금 · 고춧가루 (8개, 이름만)",/workspace/research/qnet2026/hansik/24.더덕생채.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 더덕생채,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 더덕생채 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

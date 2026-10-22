@@ -1,0 +1,8 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 25분,/workspace/research/qnet2026/hansik/15.풋고추전.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""풋고추는 5cm 길이로, 소를 넣어 지져…""",/workspace/research/qnet2026/hansik/15.풋고추전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""풋고추는 잘라 데쳐서 사용하며, 완성된 풋고추전은 8개…""",/workspace/research/qnet2026/hansik/15.풋고추전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"풋고추 · 소고기 · 두부 · 밀가루 · 달걀 · 대파 · 검은후춧가루 · 참기름 · 소금 · 깨소금 · 마늘 · 식용유 · 흰설탕 (13개, 이름만)",/workspace/research/qnet2026/hansik/15.풋고추전.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 풋고추전,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 풋고추전 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

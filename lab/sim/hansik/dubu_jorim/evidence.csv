@@ -1,0 +1,9 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 25분,/workspace/research/qnet2026/hansik/19.두부조림.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""두부는 0.8cm x 3cm x 4.5cm…""",/workspace/research/qnet2026/hansik/19.두부조림.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""8쪽을 제출하고, 촉촉하게 보이도록 국물을 약간 끼얹어…""",/workspace/research/qnet2026/hansik/19.두부조림.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""실고추와 파채를 고명으로…""",/workspace/research/qnet2026/hansik/19.두부조림.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"두부 · 대파 · 실고추 · 검은후춧가루 · 참기름 · 소금 · 마늘 · 식용유 · 진간장 · 깨소금 · 흰설탕 (11개, 이름만)",/workspace/research/qnet2026/hansik/19.두부조림.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 두부조림,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 두부조림 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

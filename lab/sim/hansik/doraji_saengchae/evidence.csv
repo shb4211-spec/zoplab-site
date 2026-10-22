@@ -1,0 +1,8 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 15분,/workspace/research/qnet2026/hansik/22.도라지생채.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""도라지는 0.3cm x 0.3cm x 6cm…""",/workspace/research/qnet2026/hansik/22.도라지생채.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""…고추장과 고춧가루 양념으로 무쳐…""",/workspace/research/qnet2026/hansik/22.도라지생채.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"통도라지 · 소금 · 고추장 · 흰설탕 · 식초 · 대파 · 마늘 · 깨소금 · 고춧가루 (9개, 이름만)",/workspace/research/qnet2026/hansik/22.도라지생채.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 도라지생채,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 도라지생채 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

@@ -1,0 +1,10 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 25분,/workspace/research/qnet2026/hansik/17.생선전.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""생선은 세장 뜨기하여 껍질을 벗겨 포를 뜨시오…""",/workspace/research/qnet2026/hansik/17.생선전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""생선전은 0.5cm x 5cm x 4cm…""",/workspace/research/qnet2026/hansik/17.생선전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""달걀은 흰자, 노른자를 혼합하여 사용…""",/workspace/research/qnet2026/hansik/17.생선전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""생선전은 8개 제출…""",/workspace/research/qnet2026/hansik/17.생선전.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"동태 · 밀가루 · 달걀 · 소금 · 흰후춧가루 · 식용유 (6개, 이름만)",/workspace/research/qnet2026/hansik/17.생선전.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 생선전,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 생선전 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

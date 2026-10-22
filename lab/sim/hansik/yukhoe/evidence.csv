@@ -1,0 +1,10 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 20분,/workspace/research/qnet2026/hansik/25.육회.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""소고기는 0.3cm x 0.3cm x 6cm로 썰어 소금 양념…""",/workspace/research/qnet2026/hansik/25.육회.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""배는 0.3cm x 0.3cm x 5cm로 변색되지 않게 하여 가장자리에 돌려 담으시오…""",/workspace/research/qnet2026/hansik/25.육회.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""마늘은 편으로 썰어 장식하고 잣가루를 고명으로…""",/workspace/research/qnet2026/hansik/25.육회.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""소고기는 손질하여 전량 사용…""",/workspace/research/qnet2026/hansik/25.육회.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"소고기 · 배 · 잣 · 소금 · 마늘 · 대파 · 검은후춧가루 · 참기름 · 흰설탕 · 깨소금 (10개, 이름만)",/workspace/research/qnet2026/hansik/25.육회.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 육회,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 육회 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

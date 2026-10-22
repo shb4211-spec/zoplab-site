@@ -1,0 +1,12 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 30분,/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""생선은 4~5cm의 토막…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""무, 두부는 2.5cm x 3.5cm x 0.8cm…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E03,문제지 요구사항 다,"""…쑥갓과 파는 4cm…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E04,문제지 요구사항 라,"""고추장, 고춧가루를 사용…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 요구사항 마,"""…생선살이 부서지지 않도록…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E06,문제지 요구사항 바,"""생선머리를 포함하여 전량 제출…""",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"동태 · 무 · 애호박 · 두부 · 풋고추 · 홍고추(생) · 쑥갓 · 마늘 · 생강 · 실파 · 고추장 · 소금 · 고춧가루 (13개, 이름만)",/workspace/research/qnet2026/hansik/5.생선찌개.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 생선찌개,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 생선찌개 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—

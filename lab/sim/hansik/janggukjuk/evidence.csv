@@ -1,0 +1,8 @@
+id,종류,내용(짧은 인용 또는 설명),출처,라벨
+E00,문제지,※시험시간 : 30분,/workspace/research/qnet2026/hansik/3.장국죽.pdf 1쪽,확인
+E01,문제지 요구사항 가,"""불린 쌀을 반정도로 싸라기를 만들어 죽을 쑤시오…""",/workspace/research/qnet2026/hansik/3.장국죽.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E02,문제지 요구사항 나,"""소고기는 다지고 불린 표고는 3cm의 길이로 채…""",/workspace/research/qnet2026/hansik/3.장국죽.pdf 1.요구사항,확인 (문제지 텍스트와 대조)
+E05,문제지 지급재료,"쌀 · 소고기 · 건표고버섯 · 대파 · 마늘 · 진간장 · 깨소금 · 검은후춧가루 · 참기름 · 국간장 (10개, 이름만)",/workspace/research/qnet2026/hansik/3.장국죽.pdf 3.지급재료목록,확인
+Z01,ZOP LAB(공식 아님),ZOP LAB 연습 순서: 장국죽,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+Z02,ZOP LAB(공식 아님),ZOP LAB 팁: 장국죽 흔한 실수,proto tasks.json steps/warn (ZOP LAB 책 내용),공식 아님
+C·H·Z22·U01·U05,공통,../../template/common/evidence_common.csv 번호 그대로,—,—
