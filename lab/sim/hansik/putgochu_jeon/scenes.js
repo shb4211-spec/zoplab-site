@@ -1,6 +1,6 @@
 // 풋고추전 학원식 실기연습 — 대사 데이터 (_build/items.py에서 생성, 손으로 고치지 말 것)
 window.ITEM={"name": "풋고추전", "time": 25};
-window.SRC={"C04": {"t": "「풋고추전」 문제지 수험자 유의사항 1)", "k": "off"}, "C07": {"t": "「풋고추전」 문제지 수험자 유의사항 6)-라)·사)", "k": "off"}, "C21": {"t": "「풋고추전」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「풋고추전」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「풋고추전」 요구사항 가", "k": "off"}, "E02": {"t": "큐넷 한식조리기능사 2026 공개과제 「풋고추전」 요구사항 나", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "U01": {"t": "맛보기 위반: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z01": {"t": "ZOP LAB 연습 순서: 풋고추전", "k": "zop"}, "Z02": {"t": "ZOP LAB 팁: 풋고추전 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
+window.SRC={"C04": {"t": "「풋고추전」 문제지 수험자 유의사항 1)", "k": "off"}, "C07": {"t": "「풋고추전」 문제지 수험자 유의사항 6)-라)·사)", "k": "off"}, "C21": {"t": "「풋고추전」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「풋고추전」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「풋고추전」 요구사항 가", "k": "off"}, "E02": {"t": "큐넷 한식조리기능사 2026 공개과제 「풋고추전」 요구사항 나", "k": "off"}, "G03": {"t": "큐넷 위생상태 및 안전관리 세부기준 10 폐기물 처리 (일부 감점)", "k": "off"}, "G10": {"t": "큐넷 위생 세부기준 기타 안내: 안전사고 시 즉시 감독위원에게", "k": "off"}, "G11": {"t": "「풋고추전」 문제지 수험자 유의사항 6)-다) 두 과제 시간 내 제출", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "S_FE69": {"t": "food-engineering 블로그 2020 실기 후기 (검색 본문 발췌 확인) · https://food-engineering.tistory.com/69 (조회 2026-10-23)", "k": "zop"}, "S_Y98": {"t": "청춘23 블로그 한식조리기능사 연습 후기 · https://young23.linkwe.kr/98 (조회 2026-10-23)", "k": "zop"}, "U01": {"t": "맛보기 위반: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z01": {"t": "ZOP LAB 연습 순서: 풋고추전", "k": "zop"}, "Z02": {"t": "ZOP LAB 팁: 풋고추전 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
 window.SCENES=[
 {
 "id": "0",
@@ -28,13 +28,98 @@ window.SCENES=[
 ],
 [
 "n",
-"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」. (복장 체크는 북어구이 판에서 했으니 건너뛰어요.)"
+"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」."
 ]
 ],
 "src": [
 "E00",
 "E01"
 ]
+},
+{
+"id": "M01",
+"part": "공개 후기 실수",
+"title": "칼로 꼭지 자르기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 풋고추 꼭지를 칼로 싹둑 자른다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">칼로 꼭지 자르기</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"꼭지는 칼 대신 손으로 살짝 따라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다.",
+"startTimer": true
+},
+{
+"id": "M04",
+"part": "공개 후기 실수",
+"title": "고추 살까지 긁기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 씨를 빼면서 안쪽 살까지 박박 긁는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">고추 살까지 긁기</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"고추 살은 남겨야 소가 잘 붙는다는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M05",
+"part": "공개 후기 실수",
+"title": "소 듬뿍",
+"type": "judge",
+"fix": true,
+"screen": "조피가 고추에 소를 볼록하게 채운다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">소 듬뿍</text>",
+"setup": [
+[
+"z",
+"어… 이렇게 하면 되는 거죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"소는 절대 많이 넣지 말고 얇게 밀어 넣으라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S1",
@@ -68,8 +153,91 @@ window.SCENES=[
 "E02",
 "Z02"
 ],
-"retry": "조피가 끓는 소금물에 고추를 살짝 데쳐 찬물에 헹군다.",
-"startTimer": true
+"retry": "조피가 끓는 소금물에 고추를 살짝 데쳐 찬물에 헹군다."
+},
+{
+"id": "M06",
+"part": "공개 후기 실수",
+"title": "밀가루 생략",
+"type": "judge",
+"fix": true,
+"screen": "조피가 고추 안쪽에 밀가루 없이 소를 넣는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">밀가루 생략</text>",
+"setup": [
+[
+"z",
+"이 정도면 괜찮겠죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"안쪽에 밀가루를 묻혀야 소가 분리되지 않는다는 팁이에요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M07",
+"part": "공개 후기 실수",
+"title": "겉면도 오래 지짐",
+"type": "judge",
+"fix": true,
+"screen": "조피가 고추 겉면을 오래 지져 색이 누렇다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">겉면도 오래 지짐</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"겉면은 기름칠만 한다는 느낌으로! 오버쿡 피드백을 받은 후기가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M08",
+"part": "공개 후기 실수",
+"title": "짧은 고추",
+"type": "judge",
+"fix": true,
+"screen": "조피가 길이가 모자란 고추를 그냥 쓴다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">짧은 고추</text>",
+"setup": [
+[
+"z",
+"다들 이렇게 하지 않나요?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"길이가 안 나오면 시작 전에 교환을 요청하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S2",
@@ -101,6 +269,88 @@ window.SCENES=[
 "retry": "조피가 소를 덜어 내고 평평하게 편다."
 },
 {
+"id": "M09",
+"part": "공개 후기 실수",
+"title": "단면 안 지짐",
+"type": "judge",
+"fix": true,
+"screen": "조피가 잘린 단면은 그냥 둔다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">단면 안 지짐</text>",
+"setup": [
+[
+"z",
+"손에 익은 대로 할게요.",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"잘린 단면도 세워서 지지라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y98"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M10",
+"part": "공개 후기 실수",
+"title": "덜 익은 소",
+"type": "judge",
+"fix": true,
+"screen": "조피가 겉만 익은 풋고추전을 꺼낸다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">덜 익은 소</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"덜 익거나 심하게 탄 건 실격·감점 대상이라고 정리한 후기가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_FE69"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "R1",
+"part": "요구사항 확인",
+"title": "요구사항 가 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 가를 다시 짚는다: \"풋고추는 5cm 길이로, 소를 넣어 지져…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 가 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E01"
+]
+},
+{
 "id": "S3",
 "part": "조리 3",
 "title": "일곱 개면 충분",
@@ -127,6 +377,86 @@ window.SCENES=[
 "C07"
 ],
 "retry": "조피가 다음 판엔 손질할 때 여유분까지 챙기기로 한다."
+},
+{
+"id": "R2",
+"part": "요구사항 확인",
+"title": "요구사항 나 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 나를 다시 짚는다: \"풋고추는 잘라 데쳐서 사용하며, 완성된 풋고추전은 8개…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 나 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E02"
+]
+},
+{
+"id": "G10",
+"part": "조리 중",
+"title": "베인 걸 숨기기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 칼에 손을 살짝 베고는 몰래 계속 썬다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">베인 걸 숨기기</text>",
+"setup": [
+[
+"z",
+"티 안 나게 그냥 할게요…",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"숨기지 말아요. 위생 세부기준 기타 안내에 자상·화상 같은 안전사고가 나면 즉시 감독위원에게 알리고 조치를 받으라고 적혀 있어요.",
+"wait"
+]
+],
+"src": [
+"G10"
+],
+"retry": "조피가 손을 들고 알린 뒤 밴드를 붙인다."
+},
+{
+"id": "G03",
+"part": "정리",
+"title": "쓰레기는 아무 데나",
+"type": "judge",
+"fix": true,
+"screen": "조피가 다듬고 남은 껍질을 개수대 옆에 쌓아 둔다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">쓰레기는 아무 데</text><text x=\"60\" y=\"50\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">나</text>",
+"setup": [
+[
+"z",
+"이따 한꺼번에 버릴게요.",
+"neutral"
+]
+],
+"explain": [
+[
+"t",
+"쓰레기도 자리가 있어요. 위생 세부기준에 일반쓰레기, 음식물쓰레기, 폐식용유는 시험위원이 지시하는 장소에 처리하고, 안 지키면 일부 감점으로 적혀 있어요.",
+"show"
+]
+],
+"src": [
+"G03"
+],
+"retry": "조피가 지시된 통에 나눠 버린다."
 },
 {
 "id": "S4",
@@ -160,6 +490,38 @@ window.SCENES=[
 "C04",
 "U01"
 ]
+},
+{
+"id": "G11",
+"part": "시간 관리",
+"title": "한 품목에 올인",
+"type": "judge",
+"fix": true,
+"screen": "조피가 풋고추전에만 매달려 다른 과제는 손도 못 댔다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">한 품목에 올인</text>",
+"setup": [
+[
+"z",
+"이거 하나라도 완벽하게!",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"완벽은 좋지만 실제 시험은 두 과제예요. 문제지 유의사항에 시험시간 내에 과제 두 가지를 제출하지 못하면 실격 항목이라고 적혀 있어요.",
+"show"
+],
+[
+"t",
+"두 과제를 한 시간 안에 어떻게 섞어 진행하는지는 시험장 안내를 따르고, 집에서는 두 품목 순서표를 같이 짜 봐요. (두 과제 시간 운영 방식은 확인 필요)",
+"smile"
+]
+],
+"src": [
+"G11"
+],
+"retry": "조피가 두 품목 순서표를 나란히 적는다."
 },
 {
 "id": "SZ",

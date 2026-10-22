@@ -1,6 +1,6 @@
 // 탕평채 학원식 실기연습 — 대사 데이터 (_build/items.py에서 생성, 손으로 고치지 말 것)
 window.ITEM={"name": "탕평채", "time": 35};
-window.SRC={"C08": {"t": "「탕평채」 문제지 수험자 유의사항 6)-자)", "k": "off"}, "C21": {"t": "「탕평채」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「탕평채」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 가", "k": "off"}, "E03": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 다", "k": "off"}, "E05": {"t": "「탕평채」 문제지 지급재료목록", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z02": {"t": "ZOP LAB 팁: 탕평채 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
+window.SRC={"C04": {"t": "「탕평채」 문제지 수험자 유의사항 1)", "k": "off"}, "C08": {"t": "「탕평채」 문제지 수험자 유의사항 6)-자)", "k": "off"}, "C21": {"t": "「탕평채」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「탕평채」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 가", "k": "off"}, "E02": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 나", "k": "off"}, "E03": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 다", "k": "off"}, "E04": {"t": "큐넷 한식조리기능사 2026 공개과제 「탕평채」 요구사항 라", "k": "off"}, "E05": {"t": "「탕평채」 문제지 지급재료목록", "k": "off"}, "G01": {"t": "「탕평채」 문제지 수험자 유의사항 3) 지급재료 확인", "k": "off"}, "G02": {"t": "큐넷 수험자 지참준비물(한식, 2026) 칼 비고: 체칼·필러 사용 불가 / 문제지 유의사항 6)-아)", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "S_Y105": {"t": "청춘23 블로그 한식조리기능사 연습 후기 · https://young23.linkwe.kr/105 (조회 2026-10-23)", "k": "zop"}, "S_Z27": {"t": "요리공작소(Cooking Factory) 블로그 품목 정리 (원문 확인) · https://zlwmzksnakak.tistory.com/27 (조회 2026-10-23)", "k": "zop"}, "U01": {"t": "맛보기 위반: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z02": {"t": "ZOP LAB 팁: 탕평채 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
 window.SCENES=[
 {
 "id": "0",
@@ -28,13 +28,185 @@ window.SCENES=[
 ],
 [
 "n",
-"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」. (복장 체크는 북어구이 판에서 했으니 건너뛰어요.)"
+"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」."
 ]
 ],
 "src": [
 "E00",
 "E01"
 ]
+},
+{
+"id": "G01",
+"part": "시작 전",
+"title": "재료 확인은 지금",
+"type": "judge",
+"fix": true,
+"screen": "시작 신호 전. 조피가 지급재료를 보지도 않고 칼부터 꺼낸다. 받은 재료: 청포묵 · 소고기 · 숙주 · 미나리 · 달걀 · 김 · 진간장 · 마늘 · 대파 · 검은후춧가루 · 참기름 · 흰설탕 · 깨소금 · 식초 · 소금 · 식용유",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">재료 확인은 지금</text>",
+"setup": [
+[
+"z",
+"재료는 쓰면서 보면 되죠.",
+"neutral"
+]
+],
+"explain": [
+[
+"t",
+"재료는 지금 봐요. 문제지 유의사항에 지급재료는 시험 전에 확인하고, 이상이 있으면 그때 조치를 받으며 시험 중에는 교환이나 추가 지급을 하지 않는다고 적혀 있어요.",
+"show"
+]
+],
+"src": [
+"G01"
+],
+"retry": "조피가 재료 이름을 하나씩 짚으며 확인한다."
+},
+{
+"id": "G02",
+"part": "시작 전",
+"title": "편한 도구 하나",
+"type": "judge",
+"fix": true,
+"screen": "조피가 가방에서 채칼을 꺼내 도마 옆에 둔다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">편한 도구 하나</text>",
+"setup": [
+[
+"z",
+"이거 하나면 채 썰기 끝!",
+"happy"
+]
+],
+"explain": [
+[
+"t",
+"편하지만 오늘은 안 돼요. 큐넷 지참준비물 목록 칼 항목 비고에 체칼, 필러 등은 기능평가에 영향을 미쳐 사용할 수 없다고 적혀 있어요.",
+"show"
+],
+[
+"t",
+"문제지 유의사항에도 지참준비물 이외의 조리기술에 영향을 줄 수 있는 기구를 쓰면 실격 항목이라고 적혀 있어요.",
+"wait"
+]
+],
+"src": [
+"G02"
+],
+"retry": "조피가 채칼을 가방에 다시 넣는다."
+},
+{
+"id": "M01",
+"part": "공개 후기 실수",
+"title": "데치기 잊음",
+"type": "judge",
+"fix": true,
+"screen": "조피가 청포묵을 썰고 바로 밑간한다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">데치기 잊음</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"데치는 걸 잊고 밑간했다가 다시 씻어 데친 후기가 있어요. 데친 다음 밑간! 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다.",
+"startTimer": true
+},
+{
+"id": "M02",
+"part": "공개 후기 실수",
+"title": "초간장 색 없음",
+"type": "judge",
+"fix": true,
+"screen": "조피 탕평채 색이 하얗다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">초간장 색 없음</text>",
+"setup": [
+[
+"z",
+"다들 이렇게 하지 않나요?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"너무 옅어서 초간장으로 버무린 게 맞냐는 질문을 받은 후기가 있어요. 묵에 은은한 갈색이 돌게 해요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M03",
+"part": "공개 후기 실수",
+"title": "굵은 묵",
+"type": "judge",
+"fix": true,
+"screen": "조피가 청포묵을 요구 크기 그대로 썬다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">굵은 묵</text>",
+"setup": [
+[
+"z",
+"손에 익은 대로 할게요.",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"묵은 데치면 굵어지니 조금 얇게 썰라는 팁이에요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M04",
+"part": "공개 후기 실수",
+"title": "김 젖음",
+"type": "judge",
+"fix": true,
+"screen": "조피가 김을 물 묻은 도마 옆에 둔다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">김 젖음</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"재료 받자마자 김을 따로 둬 젖지 않게 하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S1",
@@ -68,8 +240,119 @@ window.SCENES=[
 "E01",
 "Z02"
 ],
-"retry": "조피가 묵을 끓는 물에 살짝 데친다.",
-"startTimer": true
+"retry": "조피가 묵을 끓는 물에 살짝 데친다."
+},
+{
+"id": "M05",
+"part": "공개 후기 실수",
+"title": "지단 아래 김 위",
+"type": "judge",
+"fix": true,
+"screen": "조피가 지단을 먼저 올리고 김을 그 위에 뿌린다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">지단 아래 김 위</text>",
+"setup": [
+[
+"z",
+"어… 이렇게 하면 되는 거죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"김을 먼저 올리고 그 위에 지단을 올리라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M06",
+"part": "공개 후기 실수",
+"title": "미리 무치기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 다른 과제가 남았는데 탕평채부터 버무린다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">미리 무치기</text>",
+"setup": [
+[
+"z",
+"이 정도면 괜찮겠죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"재료만 준비해 두고 제출 직전에 버무리라는 팁이에요. 미리 무치면 물이 생긴다는 정리도 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M07",
+"part": "공개 후기 실수",
+"title": "묵이 칼에 붙음",
+"type": "judge",
+"fix": true,
+"screen": "조피 칼에 묵이 자꾸 들러붙는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">묵이 칼에 붙음</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"칼에 물을 묻혀 가며 썰라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M08",
+"part": "공개 후기 실수",
+"title": "기름 두른 김 굽기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 기름 두른 팬에 김을 굽는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">기름 두른 김 굽</text><text x=\"60\" y=\"50\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">기</text>",
+"setup": [
+[
+"z",
+"다들 이렇게 하지 않나요?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"물도 기름도 없이 달군 팬에 구우라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y105"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S2",
@@ -99,6 +382,118 @@ window.SCENES=[
 "retry": "조피가 숙주 머리와 꼬리를 뗀다."
 },
 {
+"id": "M09",
+"part": "공개 후기 실수",
+"title": "묵 겉면 그대로",
+"type": "judge",
+"fix": true,
+"screen": "조피가 청포묵 겉의 단단한 부분까지 썬다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">묵 겉면 그대로</text>",
+"setup": [
+[
+"z",
+"손에 익은 대로 할게요.",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"겉면 단단한 부분은 잘라 내고 재단하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Z27"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M10",
+"part": "공개 후기 실수",
+"title": "미나리 잎 그대로",
+"type": "judge",
+"fix": true,
+"screen": "조피가 미나리 잎과 잔뿌리를 같이 데친다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">미나리 잎 그대로</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"잎과 잔뿌리는 떼고 길이를 일정하게 자르라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Z27"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M11",
+"part": "공개 후기 실수",
+"title": "물 조금",
+"type": "judge",
+"fix": true,
+"screen": "조피가 냄비에 물을 조금만 붓는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">물 조금</text>",
+"setup": [
+[
+"z",
+"어… 이렇게 하면 되는 거죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"데칠 재료가 많으니 물을 넉넉히 끓이라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Z27"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M12",
+"part": "공개 후기 실수",
+"title": "초간장째 담기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 볼에 고인 초간장까지 접시에 붓는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">초간장째 담기</text>",
+"setup": [
+[
+"z",
+"이 정도면 괜찮겠죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"버무린 재료만 건져 담고 초간장이 접시에 많이 안 들어가게 하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Z27"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
 "id": "S3",
 "part": "조리 3",
 "title": "김 그냥 부수기",
@@ -126,6 +521,112 @@ window.SCENES=[
 "Z02"
 ],
 "retry": "조피가 김을 구워 부수고 마지막에 올린다."
+},
+{
+"id": "M13",
+"part": "공개 후기 실수",
+"title": "설탕 덜 녹음",
+"type": "judge",
+"fix": true,
+"screen": "조피가 초간장 설탕이 서걱거리는데 바로 버무린다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">설탕 덜 녹음</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"설탕이 충분히 녹을 때까지 저으라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Z27"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "R1",
+"part": "요구사항 확인",
+"title": "요구사항 가 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 가를 다시 짚는다: \"청포묵은 0.4cm x 0.4cm x 6cm로 썰어 데쳐서…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 가 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E01"
+]
+},
+{
+"id": "R2",
+"part": "요구사항 확인",
+"title": "요구사항 나 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 나를 다시 짚는다: \"모든 부재료의 길이는 4~5cm…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 나 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E02"
+]
+},
+{
+"id": "R3",
+"part": "요구사항 확인",
+"title": "요구사항 다 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 다를 다시 짚는다: \"…거두절미한 숙주는 각각 조리하여 청포묵과 함께 초간장으로 무쳐…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 다 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E03"
+]
 },
 {
 "id": "S4",
@@ -158,6 +659,60 @@ window.SCENES=[
 "src": [
 "C08"
 ]
+},
+{
+"id": "R4",
+"part": "요구사항 확인",
+"title": "요구사항 라 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 라를 다시 짚는다: \"…김은 구워 부셔서 고명…\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 라 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 짧은 발췌 · 전체 문장은 큐넷 원문. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E04"
+]
+},
+{
+"id": "GC04",
+"part": "조리 중",
+"title": "살짝 맛만",
+"type": "judge",
+"fix": true,
+"screen": "조피가 양념을 숟가락으로 떠서 입으로 가져간다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">살짝 맛만</text>",
+"setup": [
+[
+"z",
+"간이 맞나 살짝만…",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"숟가락 내려놓아요! 문제지 유의사항에 위생과 숙련된 기능평가를 위해 조리 작업 시 맛을 보지 않는다고 적혀 있어요. 얼마나 깎이는지는 공개되지 않았어요.",
+"show"
+]
+],
+"src": [
+"C04",
+"U01"
+],
+"retry": "조피가 숟가락을 내려놓는다."
 },
 {
 "id": "SZ",

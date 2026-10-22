@@ -1,6 +1,6 @@
 // 지짐누름적 학원식 실기연습 — 대사 데이터 (_build/items.py에서 생성, 손으로 고치지 말 것)
 window.ITEM={"name": "지짐누름적", "time": 35};
-window.SRC={"C05": {"t": "「지짐누름적」 문제지 수험자 유의사항 2)", "k": "off"}, "C07": {"t": "「지짐누름적」 문제지 수험자 유의사항 6)-라)·사)", "k": "off"}, "C21": {"t": "「지짐누름적」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「지짐누름적」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「지짐누름적」 요구사항 가", "k": "off"}, "E02": {"t": "「지짐누름적」 요구사항 나", "k": "off"}, "E05": {"t": "「지짐누름적」 문제지 지급재료목록", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z01": {"t": "ZOP LAB 연습 순서: 지짐누름적", "k": "zop"}, "Z02": {"t": "ZOP LAB 팁: 지짐누름적 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
+window.SRC={"C05": {"t": "「지짐누름적」 문제지 수험자 유의사항 2)", "k": "off"}, "C07": {"t": "「지짐누름적」 문제지 수험자 유의사항 6)-라)·사)", "k": "off"}, "C21": {"t": "「지짐누름적」 문제지 수험자 유의사항 7)", "k": "off"}, "E00": {"t": "「지짐누름적」 문제지 시험시간", "k": "off"}, "E01": {"t": "큐넷 한식조리기능사 2026 공개과제 「지짐누름적」 요구사항 가", "k": "off"}, "E02": {"t": "「지짐누름적」 요구사항 나", "k": "off"}, "E05": {"t": "「지짐누름적」 문제지 지급재료목록", "k": "off"}, "G04": {"t": "큐넷 위생 세부기준 9 손/손톱 (일부 감점)", "k": "off"}, "G07": {"t": "큐넷 위생 세부기준 기타 안내: 칼·도마 구분 사용은 세척으로 대신 가능", "k": "off"}, "G13": {"t": "큐넷 위생 세부기준 6 위생화 (일부 감점)", "k": "off"}, "H08": {"t": "현장 기억(잡랩 소장, 약 5년 전): 한 번 내면 끝", "k": "field"}, "S_Y97": {"t": "청춘23 블로그 한식조리기능사 연습 후기 · https://young23.linkwe.kr/97 (조회 2026-10-23)", "k": "zop"}, "U05": {"t": "접시 정리 상태: 감점될 수 있음 (점수 공개 자료 없음)", "k": "none"}, "Z01": {"t": "ZOP LAB 연습 순서: 지짐누름적", "k": "zop"}, "Z02": {"t": "ZOP LAB 팁: 지짐누름적 흔한 실수", "k": "zop"}, "Z22": {"t": "ZOP LAB 팁: 제출 전 확인 순서", "k": "zop"}};
 window.SCENES=[
 {
 "id": "0",
@@ -28,7 +28,7 @@ window.SCENES=[
 ],
 [
 "n",
-"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」. (복장 체크는 북어구이 판에서 했으니 건너뛰어요.)"
+"당신은 선생님 옆에서 같이 보는 '체크 눈'이에요. 고칠 점이 보이면 「이의 있음!」, 괜찮으면 「괜찮아요」."
 ]
 ],
 "src": [
@@ -37,12 +37,123 @@ window.SCENES=[
 ]
 },
 {
+"id": "G13",
+"part": "시작 전",
+"title": "편한 슬리퍼",
+"type": "judge",
+"fix": true,
+"screen": "조피가 뒤꿈치가 뚫린 슬리퍼를 신고 있다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">편한 슬리퍼</text>",
+"setup": [
+[
+"z",
+"오래 서 있으니까 편한 게 최고죠.",
+"happy"
+]
+],
+"explain": [
+[
+"t",
+"편한 것도 안전 안에서요. 위생 세부기준에 위생화는 굽이 높지 않고 발가락·발등·발뒤꿈치가 덮여야 하며, 부적합하면 일부 감점으로 적혀 있어요.",
+"show"
+]
+],
+"src": [
+"G13"
+],
+"retry": "조피가 운동화 형태의 작업화로 갈아 신는다."
+},
+{
+"id": "M01",
+"part": "공개 후기 실수",
+"title": "꼬치째 제출",
+"type": "judge",
+"fix": true,
+"screen": "조피가 꼬치를 꽂은 채로 접시에 담는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">꼬치째 제출</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"지짐누름적은 꼬치를 빼고, 화양적은 안 뺀다는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다.",
+"startTimer": true
+},
+{
+"id": "M03",
+"part": "공개 후기 실수",
+"title": "고기 딱 맞게",
+"type": "judge",
+"fix": true,
+"screen": "조피가 소고기를 다른 재료와 똑같은 길이로 썬다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">고기 딱 맞게</text>",
+"setup": [
+[
+"z",
+"손에 익은 대로 할게요.",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"소고기는 익으면 길이가 줄고 두꺼워지니 조금 길고 얇게 준비하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M04",
+"part": "공개 후기 실수",
+"title": "힘줄 그대로",
+"type": "judge",
+"fix": true,
+"screen": "조피가 소고기 힘줄을 끊지 않는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">힘줄 그대로</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"칼끝으로 힘줄을 끊어 연육해야 반듯해진다는 팁이에요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
 "id": "S1",
 "part": "조리 1 · 썰기",
 "title": "재료 길이 맞추기",
 "type": "judge",
 "fix": false,
-"startTimer": true,
 "screen": "조피가 고기, 표고, 당근, 도라지, 쪽파를 비슷한 길이로 나란히 놓고 칼로 끝을 맞춘다.",
 "svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">고기 · 표고 · 당근</text><text x=\"60\" y=\"50\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">도라지 · 쪽파 (길이 맞춤)</text>",
 "setup": [
@@ -62,6 +173,90 @@ window.SCENES=[
 "src": [
 "E01"
 ]
+},
+{
+"id": "M05",
+"part": "공개 후기 실수",
+"title": "갈색끼리 붙이기",
+"type": "judge",
+"fix": true,
+"screen": "조피가 소고기와 표고를 나란히 꽂는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">갈색끼리 붙이기</text>",
+"setup": [
+[
+"z",
+"어… 이렇게 하면 되는 거죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"갈색 재료끼리는 띄워 끼우라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M06",
+"part": "공개 후기 실수",
+"title": "재료가 떨어짐",
+"type": "judge",
+"fix": true,
+"screen": "조피 누름적을 뒤집자 재료가 하나씩 떨어진다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">재료가 떨어짐</text>",
+"setup": [
+[
+"z",
+"이 정도면 괜찮겠죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"선생님이 뒤집어 보며 재료가 잘 붙었는지 확인했다는 후기가 있어요. 뒷면에 밀가루를 잘 묻혀요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M07",
+"part": "공개 후기 실수",
+"title": "쭈글쭈글",
+"type": "judge",
+"fix": true,
+"screen": "조피 누름적 표면이 쭈글쭈글하다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">쭈글쭈글</text>",
+"setup": [
+[
+"z",
+"시간 아끼려고요!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"재료 배치 영향인 것 같다는 후기가 있어요. 반듯한 재료를 가장자리에 둬요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S2",
@@ -96,6 +291,90 @@ window.SCENES=[
 "C07",
 "E05"
 ]
+},
+{
+"id": "M08",
+"part": "공개 후기 실수",
+"title": "양념 과다",
+"type": "judge",
+"fix": true,
+"screen": "조피가 설탕과 다진 파·마늘을 듬뿍 넣는다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">양념 과다</text>",
+"setup": [
+[
+"z",
+"다들 이렇게 하지 않나요?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"많이 넣으면 탈 수 있다는 팁이에요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M09",
+"part": "공개 후기 실수",
+"title": "쪽파 조금",
+"type": "judge",
+"fix": true,
+"screen": "조피가 쪽파를 한 가닥만 끼운다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">쪽파 조금</text>",
+"setup": [
+[
+"z",
+"손에 익은 대로 할게요.",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"쪽파는 지지면 숨이 죽으니 넉넉히 끼우라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "M10",
+"part": "공개 후기 실수",
+"title": "데친 뒤 방치",
+"type": "judge",
+"fix": true,
+"screen": "조피가 데친 도라지·당근을 찬물에 안 헹군다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">데친 뒤 방치</text>",
+"setup": [
+[
+"z",
+"급하니까 일단 이렇게!",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"데친 뒤 바로 찬물에 헹구고 물기를 빼라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
 },
 {
 "id": "S3",
@@ -133,6 +412,86 @@ window.SCENES=[
 ]
 },
 {
+"id": "M11",
+"part": "공개 후기 실수",
+"title": "길이 못 나오는 재료",
+"type": "judge",
+"fix": true,
+"screen": "조피가 짧은 당근을 그냥 쓰려 한다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">길이 못 나오는 </text><text x=\"60\" y=\"50\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">재료</text>",
+"setup": [
+[
+"z",
+"어… 이렇게 하면 되는 거죠?",
+"oops"
+]
+],
+"explain": [
+[
+"t",
+"시작 전에 모든 재료 길이가 나오는지 보고 안 되면 교환을 요청하라는 메모가 있어요. 공개된 연습 후기에서 실제로 나온 실수를 옮긴 ZOP LAB 연습 메모예요(공식 아님).",
+"show",
+"zop"
+]
+],
+"src": [
+"S_Y97"
+],
+"retry": "조피가 메모대로 다시 한다."
+},
+{
+"id": "R1",
+"part": "요구사항 확인",
+"title": "요구사항 가 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 가를 다시 짚는다: \"각 재료는 0.6cm x 1cm x 6cm로 하시오.\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 가 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 재료 하나하나가 두께 0.6cm, 폭 1cm, 길이 6cm 정도. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E01"
+]
+},
+{
+"id": "R2",
+"part": "요구사항 확인",
+"title": "요구사항 나 확인",
+"type": "judge",
+"fix": false,
+"screen": "조피가 손을 멈추고 문제지 요구사항 나를 다시 짚는다: \"누름적의 수량은 2개를 제출하고, 꼬치는 빼서 제출하시오.\"",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">요구사항 나 확인</text>",
+"setup": [
+[
+"z",
+"여기까지 문제지랑 맞는지 볼게요.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 쉬운 말로 하면 2개 내고, 꼬치는 빼고 낸다. 중간중간 문제지와 맞춰 보는 습관이 제일 든든해요. 전체 문장은 큐넷 원문으로 확인해요.",
+"smile"
+]
+],
+"src": [
+"E02"
+]
+},
+{
 "id": "S4",
 "part": "조리 4 · 꼬치",
 "title": "꼬치째로 담기",
@@ -164,6 +523,58 @@ window.SCENES=[
 "src": [
 "E02",
 "Z02"
+]
+},
+{
+"id": "G04",
+"part": "조리 중",
+"title": "손가락 밴드",
+"type": "judge",
+"fix": false,
+"screen": "조피 손가락에 작은 상처가 있어 밴드를 붙이고 위생장갑을 꼈다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">손가락 밴드</text>",
+"setup": [
+[
+"z",
+"상처는 가려야죠.",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"좋아요! 위생 세부기준에 상처가 있으면 밴드, 위생장갑 착용 등 적합한 조치를 하라고 적혀 있어요. 손톱은 짧게, 매니큐어는 안 돼요.",
+"smile"
+]
+],
+"src": [
+"G04"
+]
+},
+{
+"id": "G07",
+"part": "조리 중",
+"title": "같은 도마 쓰기",
+"type": "judge",
+"fix": false,
+"screen": "조피가 고기를 썬 도마와 칼을 깨끗이 씻은 뒤 채소를 썬다.",
+"svg": "<ellipse cx=\"60\" cy=\"44\" rx=\"54\" ry=\"30\" fill=\"#fff\" stroke=\"#1f2a24\" stroke-width=\"3\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"Gaegu\" font-weight=\"700\" font-size=\"12\" fill=\"#1f2a24\">같은 도마 쓰기</text>",
+"setup": [
+[
+"z",
+"씻고 쓰면 되죠?",
+"thinking"
+]
+],
+"explain": [
+[
+"t",
+"맞아요. 위생 세부기준 기타 안내에 교차오염 방지를 위한 칼·도마 구분 사용은 세척으로 대신할 수 있다고 적혀 있어요.",
+"smile"
+]
+],
+"src": [
+"G07"
 ]
 },
 {
