@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>유니짜장면 한 판 · 학원식 실기연습 | ZOP LAB</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../_shared/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand">ZOP LAB <span>학원식 실기연습 · 유니짜장면</span></div>
+    <div id="timer" class="timer hide" aria-live="off"><small>연습용 타이머</small><b id="clock">30:00</b></div>
+  </header>
+
+  <!-- 시작 화면 -->
+  <section id="start" class="screen on">
+    <div class="startcard">
+      <p class="kicker">학원식 실기연습 · 중식조리기능사</p>
+      <h1>유니짜장면 한 판</h1>
+      <p class="origin">“실기를 준비하면서 ‘이런 연습 도구가 있었으면 좋았겠다’ 싶어서 만들었습니다.”</p>
+      <div class="cast"><img src="../_shared/img/zopi_cook_neutral.png" alt="조피"><img src="../_shared/img/hansogeum_smile.png" alt="솔솔 쌤"></div>
+      <p class="help"><b>연습에 도움을 드립니다.</b> 운전면허 학원의 연습용 시뮬레이터 같은 거예요. 실제 시험 전에 손에 익히는 곳이지, 합격이나 불합격을 정하는 곳이 아니에요.</p>
+      <ul class="notice">
+        <li>공식 기준이나 정답이 아닙니다. 선생님은 큐넷 공개과제에 적힌 문장을 출처와 함께 보여 줄 뿐이에요.</li>
+        <li>무대는 가상의 학원 실습실, 솔솔 쌤은 가상 인물이에요.</li>
+        <li>실제 시험은 과제 2개를 함께 봐요. 이 연습은 유니짜장면 하나만 해요.</li>
+        <li>한국산업인력공단과 관계없습니다. 공단과 무관, 공식 채점 아님.</li><li>흔한 실수 장면은 공개 합격 후기·강사 블로그를 우리 말로 바꿔 쓴 것이고, 출처는 장면마다 달았어요.</li>
+      </ul>
+      <p class="update">품목은 계속 업데이트됩니다.</p>
+      <button id="go" class="btn main">연습 시작하기</button>
+    </div>
+  </section>
+
+  <!-- 장면 화면 -->
+  <section id="play" class="screen">
+    <div id="stage">
+      <div id="part" class="part"></div>
+      <div id="prop" class="prop"></div>
+      <img id="zopi" class="char z" src="../_shared/img/zopi_cook_thinking.png" alt="조피">
+      <img id="teacher" class="char t" src="../_shared/img/hansogeum_smile.png" alt="솔솔 쌤">
+    </div>
+    <div id="panel">
+      <div id="screenText" class="screentext"></div>
+      <div id="check" class="check hide"></div>
+      <div id="box" class="box">
+        <div id="who" class="who"></div>
+        <div id="tag" class="tag hide"></div>
+        <div id="line" class="line"></div>
+      </div>
+      <div id="src" class="src hide"></div>
+      <div id="actions" class="actions"></div>
+    </div>
+  </section>
+
+  <!-- 결과 화면 -->
+  <section id="result" class="screen"></section>
+</div>
+<script src="scenes.js"></script>
+<script src="../_shared/app.js"></script>
+</body>
+</html>
