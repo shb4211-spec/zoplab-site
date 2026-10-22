@@ -24,12 +24,12 @@ footer{text-align:center;font-size:12px;color:#b39c6d;margin-top:30px;letter-spa
 <p>"나도 책을 쓸 수 있을까?" 싶은 분께, 여기 꽂힌 책들이 그 대답이 되면 좋겠어요.</p></section>
 <h2>레이블 책</h2><div class="grid" id="label"></div>
 <h2>참여자 서가</h2><div class="grid" id="part"></div>
-<p class="note">서가에는 주인이 동의한 책만 올라와요. 모두 비매품이에요.</p>
+<p style="text-align:center;margin-top:24px"><a href="/author/" style="display:inline-block;background:#b6533a;color:#fff;padding:12px 26px;border-radius:30px;font-weight:700;text-decoration:none;box-shadow:4px 4px 0 #1f2a24">「내 인생 한 권」 참여 신청하러 가기 →</a></p><p class="note">서가에는 주인이 동의한 책만 올라와요. 모두 비매품이에요.</p>
 <footer>ZOP LAB · 잡랩 북스 · 한 권 레이블</footer>
 <script src="books.js"></script><script>
 function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 function card(b){return `<div class="card"><img src="${esc(b.cover)}" alt="『${esc(b.title)}』 표지" loading="lazy"><div class="no">No.${esc(b.no)}</div><div class="t">『${esc(b.title)}』</div><div class="m">지은이 ${esc(b.author)}${b.date?" · "+esc(b.date):""}</div>${b.line?`<div class="l">${esc(b.line)}</div>`:""}<span class="free">비매품</span>${b.preview?`<a class="pv" href="${esc(b.preview)}">미리보기 →</a>`:""}</div>`}
 document.getElementById("label").innerHTML=LABEL_BOOKS.map(card).join("");
 var P=PARTICIPANT_BOOKS,next=String(3+P.length).padStart(3,"0");
-document.getElementById("part").innerHTML=P.map(card).join("")+`<a class="slot" href="/lab/"><div class="no">No.${next}</div><div class="t">다음 책은<br>당신 차례</div><div class="m" style="margin-top:6px">「내 인생 한 권」 알아보기 →</div></a>`;
+document.getElementById("part").innerHTML=P.map(card).join("")+`<a class="slot" href="/author/"><div class="no">No.${next}</div><div class="t">다음 책은<br>당신 차례</div><div class="m" style="margin-top:6px">「내 인생 한 권」 알아보기 →</div></a>`;
 </script></body></html>
