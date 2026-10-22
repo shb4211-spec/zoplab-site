@@ -28,8 +28,8 @@ footer{text-align:center;font-size:12px;color:#b39c6d;margin-top:30px;letter-spa
 <footer>ZOP LAB · 잡랩 북스 · 한 권 레이블</footer>
 <script src="books.js"></script><script>
 function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function card(b){return `<div class="card"><img src="${esc(b.cover)}" alt="『${esc(b.title)}』 표지" loading="lazy"><div class="no">No.${esc(b.no)}</div><div class="t">『${esc(b.title)}』</div><div class="m">지은이 ${esc(b.author)}${b.date?" · "+esc(b.date):""}</div>${b.line?`<div class="l">${esc(b.line)}</div>`:""}<span class="free">비매품</span>${b.preview?`<a class="pv" href="${esc(b.preview)}">미리보기 →</a>`:""}</div>`}
+function card(b){return `<div class="card"><img src="${esc(b.cover)}" alt="『${esc(b.title)}』 표지" loading="lazy"><div class="no">No.${esc(b.no)}</div><div class="t">『${esc(b.title)}』</div><div class="m">지은이 ${esc(b.author)}${b.date?" · "+esc(b.date):""}</div>${b.line?`<div class="l">${esc(b.line)}</div>`:""}<span class="free">비매품</span>${b.preview?`<a class="pv" href="${esc(b.preview)}">읽어 보기 →</a>`:""}</div>`}
 document.getElementById("label").innerHTML=LABEL_BOOKS.map(card).join("");
-var P=PARTICIPANT_BOOKS,next=String(3+P.length).padStart(3,"0");
+var P=PARTICIPANT_BOOKS,next=String(LABEL_BOOKS.length+1+P.length).padStart(3,"0");
 document.getElementById("part").innerHTML=P.map(card).join("")+`<a class="slot" href="/author/"><div class="no">No.${next}</div><div class="t">다음 책은<br>당신 차례</div><div class="m" style="margin-top:6px">「내 인생 한 권」 알아보기 →</div></a>`;
 </script></body></html>
