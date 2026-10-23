@@ -1,0 +1,147 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>잡랩 배움 노트 (준비 중) | 잡랩(ZOP LAB)</title><meta name="description" content="잡랩이 새로 배우고 공부한 것을 노트로 정리하고 있어요. 준비되는 대로 이곳에 열어요."><meta name="robots" content="noindex"><link rel="canonical" href="https://zoplab.co.kr/baeum/"><meta property="og:type" content="website"><meta property="og:site_name" content="잡랩(ZOP LAB)"><meta property="og:title" content="잡랩 배움 노트 (준비 중) | 잡랩(ZOP LAB)"><meta property="og:description" content="잡랩이 새로 배우고 공부한 것을 노트로 정리하고 있어요. 준비되는 대로 이곳에 열어요."><meta property="og:url" content="https://zoplab.co.kr/baeum/"><meta property="og:image" content="https://zoplab.co.kr/og.png"><link rel="icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><style>
+:root{--fo:#1f2a24;--gd:#b39c6d;--iv:#f3efe6;--iv2:#ebe5d7;--ink:#1f2a24;--mute:#6d726c;--txt:#3b433e;--soft:#d9d5ca;
+--sans:'Pretendard','Noto Sans KR','Noto Sans CJK KR',sans-serif;--ser:'Noto Serif KR','Noto Serif CJK KR',serif;--wm:'Cormorant Garamond','Cormorant',serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);background:var(--iv);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wm{font-family:var(--wm);font-weight:500;font-variant-numeric:lining-nums}
+.ser{font-family:var(--ser)}
+.wrap{max-width:720px;margin:0 auto;padding:0 32px}
+.lab{font-size:12px;font-weight:500;letter-spacing:4px;color:var(--gd)}
+.rule{width:40px;height:1px;background:var(--gd)}
+.dark{background:var(--fo);color:var(--iv)}
+section{padding:72px 0}
+h2.big{font-family:var(--ser);font-weight:600;font-size:30px;line-height:1.45;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 26px;font-size:15px;font-weight:500;letter-spacing:1px;border:1px solid var(--gd);transition:.2s}
+.btn.gold{background:var(--gd);color:var(--fo)}
+.btn.gold:hover{background:#c4ae80}
+.btn.line{color:var(--gd)}
+.btn.line:hover{background:rgba(179,156,109,.12)}
+.btn.ink{border-color:var(--fo);color:var(--fo)}
+.btn.ink:hover{background:var(--fo);color:var(--iv)}
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(31,42,36,.97);border-bottom:1px solid rgba(179,156,109,.25);backdrop-filter:blur(6px)}
+header .in{height:56px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 20px}
+header .logo{font-size:19px;letter-spacing:6px;color:var(--gd)}
+header .btn{height:32px;padding:0 16px;font-size:13px}
+/* hero */
+.hero{min-height:calc(100svh - 56px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px 64px;position:relative}
+.hero h1{font-size:64px;line-height:1;letter-spacing:12px;padding-left:12px;color:var(--gd)}
+.hero .rule{margin:34px auto 26px}
+.hero .ko{font-size:19px;font-weight:300;letter-spacing:10px;padding-left:10px}
+.hero .en{font-family:var(--wm);font-style:italic;font-size:17px;letter-spacing:2px;color:var(--gd);opacity:.9;margin-top:18px}
+.hero .btn{margin-top:52px;min-width:200px}
+/* intro video */
+.intro{padding:24px 16px 32px;text-align:center}
+.intro .vbox{position:relative;width:100%;max-width:min(360px,calc(80vh * 9 / 16));margin:0 auto}
+.intro video{display:block;width:100%;aspect-ratio:9/16;height:auto;max-height:80vh;border-radius:18px;background:#1f2a24;object-fit:cover;border:1px solid rgba(179,156,109,.35)}
+.intro .snd{position:absolute;right:12px;bottom:12px;height:34px;padding:0 14px;font-family:var(--sans);font-size:13px;letter-spacing:1px;color:var(--gd);background:rgba(31,42,36,.78);border:1px solid var(--gd);border-radius:17px;cursor:pointer}
+@media (min-width:760px){.intro{padding:40px 24px 48px}.intro .vbox{max-width:min(400px,calc(80vh * 9 / 16))}}
+/* one line */
+.oneline .q{font-family:var(--ser);font-size:27px;line-height:1.65;margin-top:30px}
+.oneline .by{font-family:var(--wm);font-style:italic;font-size:17px;color:var(--mute);letter-spacing:1px;margin-top:40px}
+/* why */
+.why{padding-top:0}
+.why .tl{margin-top:40px}
+.step{position:relative;padding:0 0 44px 44px}
+.step:last-child{padding-bottom:0}
+.step .dot{position:absolute;left:0;top:6px;width:11px;height:11px;border-radius:50%;border:1px solid var(--gd);background:var(--iv)}
+.step:last-child .dot{background:var(--gd)}
+.step:not(:last-child)::after{content:"";position:absolute;left:5px;top:24px;bottom:-4px;width:1px;background:var(--gd);opacity:.55}
+.step .k{font-size:12px;font-weight:500;letter-spacing:3px;color:var(--gd)}
+.step .t{font-size:18px;font-weight:500;margin-top:6px}
+.step .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
+/* featured book */
+.feat{background:var(--iv2);text-align:center;padding:88px 0 96px}
+.feat .cover{display:block;width:100%;max-width:280px;height:auto;margin:40px auto 0;filter:drop-shadow(0 14px 22px rgba(31,42,36,.16))}
+.feat .bt{font-size:14px;font-weight:400;letter-spacing:.5px;color:var(--mute);margin-top:32px}
+/* name */
+.row{display:flex;align-items:flex-start;padding:28px 0;border-top:1px solid rgba(179,156,109,.28)}
+.row:first-of-type{border-top:0}
+.row .ini{width:84px;flex:none;color:var(--gd);font-size:64px;line-height:.9}
+.row .ini.s{font-size:26px;line-height:2.2;letter-spacing:2px;opacity:.75}
+.row .w{font-family:var(--wm);font-size:24px;font-weight:500;letter-spacing:1px}
+.row .w b{color:var(--gd);font-weight:500}
+.row .d{font-size:14.5px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:4px}
+.name .rows{margin-top:36px}
+/* what */
+.what .lead{font-size:17px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:22px}
+.what .now{margin-top:56px}
+.work{border-top:1px solid rgba(31,42,36,.18);padding-top:26px;margin-top:22px}
+.work .h{display:flex;align-items:baseline;gap:14px}
+.work .h .n{font-size:20px;color:var(--gd)}
+.work .h .t{font-size:18px;font-weight:500}
+.work .tag,.work .d{margin-left:36px}
+.work .tag{font-size:13px;letter-spacing:1px;color:var(--gd);margin-top:6px}
+.work .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
+/* books */
+.books{background:var(--iv2)}
+.books .sub{font-size:15px;font-weight:300;color:var(--txt);margin-top:14px;line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:32px}
+.card{background:#faf8f2;border:1px solid rgba(179,156,109,.35);padding:20px 20px 18px;display:flex;flex-direction:column}
+.card .cat{font-size:11.5px;font-weight:500;letter-spacing:2px;color:var(--gd)}
+.card .t{font-size:17px;font-weight:600;line-height:1.5;margin-top:10px}
+.card .d{font-size:14px;font-weight:300;line-height:1.7;color:var(--txt);margin-top:8px;flex:1}
+.card .btn{margin-top:16px;height:40px;font-size:14px;width:100%}
+.books .more{display:flex;justify-content:space-between;align-items:center;margin-top:28px;font-size:13.5px;color:var(--mute)}
+.books .more a{color:var(--fo);font-weight:500;border-bottom:1px solid var(--gd);padding-bottom:2px;white-space:nowrap}
+/* sim (실기 연습) */
+.sim .d{font-size:17px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:22px}
+.sim .note{font-size:13.5px;color:var(--mute);line-height:1.7;margin-top:12px}
+.sim .btn{margin-top:28px}
+.sim .promo{display:block;width:100%;max-width:300px;aspect-ratio:9/16;height:auto;border-radius:18px;background:#1f2a24;margin:0 0 36px;object-fit:cover}
+/* log */
+.log .d{font-size:17px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:22px}
+.log .btn{margin-top:36px}
+.log .url{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.8;margin-top:14px;letter-spacing:1px}
+/* promise */
+.plist{margin-top:44px;border-bottom:1px solid rgba(31,42,36,.18)}
+.prom{display:flex;align-items:baseline;gap:22px;border-top:1px solid rgba(31,42,36,.18);padding:24px 0}
+.prom .n{width:26px;flex:none;font-size:20px;color:var(--gd)}
+.prom .t{font-size:18px}
+.promise .end{font-family:var(--ser);font-size:23px;margin-top:48px}
+.promise .end span{color:var(--gd)}
+/* footer */
+footer{text-align:center;padding:88px 24px 48px}
+footer .logo{font-size:44px;letter-spacing:9px;padding-left:9px;color:var(--gd);line-height:1}
+footer .ko{font-size:15px;font-weight:300;letter-spacing:8px;padding-left:8px;margin-top:18px}
+footer .rule{margin:30px auto}
+footer .links{font-size:14px;font-weight:300;line-height:2;color:var(--soft);letter-spacing:1px}
+footer .en{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.85;letter-spacing:2px;margin-top:40px}
+footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(179,156,109,.22);font-size:12px;color:#9aa096;line-height:1.9;letter-spacing:.5px}
+@media (min-width:760px){
+ section{padding:128px 0}
+ h2.big{font-size:40px}
+ .hero h1{font-size:120px;letter-spacing:22px;padding-left:22px}
+ .hero .ko{font-size:26px;letter-spacing:16px;padding-left:16px}
+ .hero .en{font-size:22px}
+ .oneline .q{font-size:40px}
+ .feat{padding:128px 0 136px}
+ .feat .cover{max-width:340px;margin-top:56px}
+ .feat .bt{font-size:15px}
+ .grid{grid-template-columns:1fr 1fr}
+ .row .ini{width:130px;font-size:96px}
+ .row .ini.s{font-size:38px}
+ .row .w{font-size:30px}
+ .row .d{font-size:16px}
+}
+footer .legal a{color:#9aa096}</style><link rel="stylesheet" href="/assets/sitenav.css"><script src="/assets/sitenav.js" defer></script></head><body><nav class="zn" aria-label="사이트 메뉴"><div class="zn-in"><a class="zn-logo" href="/">ZOP LAB</a><button class="zn-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="zn-menu">☰</button><ul class="zn-menu" id="zn-menu">
+<li><a href="/lab/sim/">실기 연습게임<small>무료</small></a></li>
+<li><a href="/hanjeopsi/">한 접시 실험일지</a></li>
+<li><a href="/webtoon/">웹툰</a></li>
+<li><a href="/author/">내 인생 한 권</a></li>
+<li><a href="/lab/">자료실</a></li>
+<li><a href="/travel/">국내 여행지<small>준비 중</small></a></li>
+<li><a href="/baeum/">배움 노트<small>준비 중</small></a></li>
+<li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 소개</a></li><li><a href="/about/#assistant">비서 소개</a></li></ul></li>
+</ul></div></nav><main><section class="zs zs-hero"><img class="bg" src="/hanjeopsi/img/0a8071c634af.webp" alt="" fetchpriority="high" decoding="async"><div class="zs-wrap"><p class="zs-eye">COMING SOON · 준비 중</p><h1 class="zs-h1">잡랩 배움 노트</h1><p class="zs-lead">잡랩이 새로 배우고 공부한 것을 노트로 정리하고 있어요. 준비되는 대로 이곳에 열어요.</p><div class="zs-btns"><a class="zs-btn pri" href="/hanjeopsi/">한 접시 실험일지 보기</a><a class="zs-btn ghost" href="/">첫 화면으로</a></div></div></section><section class="zs zs-sec"><div class="zs-wrap"><div class="zs-reveal"><p class="zs-eye">지금 볼 수 있는 콘텐츠</p><h2 class="zs-h2">먼저 이것부터 둘러보세요</h2></div><div class="zs-grid"><a class="zs-card zs-reveal" href="/lab/sim/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="11" r="1"/><circle cx="18" cy="13" r="1"/></svg></span><span class="zs-tag">무료</span><h3>실기 연습게임</h3><p>한식·양식·중식·일식 조리기능사 실기 과제를 순서대로 눌러 보며 익히는 연습 게임이에요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/hanjeopsi/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15h18"/><path d="M5 15a7 7 0 0 1 14 0"/><path d="M12 6v2"/><path d="M4 19h16"/></svg></span><span class="zs-tag">실험일지</span><h3>잡랩 한 접시 실험일지</h3><p>맛 공부하러 다니며 찍은 음식 사진을 실기 기준으로 분석한 일지 100편이에요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/author/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/></svg></span><span class="zs-tag">책 프로젝트</span><h3>내 인생 한 권</h3><p>평범한 사람의 이야기로 책 한 권을 만드는 프로젝트와 잡랩 북스 서가예요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/webtoon/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><span class="zs-tag">웹툰</span><h3>잡랩 웹툰</h3><p>조리기능사 시험 준비 이야기를 조피와 함께 웹툰으로 풀었어요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/lab/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><span class="zs-tag">자료실</span><h3>조피 자료실</h3><p>D-day 카드, 체크리스트, 조피 만화 등 실기 준비 자료를 모아 뒀어요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/travel/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></span><span class="zs-tag soon">준비 중</span><h3>국내 여행지</h3><p>다녀온 국내 여행지를 정리하고 있어요.</p><span class="zs-go">미리 보기 →</span></a><a class="zs-card zs-reveal" href="/baeum/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></svg></span><span class="zs-tag soon">준비 중</span><h3>잡랩 배움 노트</h3><p>새로 배우고 공부한 것을 노트로 정리하고 있어요.</p><span class="zs-go">미리 보기 →</span></a></div></div></section></main><footer class="dark">
+ <div class="logo wm">ZOP LAB</div>
+ <div class="ko">부업연구소</div>
+ <div class="rule"></div>
+ <div class="links"><a href="https://zoplab.co.kr/link">zoplab.co.kr/link</a><br><a href="https://blog.naver.com/zoplab" target="_blank" rel="noopener">블로그</a> · <a href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener">유튜브</a> · <a href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener">카페</a> · <a href="https://instagram.com/zoplab" target="_blank" rel="noopener">인스타그램</a> · <a href="https://www.threads.com/@zoplab" target="_blank" rel="noopener">스레드</a> · <a href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener">틱톡</a><br>협찬·광고 문의 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></div>
+ <div class="en">Zero-inventory Online Pipeline LAB</div>
+ <div class="team" style="margin:0 0 12px;display:grid;gap:8px;text-align:left;line-height:1.55">
+<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/sojang.jpg" alt="잡랩 소장 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>잡랩 소장</b> · ZOP LAB 대표 · 부업연구소 소장<br>· 조리기능사 실기 요약집 전자책 저자<br>· 2026.10 전자책 「몸이 버티는 동안, 돈 구멍을 만든다」 출간 (잡랩 북스) <a href="https://shb4698.upaper.kr/content/1224356" target="_blank" rel="noopener" style="color:#b39c6d;text-decoration:underline;white-space:nowrap">책 보러 가기</a><br>· 조리기능사 (한식·양식·중식·일식), 식육처리기능사<br>· 호텔외식조리 전공, 한식당 주방 실무 경력<br>· 전자책 검수</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/zopi_jr.jpg" alt="조피 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>조피</b> · 잡랩 홍보 담당 (ZOP LAB 가상 직원)<br>· 조리기능사 4종 요약집의 숫자와 규격을 2026 큐넷 공개과제로 하나하나 대조했어요<br>· 상세페이지, 자료실, 블로그 글 초안을 정리하고 있어요<br>· 잡랩 지출과 영수증 장부를 관리해요<br>· 좌우명: "우리는 숫자와 데이터를 믿는다"</div></div></div><div class="legal"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br>상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 서홍빈<br>호스팅서비스 제공자 GitHub Inc.<br>© 2026 ZOP LAB</div>
+</footer></body></html>

@@ -109,12 +109,21 @@ summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:n
 .arr{display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid var(--ink);border-radius:18px;box-shadow:3px 3px 0 var(--ink);padding:14px;margin-top:12px}.arr span:nth-child(2){flex:1}.arr b{display:block;font-size:15px}.arr small{font-size:12.5px;color:var(--mute)}.arr i{font-style:normal;font-size:20px;font-weight:900}
 .fs{display:block;margin-top:14px}.fs input{width:100%;height:46px;border:2.5px solid var(--ink);border-radius:999px;padding:0 16px;font:inherit;font-size:14px;background:#fff}
 .more{display:block;color:var(--blue);font-weight:800;font-size:12px;margin-top:18px}.h2{font-size:19px;font-weight:900;display:flex;align-items:center;gap:8px}.cnt{font-size:12px;background:var(--ink);color:#fff;border-radius:999px;padding:2px 9px}
-</style></head><body>
-<header class="bar">
+</style><link rel="stylesheet" href="/assets/sitenav.css"><script src="/assets/sitenav.js" defer></script></head><body><nav class="zn" aria-label="사이트 메뉴"><div class="zn-in"><a class="zn-logo" href="/">ZOP LAB</a><button class="zn-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="zn-menu">☰</button><ul class="zn-menu" id="zn-menu">
+<li><a href="/lab/sim/">실기 연습게임<small>무료</small></a></li>
+<li><a href="/hanjeopsi/">한 접시 실험일지</a></li>
+<li><a href="/webtoon/">웹툰</a></li>
+<li><a href="/author/">내 인생 한 권</a></li>
+<li><a href="/lab/">자료실</a></li>
+<li><a href="/travel/">국내 여행지<small>준비 중</small></a></li>
+<li><a href="/baeum/">배움 노트<small>준비 중</small></a></li>
+<li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 소개</a></li><li><a href="/about/#assistant">비서 소개</a></li></ul></li>
+</ul></div></nav>
+<div class="bar labtools" role="toolbar" aria-label="자료실 도구">
 <button class="ib" id="mb" aria-label="메뉴">☰<small>메뉴</small></button>
 <form class="sr" id="sf" role="search"><input id="q" type="search" placeholder="자료 · 만화 · 복기책 · 공지" aria-label="자료 검색"><button type="submit">찾기</button></form>
 <a class="ib" href="#notice" aria-label="공지">📣<small>공지</small></a>
-</header>
+</div>
 <div class="dim" id="dim"></div>
 <nav class="drawer" id="menu" aria-label="전체 메뉴"><div class="dh"><img src="/link/logo.png" alt=""><b>잡랩 조피 자료실</b><button class="x" id="mx" aria-label="닫기">✕</button></div>
 <h4>자료실</h4><a href="#dday">🗓️ D-day 카드</a><a href="#types">🥢 종목 고르기</a><a href="#retake">🔍 떨어져 봤다면</a><a href="#peek">📕 복기책 살짝 보기</a><a href="#comics">🎬 조피 만화</a><a href="/hanjeopsi/">🍽️ 잡랩 한 접시</a><a href="#schedule">📅 시험 일정</a><a href="#checklist">✅ 준비물·실격 체크리스트</a><a href="#notice">📣 공지</a>
@@ -178,7 +187,7 @@ summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:n
 </main>
 <footer><a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a> · <a href="/link/">링크 모음</a><br>개인 학습 정리예요. 큐넷과 관계없고 합격을 보장하지 않아요.<div class="team" style="margin:0 0 12px;display:grid;gap:8px;text-align:left;line-height:1.55">
 <div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/sojang.jpg" alt="잡랩 소장 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>잡랩 소장</b> · ZOP LAB 대표 · 부업연구소 소장<br>· 조리기능사 실기 요약집 전자책 저자<br>· 2026.10 전자책 「몸이 버티는 동안, 돈 구멍을 만든다」 출간 (잡랩 북스) <a href="https://shb4698.upaper.kr/content/1224356" target="_blank" rel="noopener" style="color:#b39c6d;text-decoration:underline;white-space:nowrap">책 보러 가기</a><br>· 조리기능사 (한식·양식·중식·일식), 식육처리기능사<br>· 호텔외식조리 전공, 한식당 주방 실무 경력<br>· 전자책 검수</div></div>
-<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/zopi_jr.jpg" alt="조피 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>조피</b> · 잡랩 홍보 실장 (ZOP LAB 가상 직원)<br>· 조리기능사 4종 요약집의 숫자와 규격을 2026 큐넷 공개과제로 하나하나 대조했어요<br>· 상세페이지, 자료실, 블로그 글 초안을 정리하고 있어요<br>· 잡랩 지출과 영수증 장부를 관리해요<br>· 좌우명: "우리는 숫자와 데이터를 믿는다"</div></div></div><div class="biz"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br>상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 서홍빈<br>호스팅서비스 제공자 GitHub Inc.<br>© 2026 ZOP LAB</div></footer>
+<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/zopi_jr.jpg" alt="조피 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>조피</b> · 잡랩 홍보 담당 (ZOP LAB 가상 직원)<br>· 조리기능사 4종 요약집의 숫자와 규격을 2026 큐넷 공개과제로 하나하나 대조했어요<br>· 상세페이지, 자료실, 블로그 글 초안을 정리하고 있어요<br>· 잡랩 지출과 영수증 장부를 관리해요<br>· 좌우명: "우리는 숫자와 데이터를 믿는다"</div></div></div><div class="biz"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br>상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 서홍빈<br>호스팅서비스 제공자 GitHub Inc.<br>© 2026 ZOP LAB</div></footer>
 <nav class="nav" id="tabs"><a href="#home" data-s="home" class="on"><span>🏠</span>홈</a><a href="#study" data-s="study"><span>📘</span>내 학습</a><a href="#free" data-s="free"><span>🎁</span>무료자료</a><a href="#my" data-s="my"><span>👤</span>내 정보</a></nav>
 <script>
 const q=document.getElementById('q'),em=document.getElementById('empty');
