@@ -19,11 +19,11 @@ html{scroll-padding-top:calc(var(--zn-h) + 16px)}
 .zn-sub{display:none;position:absolute;right:0;top:calc(100% + 8px);min-width:180px;background:#26332c;border:1px solid rgba(179,156,109,.35);border-radius:12px;padding:var(--zs-1);box-shadow:0 14px 30px rgba(0,0,0,.3)}
 .zn-sub::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
 .zn-has.open .zn-sub{display:block}
-@media(hover:hover) and (min-width:961px){.zn-has:hover .zn-sub{display:block}}
+@media(hover:hover) and (min-width:1080px){.zn-has:hover .zn-sub{display:block}}
 .zn-sub a{padding:10px 12px}
 .zn a:focus-visible,.zn button:focus-visible,.zs a:focus-visible{outline:2px solid #e8d6ac;outline-offset:2px}
 .zn-btn{display:none;background:none;border:1px solid rgba(179,156,109,.5);color:#f3efe4;border-radius:8px;width:44px;height:40px;font-size:20px;cursor:pointer}
-@media(max-width:960px){
+@media(max-width:1079px){
 .zn-btn{display:block}
 .zn-menu{display:none;position:absolute;left:0;right:0;top:var(--zn-h);flex-direction:column;align-items:stretch;background:#1f2a24;padding:var(--zs-1) var(--zs-2) var(--zs-2);border-bottom:1px solid rgba(179,156,109,.3);box-shadow:0 10px 24px rgba(0,0,0,.3);max-height:calc(100vh - var(--zn-h));overflow:auto}
 .zn.open .zn-menu{display:flex}
