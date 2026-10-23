@@ -102,3 +102,9 @@ a.zs-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(31,42,36,
 .zs-ch h3{font-size:17px}.zs-ch p{font-size:14px}
 .zn,.zn *{letter-spacing:normal;line-height:1.4}.zn{font-size:14px}.zn-logo{letter-spacing:4px}.zn-menu a,.zn-dd{font-family:inherit;font-weight:400}
 @media(max-width:600px){.zs-chgrid{grid-template-columns:1fr 1fr;gap:var(--zs-2)}.zs-ch{padding:var(--zs-2)}.zs-ch .zs-ic{width:40px;height:40px;margin-bottom:var(--zs-1)}.zs-ch h3{font-size:15px}.zs-ch p{font-size:12px}}
+
+.zs-hero-zopi{background-color:#1f2a24;background-image:radial-gradient(rgba(243,239,228,.07) 1px,transparent 1.2px);background-size:22px 22px}
+.zs-hero-zopi::after{display:none}
+.zs-herogrid{display:grid;grid-template-columns:1fr;gap:var(--zs-6);align-items:center}
+.zs-hero-zopi .zopi{display:block;width:min(70%,280px);height:auto;margin:0 auto}
+@media(min-width:900px){.zs-herogrid{grid-template-columns:1.25fr 1fr}.zs-hero-zopi .zopi{width:min(100%,380px);margin:0 0 0 auto}}
