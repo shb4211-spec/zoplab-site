@@ -41,6 +41,34 @@ details.fq{border-top:1px solid rgba(184,151,90,.3);padding:14px 0}details.fq su
 .first{margin-top:24px;padding:26px 20px;border-radius:18px;border:2px dashed var(--gd);text-align:center}.first h3{color:var(--iv);font-size:20px;margin:0 0 8px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#f3ead8;color:#1f2a24;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:700}
 .rv{text-align:center;margin-top:16px;font-size:14px}.rv a{color:var(--gd)}
+.stepi{display:flex;align-items:center;gap:6px;margin-bottom:28px}.stepi span{width:28px;height:6px;border-radius:9px;background:rgba(255,255,255,.15)}.stepi span.on{background:var(--gd)}.stepi em{font-style:normal;font-size:13px;color:var(--gd);margin-left:6px;font-weight:700}
+.ecard{margin:28px 0 14px;padding:24px 18px;border-radius:20px;background:rgba(243,234,216,.06);border:1px solid rgba(184,151,90,.4)}.ecard h2{margin:0 0 6px;font-size:22px}
+.ebtn{display:block;width:100%;min-height:64px;margin-top:12px;border-radius:16px;border:1px solid var(--gd);background:#f3ead8;color:#1f2a24;font-size:17px;font-weight:700;cursor:pointer;font-family:inherit}.ebtn:hover,.ebtn:focus-visible{background:var(--gd);outline:none}
+#s-intro{width:100vw;margin:-48px 0 -72px calc(50% - 50vw)}
+.st{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 120px;position:relative;overflow:hidden}
+.st.w{background:radial-gradient(120% 80% at 0% 0%,rgba(184,151,90,.18),transparent 55%),radial-gradient(90% 70% at 100% 100%,rgba(31,42,36,.10),transparent 60%),#faf7f0;color:#1f2a24}
+.st.g{background:linear-gradient(180deg,#e9e6df,#9a9d97);color:#1f2a24}
+.st.d{background:radial-gradient(1px 1px at 20% 30%,#fff8,transparent),radial-gradient(1px 1px at 70% 20%,#fff6,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff7,transparent),radial-gradient(1px 1px at 85% 60%,#fff5,transparent),radial-gradient(1px 1px at 10% 85%,#fff6,transparent),radial-gradient(80% 60% at 50% 40%,#2b3a31,#121a15);background-size:220px 220px,260px 260px,300px 300px,240px 240px,280px 280px,100% 100%;color:#f3ead8}
+.st.band{background:#faf7f0}
+.sl{font-family:'Noto Serif KR','Noto Serif CJK KR',serif;font-weight:900;font-size:clamp(30px,8.4vw,52px);line-height:1.55;margin:0;letter-spacing:-.5px}
+.sl.small{font-size:clamp(20px,5.4vw,28px);font-weight:600;color:#d9d5ca;margin-bottom:auto;margin-top:12vh}
+.sl mark{background:none;color:inherit;padding:0 .08em;background-image:linear-gradient(transparent 62%,rgba(232,196,74,.75) 62%,rgba(232,196,74,.75) 92%,transparent 92%)}
+.sl mark.r{color:#9c2f22;background-image:linear-gradient(transparent 62%,rgba(156,47,34,.22) 62%,rgba(156,47,34,.22) 92%,transparent 92%)}
+.sl mark.gd{color:#d8b56a;background-image:none}
+.xl{font-size:1.25em}
+.bandt{display:block;width:100%;background:#1f2a24;color:#f3ead8;padding:22px 0}
+.vs1,.vs2{display:block}.vs{display:block;font-size:2.2em;color:rgba(31,42,36,.18);margin:12px 0;font-family:Georgia,serif}.vs2 b{color:#9c2f22}
+.ttl{display:block;font-size:1.25em;line-height:1.35}.ttl small{display:block;font-size:.32em;letter-spacing:.5em;color:#b8975a;font-family:'Pretendard',sans-serif;margin-bottom:14px}.ttl b{color:#d8b56a}
+.cue{font-size:44px;margin-top:36px;animation:bob 1.4s ease-in-out infinite;transform:rotate(180deg)}@keyframes bob{50%{translate:0 10px}}
+.hint{font-size:13px;color:#6d726c;margin-top:6px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+.sheet{width:100%;max-width:520px;margin-top:24px;background:#f3ead8;color:#1f2a24;border-radius:24px 24px 0 0;padding:26px 20px 28px;text-align:left;box-shadow:0 -12px 40px rgba(0,0,0,.4);transform:translateY(60px);opacity:0;transition:transform .7s,opacity .7s}.sheet.in{transform:none;opacity:1}
+.sheet .qn{color:#7a6234}.sheet h3{font-size:22px;margin:6px 0 10px;text-align:center}
+.sheet .opt{background:#fff;color:#1f2a24;border-color:rgba(31,42,36,.15);text-align:center;font-weight:700}
+.sheet input{background:#fff;color:#1f2a24;border-color:rgba(31,42,36,.2)}.sheet .note{color:#6d726c}
+.st.last{justify-content:flex-end;padding-bottom:0}
+.sbar{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(18,26,21,.85) 35%);transition:opacity .3s}.sbar .btn{max-width:520px;margin:0 auto}.sbar.off{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.rv,.sheet{opacity:1!important;transform:none!important;transition:none}.cue{animation:none}html{scroll-behavior:auto}}
 [hidden]{display:none!important}
 </style>
 <link rel="stylesheet" href="/assets/sitenav.css"><script src="/assets/sitenav.js" defer></script></head><body>
@@ -60,16 +88,11 @@ details.fq{border-top:1px solid rgba(184,151,90,.3);padding:14px 0}details.fq su
 <li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/brand/">브랜드 소개·본질</a></li><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 연혁</a></li><li><a href="/about/#assistant">비서 소개</a></li><li><a href="/about/#office">사무실 소개</a></li></ul></li>
 </ul></div></nav>
 <main class="kt"><div class="kt-in">
-<section id="s-intro">
-<p class="eye">ZOP LAB · 내 인생 한 권</p>
-<h1>내 인생 키워드 테스트 📖</h1>
-<p>질문 7개만 답하면 내 이야기의 키워드가 나와요. 그 키워드가 그대로 <b>「내 인생 한 권」</b>의 첫 장이 돼요. 그냥 일반인도 책을 써요.</p>
-<span class="fun">재미용 · 사주·운세 아님 · 약 1분</span>
-<label for="nick">닉네임 (안 써도 돼요)</label>
-<input id="nick" maxlength="12" placeholder="예: 라면장인" autocomplete="off">
-<button class="btn gold" id="go">테스트 시작하기 →</button>
-<p class="note">입력한 닉네임과 답은 이 화면에서만 쓰여요. 어디에도 저장하거나 보내지 않아요.</p>
-</section>
+<div id="s-intro"><section class="st w"><h2 class="sl rv">오늘 있었던 일,<br>1년 뒤에도<br><mark class="r">기억</mark>날까요?</h2><div class="cue" aria-hidden="true">👆</div><p class="hint">천천히 내려 보세요</p></section><section class="st w"><h2 class="sl rv">대부분의 이야기는<br>조용히 <mark class="y">잊혀요</mark>.</h2></section><section class="st w"><h2 class="sl rv"><span class="xl"><mark class="y">하지만</mark></span></h2></section><section class="st w"><h2 class="sl rv">적어 두면 남아요.<br>모으면<br><mark class="r">한 권</mark>이 돼요.</h2></section><section class="st band"><h2 class="sl rv"><span class="bandt">기록해 보세요.</span></h2></section><section class="st w"><h2 class="sl rv"><span class="vs1">글 잘 쓰는 사람만?</span><span class="vs">VS</span><span class="vs2">내 이야기를 가진 <b>누구나</b></span></h2></section><section class="st g"><h2 class="sl rv">당신의 이야기,<br><mark class="r">누가</mark> 대신<br>써 줄 수 있을까요?</h2></section><section class="st d"><h2 class="sl rv">그건<br><mark class="gd">당신</mark>뿐이에요.</h2></section><section class="st d"><h2 class="sl rv"><span class="ttl"><small>ZOP LAB</small>잡랩<br><b>내 인생 한 권</b></span></h2></section><section class="st d"><h2 class="sl rv"><mark class="gd">당신</mark>에게도<br>펼쳐집니다.</h2></section><section class="st d last" id="sheetwrap"><p class="sl small rv">신청 전에, 질문 7개로<br>내 이야기의 키워드부터 찾아봐요.</p>
+<button class="btn gold" id="open" style="max-width:520px;margin-bottom:28vh">내 인생 한 권 신청하기 →</button><div class="sheet" id="sheet" hidden><p class="qn">Q1 / 7 · 재미용</p><h3 id="sq"></h3><div id="sopts"></div>
+<input id="nick" maxlength="12" placeholder="닉네임 (안 써도 돼요)" autocomplete="off" aria-label="닉네임 (선택)"><p class="note" style="margin-top:8px">이름·연락처·생년월일은 받지 않아요. 아무것도 저장하거나 보내지 않아요.</p></div></section>
+<div class="sbar" id="sbar"><a href="#sheetwrap" class="btn gold">내 인생 한 권 신청하기</a></div>
+</div>
 <section id="s-q" hidden>
 <p class="qn" id="qn"></p><div class="bar"><i id="bar"></i></div>
 <h2 class="q" id="qt"></h2><div id="opts"></div>
@@ -114,7 +137,12 @@ const Q=[
 ['요즘 나를 한 단어로 하면?',[['버티는 중','grow'],['준비 중','dream'],['돌아다니는 중','road'],['생각 많은 중','think']]],
 ['내 책 제목에 꼭 들어갔으면 하는 건?',[['만들었던 것','cook'],['다닌 곳','road'],['소중한 사람','care'],['앞으로의 나','dream']]]];
 const $=id=>document.getElementById(id);let i=0,sc={},nick='';
-$('go').onclick=()=>{nick=$('nick').value.trim().slice(0,12);i=0;sc={};$('s-intro').hidden=true;$('s-q').hidden=false;show();scrollTo(0,0)};
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.35});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const sbar=$('sbar');
+function openSheet(){$('open').hidden=true;$('sheet').hidden=false;sbar.classList.add('off');$('sheetwrap').scrollIntoView({block:'end'});requestAnimationFrame(()=>$('sheet').classList.add('in'))}
+new IntersectionObserver(es=>es.forEach(x=>sbar.classList.toggle('off',x.isIntersecting)),{threshold:.4}).observe($('sheetwrap'));$('open').onclick=openSheet;sbar.querySelector('a').onclick=ev=>{ev.preventDefault();openSheet()};
+function sheetQ(){$('sq').textContent=Q[0][0];$('sopts').innerHTML='';Q[0][1].forEach(([tx,k])=>{const b=document.createElement('button');b.className='opt';b.textContent=tx;b.onclick=()=>{nick=$('nick').value.trim().slice(0,12);sc={};sc[k]=1;i=1;$('s-intro').hidden=true;$('s-q').hidden=false;show();scrollTo(0,0)};$('sopts').appendChild(b)})}sheetQ();
+
 function show(){const q=Q[i];$('qn').textContent=`Q${i+1} / ${Q.length}`;$('bar').style.width=(i/Q.length*100)+'%';$('qt').textContent=q[0];$('opts').innerHTML='';
 q[1].forEach(([t,k])=>{const b=document.createElement('button');b.className='opt';b.textContent=t;b.onclick=()=>{sc[k]=(sc[k]||0)+1;i++;i<Q.length?show():res()};$('opts').appendChild(b)})}
 function res(){const order=Object.keys(T);let best=order.reduce((a,b)=>(sc[b]||0)>(sc[a]||0)?b:a,order[0]);const t=T[best];
@@ -140,7 +168,7 @@ x.fillStyle='#7a6234';x.font='600 26px '+F;x.fillText('ZOP LAB · 내 인생 한
 c.toBlob(bl=>{const a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='zoplab-keyword.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),3000);toast('이미지를 저장했어요')},'image/png')};
 $('share').onclick=async()=>{const url=location.origin+'/author/test/';const d={title:'내 인생 키워드 테스트',text:(cur?'나는 '+cur.n+'! ':'')+'내 이야기 키워드 찾아보기 (재미용)',url};
 if(navigator.share){try{await navigator.share(d)}catch(e){}return}try{await navigator.clipboard.writeText(url);toast('링크를 복사했어요')}catch(e){prompt('링크를 복사해 주세요',url)}};
-$('again').onclick=()=>{$('s-r').hidden=true;$('s-intro').hidden=false;scrollTo(0,0)};
+$('again').onclick=()=>{$('s-r').hidden=true;$('s-intro').hidden=false;sbar.classList.remove('off');$('open').hidden=false;$('sheet').hidden=true;$('sheet').classList.remove('in');scrollTo(0,0)};
 </script>
 <style>footer{background:#17201b;color:#a9ada6;padding:32px 20px;font-size:13px;line-height:1.7}footer>*{max-width:720px;margin-left:auto;margin-right:auto}footer a{color:#b8975a}footer summary{cursor:pointer}</style><footer class="dark">
  <div class="logo wm">ZOP LAB</div>
