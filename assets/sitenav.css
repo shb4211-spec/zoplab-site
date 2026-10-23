@@ -82,3 +82,23 @@ a.zs-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(31,42,36,
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.zs-reveal{opacity:1;transform:none;transition:none}.zs-card,.zs-btn,.zn,.zn-dd svg{transition:none}}
 /* lab: former top bar becomes an in-page toolbar */
 .bar.labtools{position:static!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.zs-bookcard{grid-column:1/-1}
+.zs-shelf{list-style:none;margin:var(--zs-3) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--zs-3)}
+.zs-shelf li{display:flex;flex-direction:column;gap:4px}
+.zs-shelf img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px;box-shadow:0 6px 14px rgba(31,42,36,.18);background:#fff;margin-bottom:var(--zs-1)}
+.zs-shelf b{font-size:15px;line-height:1.4}.zs-shelf span{font-size:13px;color:var(--zs-mute);line-height:1.5}
+@media(max-width:520px){.zs-shelf{gap:var(--zs-2)}.zs-shelf b{font-size:13px}.zs-shelf span{font-size:12px}}
+.zn-logo{letter-spacing:4px}.zn-menu a,.zn-dd{padding:8px 7px}
+.zs-shelf-h{font-size:18px;font-weight:800;margin:var(--zs-6) 0 var(--zs-2);padding-bottom:var(--zs-1);border-bottom:2px solid var(--zs-gold);color:var(--zs-ink)}
+#all-books .zs-shelf{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.zs-shelf a{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:4px}
+.zs-shelf img{aspect-ratio:auto;object-fit:contain;max-height:240px;background:transparent;box-shadow:0 6px 14px rgba(31,42,36,.16)}
+.zs-shelf .meta{display:flex;flex-direction:column;gap:4px}
+.zs-badge{align-self:flex-start;font-size:11px;font-weight:700;padding:1px 8px;border-radius:999px;background:#1f2a24;color:#e8d6ac}
+.zs-badge.free{background:#a8482f;color:#fff}
+.zs-shelf.mini{grid-template-columns:repeat(4,1fr)}
+@media(max-width:520px){.zs-shelf.mini{grid-template-columns:repeat(2,1fr)}#all-books .zs-shelf{grid-template-columns:repeat(2,1fr)}}
+.zs-chgrid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.zs-ch h3{font-size:17px}.zs-ch p{font-size:14px}
+.zn,.zn *{letter-spacing:normal;line-height:1.4}.zn{font-size:14px}.zn-logo{letter-spacing:4px}.zn-menu a,.zn-dd{font-family:inherit;font-weight:400}
+@media(max-width:600px){.zs-chgrid{grid-template-columns:1fr 1fr;gap:var(--zs-2)}.zs-ch{padding:var(--zs-2)}.zs-ch .zs-ic{width:40px;height:40px;margin-bottom:var(--zs-1)}.zs-ch h3{font-size:15px}.zs-ch p{font-size:12px}}
