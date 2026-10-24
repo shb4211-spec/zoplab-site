@@ -1,0 +1,87 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 자동화 프로그램 제작 가이드 · 잡랩 북스 공식 무료전자책</title>
+<meta name="description" content="잡랩 북스 공식 무료전자책 《AI 자동화 프로그램 제작 가이드》. 156쪽, 노코드 도구로 자동화 4가지를 순서대로 만들어 보는 실습서. 비매품 · 무료 배포.">
+<meta property="og:title" content="《AI 자동화 프로그램 제작 가이드》 · 잡랩 북스 공식 무료전자책"><meta property="og:description" content="156쪽 노코드 AI 자동화 실습서. 비매품 · 무료 배포."><meta property="og:image" content="https://zoplab.co.kr/books/free/cover.webp"><meta property="og:type" content="website">
+<link rel="canonical" href="https://zoplab.co.kr/books/free/"><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/sitenav.css"><script src="/assets/sitenav.js" defer></script>
+<style>
+body{margin:0;font-family:'Pretendard','Noto Sans KR',sans-serif;background:#f3efe6;color:#1f2a24;word-break:keep-all;line-height:1.7}
+.fb-hero{background:#1f2a24;background-image:radial-gradient(rgba(243,234,216,.08) 1px,transparent 1px);background-size:14px 14px;color:#f3ead8;padding:48px 20px 56px}
+.fb-in{max-width:1040px;margin:0 auto}
+.fb-grid{display:grid;gap:28px;align-items:center}@media(min-width:880px){.fb-grid{grid-template-columns:340px 1fr;gap:56px}}
+.fb-cover{width:100%;max-width:300px;margin:0 auto;display:block;border-radius:8px;box-shadow:0 18px 40px rgba(0,0,0,.45);height:auto}
+.eye{font-size:12px;letter-spacing:3px;color:#b8975a;font-weight:700;margin:0}
+.fb-hero h1{font-size:clamp(26px,5.6vw,40px);line-height:1.35;margin:10px 0 8px}
+.fb-hero .sub{color:#d9d5ca;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}.chips span{font-size:13px;border:1px solid rgba(184,151,90,.55);border-radius:999px;padding:4px 12px;color:#e9e2d0}
+.dl{display:flex;flex-direction:column;gap:10px;max-width:420px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;border-radius:14px;font-weight:700;text-decoration:none;font-size:16px;border:1px solid #b8975a;color:#b8975a}
+.btn.gold{background:#b8975a;color:#1f2a24;min-height:60px;font-size:17px}
+.btn small{font-weight:500;opacity:.8}
+.note{font-size:13px;color:#a9ada6;margin-top:10px}
+.sec{padding:56px 20px}.sec h2{font-size:24px;margin:8px 0 16px}
+.parts{display:grid;gap:12px}@media(min-width:760px){.parts{grid-template-columns:repeat(3,1fr)}}
+.part{background:#faf8f2;border:1px solid rgba(179,156,109,.35);border-radius:14px;padding:18px}.part b{display:block;color:#7a6234;font-size:13px;letter-spacing:1px}.part h3{margin:4px 0 6px;font-size:17px}.part p{margin:0;font-size:14.5px;color:#3b433e}
+.shots{display:grid;gap:16px;margin-top:20px}@media(min-width:760px){.shots{grid-template-columns:1fr 1fr}}.shots img{width:100%;height:auto;border-radius:10px;border:1px solid rgba(31,42,36,.12);background:#fff}.shots figcaption{font-size:13px;color:#6d726c;margin-top:6px}
+ul.ok{padding-left:20px}ul.ok li{margin:6px 0}
+.alt{background:#ebe5d7}
+</style></head><body>
+<nav class="zn" aria-label="사이트 메뉴"><div class="zn-in"><a class="zn-logo" href="/">ZOP LAB</a><button class="zn-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="zn-menu">☰</button><ul class="zn-menu" id="zn-menu">
+<li><a href="/lab/sim/">실기 연습게임<small>무료</small></a></li>
+<li><a href="/hanjeopsi/">한 접시 실험일지</a></li>
+<li><a href="/webtoon/">웹툰</a></li>
+<li><a href="/exhibition/" title="온라인 사진전 「기다림이 머문 자리」">인생사진전</a></li>
+<li><a href="/author/">내 인생 한 권</a></li>
+<li><a href="/books/">책 소개</a></li>
+<li><a href="/lab/">자료실</a></li>
+<li><a href="/travel/">잡랩 맛길 노트(여행지)</a></li>
+<li><a href="/baeum/">배움 노트<small>준비 중</small></a></li>
+<li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/brand/">브랜드 소개·본질</a></li><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 연혁</a></li><li><a href="/about/#assistant">비서 소개</a></li><li><a href="/about/#office">사무실 소개</a></li></ul></li>
+</ul></div></nav>
+<main>
+<section class="fb-hero"><div class="fb-in fb-grid">
+<img class="fb-cover" src="/books/free/cover.webp" alt="《AI 자동화 프로그램 제작 가이드》 표지" width="300" height="426">
+<div><p class="eye">잡랩 북스 · 공식 무료전자책</p>
+<h1>《AI 자동화 프로그램<br>제작 가이드》</h1>
+<p class="sub">순서대로 만드는 노코드 AI 자동화 실습서</p>
+<div class="chips"><span>156쪽</span><span>실습 4가지 + 활용편</span><span>부록 2종</span><span>지은이 잡랩 소장</span><span>비매품 · 무료 배포</span></div>
+<div class="dl">
+<a class="btn gold" href="/books/free/files/ai_auto_guide.pdf" download>본책 PDF 받기 <small>156쪽</small></a>
+<a class="btn" href="/books/free/files/prompts_collection.pdf" download>부록 · 프롬프트 모음 <small>11쪽</small></a>
+<a class="btn" href="/books/free/files/checklist.pdf" download>부록 · 체크리스트 <small>5쪽</small></a>
+</div>
+<p class="note">가입이나 연락처 입력 없이 바로 받을 수 있어요. 자유롭게 나눠도 되지만, 내용을 고쳐서 판매하는 것은 허락하지 않아요.</p>
+</div></div></section>
+<section class="sec"><div class="fb-in">
+<p class="eye">WHAT YOU BUILD · 이 책에서 만드는 것</p><h2>각 부마다 완성품이 하나씩 남아요</h2>
+<div class="parts">
+<div class="part"><b>0부</b><h3>시작하기</h3><p>자동화를 세 조각으로 나눠 보고, 도구 3개(Make, Google, Gemini) 계정과 비용 계산표를 준비해요.</p></div>
+<div class="part"><b>1부</b><h3>고객 문의 자동 분류와 답변 초안</h3><p>설문지 → 시트 → AI 분류 → Gmail 임시보관함. 테스트 문의 10건으로 결과를 확인해요.</p></div>
+<div class="part"><b>2부</b><h3>매일 아침 도착하는 업무 리포트</h3><p>예약 실행으로 시트 데이터를 모으고, AI로 요약해 메일로 받아요.</p></div>
+<div class="part"><b>3부</b><h3>콘텐츠 기획 → 초안 → 검토 대기</h3><p>아이디어 시트에서 개요와 초안을 만들고 Google 문서로 정리해요. 게시 전엔 사람이 검토해요.</p></div>
+<div class="part"><b>4부</b><h3>내 업무 규칙을 익힌 AI 비서</h3><p>업무 규칙 문서를 쓰고 Gemini Gem으로 비서를 만들어 1~3부 자동화에 연결해요. 한계와 주의점도 함께 적었어요.</p></div>
+<div class="part"><b>5부</b><h3>만든 자동화를 일로 연결하기</h3><p>범위와 견적 정하는 법, 납품 방식, 계약·유지보수·데이터 책임, 첫 고객 찾기 체크리스트.</p></div>
+</div></div></section>
+<section class="sec alt"><div class="fb-in">
+<p class="eye">PREVIEW · 미리 보기</p><h2>이런 식으로 따라 해요</h2>
+<div class="shots"><figure style="margin:0"><img src="/books/free/toc.webp" alt="차례 페이지" loading="lazy"><figcaption>차례 (본문 0~5부, 부록 A~E)</figcaption></figure><figure style="margin:0"><img src="/books/free/practice.webp" alt="실습 페이지" loading="lazy"><figcaption>실습 페이지</figcaption></figure></div>
+</div></section>
+<section class="sec"><div class="fb-in">
+<p class="eye">PROMISE · 이 책의 약속</p><h2>확인한 것만, 부풀리지 않고</h2>
+<ul class="ok"><li>만드는 순서대로 썼어요. 개념 설명은 실습에 필요한 만큼만 넣었어요.</li>
+<li>도구 메뉴 이름과 요금은 공식 문서로 확인한 날짜(2026년 10월 24일)와 함께 적었어요. 온라인 도구는 자주 바뀌니 부록 E의 출처에서 최신 내용을 확인하세요.</li>
+<li>"얼마를 번다", "몇 시간을 아낀다" 같은 약속은 하지 않아요.</li></ul>
+<p style="margin-top:20px"><a href="/books/" style="color:#7a6234;font-weight:700">잡랩 북스 서가 전체 보기 →</a></p>
+</div></section>
+</main>
+<style>footer{background:#17201b;color:#a9ada6;padding:32px 20px;font-size:13px;line-height:1.7}footer>*{max-width:720px;margin-left:auto;margin-right:auto}footer a{color:#b8975a}footer summary{cursor:pointer}</style><footer class="dark">
+ <div class="logo wm">ZOP LAB</div>
+ <div class="ko">부업연구소</div>
+ <div class="rule"></div>
+ <div class="links"><a href="https://zoplab.co.kr/link">zoplab.co.kr/link</a><br><a href="https://blog.naver.com/zoplab" target="_blank" rel="noopener">블로그</a> · <a href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener">유튜브</a> · <a href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener">카페</a> · <a href="https://instagram.com/zoplab" target="_blank" rel="noopener">인스타그램</a> · <a href="https://www.threads.com/@zoplab" target="_blank" rel="noopener">스레드</a> · <a href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener">틱톡</a><br>협찬·광고 문의 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></div>
+ <div class="en">Zero-inventory Online Pipeline LAB</div>
+ <div class="team" style="margin:0 0 12px;display:grid;gap:8px;text-align:left;line-height:1.55">
+<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/sojang.jpg" alt="잡랩 소장 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>잡랩 소장</b> · ZOP LAB 대표 · 부업연구소 소장<br>· 조리기능사 실기 요약집 전자책 저자<br>· 2026.10 전자책 「몸이 버티는 동안, 돈 구멍을 만든다」 출간 (잡랩 북스) <a href="/books/" style="color:#b39c6d;text-decoration:underline;white-space:nowrap">책 보러 가기</a><br>· 조리기능사 (한식·양식·중식·일식), 식육처리기능사<br>· 호텔외식조리 전공, 한식당 주방 실무 경력<br>· 전자책 검수</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/zopi_jr.jpg" alt="조피 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>조피</b> · 잡랩 홍보 담당 (ZOP LAB 가상 직원)<br>· 조리기능사 4종 요약집의 숫자와 규격을 2026 큐넷 공개과제로 하나하나 대조했어요<br>· 상세페이지, 자료실, 블로그 글 초안을 정리하고 있어요<br>· 잡랩 지출과 영수증 장부를 관리해요<br>· 좌우명: "우리는 숫자와 데이터를 믿는다"</div></div></div><div class="legal"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br><details class="zbiz" style="display:inline-block;text-align:inherit;margin:4px 0"><summary style="cursor:pointer;list-style:revert;text-decoration:underline">대표 잡랩 소장 · 사업자등록번호 471-46-01136 · 사업자 정보 ▾</summary><div style="margin-top:6px">상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 대표 잡랩 소장<br>호스팅서비스 제공자 GitHub Inc.</div></details><br>© 2026 ZOP LAB</div>
+</footer>
+</body></html>
