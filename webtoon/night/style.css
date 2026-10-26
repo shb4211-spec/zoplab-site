@@ -1,0 +1,13 @@
+:root{--ink:#1f2a24;--text:#26302a;--mute:#5b625d;--paper:#f6f2e8;--line:#e2dccd;--accent:#a8482f;--gold:#b39c6d;--r:16px}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+.wrap{max-width:800px;margin:0 auto;padding:16px}h1{color:var(--ink);font-size:1.5rem;margin:8px 0}.sub{color:var(--mute);font-size:.9rem}
+.list{list-style:none;padding:0;margin:16px 0;display:grid;gap:8px}
+.list a,.list .soon{display:flex;gap:12px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:var(--r);background:#fff;text-decoration:none;color:var(--text)}
+.list .no{font-weight:700;color:var(--accent);min-width:3.2em}.list .soon{opacity:.55;background:transparent}.badge{margin-left:auto;font-size:.8rem;color:var(--mute)}
+.nav{display:flex;gap:8px;justify-content:space-between;max-width:800px;margin:0 auto;padding:12px}
+.nav a,.nav span{flex:1;text-align:center;padding:12px 6px;border-radius:12px;background:var(--ink);color:#fff;text-decoration:none;font-size:.95rem}
+.nav .off{background:var(--line);color:var(--mute);pointer-events:none}.nav .list-btn{background:var(--gold)}
+.strip{max-width:800px;margin:0 auto;line-height:0;background:#000}.strip img{display:block;width:100%;height:auto;margin:0}
+.ttl{text-align:center;padding:8px;color:var(--ink)}
+
+.list img{width:56px;height:56px;border-radius:10px;object-fit:cover}
