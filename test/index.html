@@ -1,0 +1,69 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>나의 인생 키워드 테스트 | 잡랩(ZOP LAB)</title>
+<meta name="description" content="질문 6개, 1~2분. 무료로 가볍게 나의 인생 키워드를 찾아봐요.">
+<meta property="og:title" content="나의 인생 키워드 테스트 | 잡랩(ZOP LAB)"><meta property="og:description" content="질문 6개, 1~2분이면 끝나요. 무료예요."><meta property="og:image" content="https://zoplab.co.kr/img/hero_zopi.webp">
+<link rel="icon" href="/favicon.ico">
+<style>
+:root{--ink:#1f2a24;--gd:#b39c6d;--iv:#f3efe6;--mute:#6d726c;--txt:#3b433e;--soft:#d9d5ca;--sans:'Pretendard','Noto Sans KR','Noto Sans CJK KR',sans-serif;--ser:'Noto Serif KR','Noto Serif CJK KR',serif}
+*{box-sizing:border-box}body{margin:0;background:var(--iv);color:var(--txt);font-family:var(--sans);min-height:100vh}
+main{max-width:440px;margin:0 auto;padding:28px 20px 40px}
+.top{font-size:13px;color:var(--mute);letter-spacing:.08em}.top a{color:inherit;text-decoration:none}
+h1{font-family:var(--ser);color:var(--ink);font-size:28px;line-height:1.35;margin:14px 0 8px}
+.zopi{display:block;width:150px;height:150px;object-fit:cover;border-radius:50%;margin:18px auto;border:3px solid #fff;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.bub{background:#fff;border-radius:16px;padding:14px 16px;line-height:1.6;font-size:15px;position:relative}
+.bub b{color:var(--ink)}
+.btn{display:block;width:100%;border:0;border-radius:14px;padding:16px;font:600 16px var(--sans);background:var(--ink);color:#fff;margin-top:18px;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;border:1.5px solid var(--soft);background:#fff;border-radius:14px;padding:15px 16px;font:15px var(--sans);color:var(--txt);margin-top:10px;cursor:pointer}
+.opt:active{border-color:var(--gd)}
+.bar{height:6px;background:var(--soft);border-radius:3px;overflow:hidden;margin:16px 0}.bar i{display:block;height:100%;background:var(--gd)}
+.q{font-family:var(--ser);color:var(--ink);font-size:21px;line-height:1.45;margin:18px 0 8px}
+.small{font-size:13px;color:var(--mute);text-align:center;margin-top:14px}
+.card{background:#fff;border-radius:22px;padding:30px 22px 22px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.07);border-top:6px solid var(--gd)}
+.card .who{font-size:14px;color:var(--mute);letter-spacing:.06em}
+.card .kw{font-family:var(--ser);font-size:46px;color:var(--ink);margin:10px 0 4px}
+.card .sub{font-size:15px;color:var(--gd);font-weight:600}
+.card .zopi{width:120px;height:120px}
+.card .say{font-size:15px;line-height:1.7;text-align:left}
+.card .url{margin-top:20px;font-size:12px;color:var(--mute);letter-spacing:.05em}
+.hide{display:none}.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+</style></head><body><main>
+<div class="top"><a href="/">ZOP LAB · 잡랩</a></div>
+<section id="start">
+<h1>나의 인생 키워드는<br>뭘까?</h1>
+<img class="zopi" src="/img/hero_zopi.webp" alt="조피">
+<div class="bub">안녕, 나는 <b>조피</b>야. 질문 6개에 답하기만 하면 돼.<br>1~2분이면 끝! 무료고, 이름도 로그인도 필요 없어. 정답은 없으니까 부담 없이 가볍게 골라 줘.</div>
+<button class="btn" onclick="go()">시작하기</button>
+<p class="small">재미로 보는 테스트예요 · 답은 어디에도 저장되지 않아요</p>
+</section>
+<section id="quiz" class="hide"><div class="bar"><i id="pg"></i></div><div class="small" id="no" style="text-align:left;margin:0"></div><div class="q" id="qt"></div><div id="ops"></div></section>
+<section id="res" class="hide">
+<div class="card" id="card"><div class="who">나의 인생 키워드</div><div class="kw" id="kw"></div><div class="sub" id="sub"></div>
+<img class="zopi" src="/img/hero_zopi.webp" alt="조피"><div class="bub say" id="say" style="background:var(--iv)"></div><div class="url">zoplab.co.kr/test</div></div>
+<p class="small">화면을 캡처해서 친구에게 보여 줘도 좋아요</p>
+<button class="btn ghost" onclick="go()">다시 해 보기</button>
+</section>
+</main>
+<script>
+const K={
+'모험':['처음 가 보는 길이 설레는 사람','너는 지도 밖으로 한 발 나가 볼 때 가장 반짝여. 낯선 길에서 만난 장면들이 결국 너만의 이야기가 될 거야. 오늘도 작은 모험 하나, 어때?'],
+'도전':['해 보기 전엔 모르는 사람','너는 "될까?"보다 "해 볼까?"가 먼저인 사람이야. 넘어져도 다시 일어나는 그 힘이 너를 앞으로 데려가. 결과보다 해 본 너를 칭찬해 줘.'],
+'순수':['좋아하는 마음을 지키는 사람','너는 계산보다 마음이 먼저 움직여. 처음 좋아했던 그 마음, 잃지 말고 오래 간직해 줘. 그게 너의 가장 큰 힘이야.'],
+'낭만':['평범한 하루에서 반짝임을 찾는 사람','노을, 노래 한 곡, 따뜻한 한 끼. 너는 작은 순간을 특별하게 만드는 사람이야. 오늘의 낭만 하나를 꼭 챙겨 줘.'],
+'행복':['지금 여기를 아끼는 사람','너는 멀리 있는 것보다 곁에 있는 것을 소중히 여겨. 좋아하는 사람과 웃는 시간, 그게 이미 너의 보물이야.'],
+'깨달음':['나를 알아가는 사람','너는 경험 하나하나에서 "아, 나는 이런 사람이구나"를 발견해. 천천히 가도 괜찮아. 알아 가는 길 자체가 너의 모험이야.'],
+'호기심':['"왜?"가 많은 사람','궁금한 게 생기면 그냥 지나치지 못하지? 그 질문들이 너를 새로운 곳으로 데려가. 오늘 떠오른 "왜?"를 하나 따라가 봐.']};
+const Q=[
+['쉬는 날, 제일 끌리는 건?',[['안 가 본 동네를 걸어 보기','모험'],['미뤄 둔 일 하나 시작하기','도전'],['좋아하는 사람과 맛있는 밥','행복'],['궁금했던 걸 찾아보기','호기심']]],
+['어릴 때의 나는?',[['좋아하는 게 생기면 푹 빠졌다','순수'],['"왜?"를 입에 달고 살았다','호기심'],['밖에서 뛰어노는 게 최고','모험'],['혼자 생각하는 시간이 좋았다','깨달음']]],
+['처음 해 보는 일 앞에서 나는?',[['일단 해 본다','도전'],['설렌다, 새로운 길이니까','모험'],['왜 하는지부터 생각해 본다','깨달음'],['함께할 사람이 있으면 좋다','행복']]],
+['마음이 몽글해지는 순간은?',[['노을 지는 하늘을 볼 때','낭만'],['누군가 진심으로 고마워할 때','순수'],['소중한 사람들과 웃을 때','행복'],['어려운 걸 끝내 해냈을 때','도전']]],
+['여행 가방에 꼭 넣는 건?',[['일기장이나 메모장','깨달음'],['이어폰과 좋아하는 노래','낭만'],['지도 대신 용기','모험'],['처음 보는 걸 찍을 카메라','호기심']]],
+['10년 뒤의 나에게 한마디 한다면?',[['아직 그 마음 그대로지?','순수'],['오늘도 행복하게 웃고 있지?','행복'],['그때 해 보길 잘했지?','도전'],['멋진 장면 많이 모았지?','낭만']]]];
+let i=0,s={};const $=x=>document.getElementById(x);
+function show(id){['start','quiz','res'].forEach(x=>$(x).classList.toggle('hide',x!==id));scrollTo(0,0)}
+function go(){i=0;s={};show('quiz');draw()}
+function draw(){const q=Q[i];$('pg').style.width=(i/Q.length*100)+'%';$('no').textContent=(i+1)+' / '+Q.length;$('qt').textContent=q[0];$('ops').innerHTML='';
+q[1].forEach(o=>{const b=document.createElement('button');b.className='opt';b.textContent=o[0];b.onclick=()=>{s[o[1]]=(s[o[1]]||0)+1;i++;i<Q.length?draw():done()};$('ops').appendChild(b)})}
+function done(){const m=Math.max(...Object.values(s));const c=Object.keys(s).filter(k=>s[k]===m);const k=c[Math.floor(Math.random()*c.length)];
+$('kw').textContent=k;$('sub').textContent=K[k][0];$('say').innerHTML='<b>조피의 한마디</b><br>'+K[k][1];show('res')}
+</script></body></html>
