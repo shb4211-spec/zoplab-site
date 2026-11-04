@@ -1,7 +1,7 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>나의 인생 키워드 테스트 | 잡랩(ZOP LAB)</title>
-<meta name="description" content="질문 6개, 1~2분. 무료로 가볍게 나의 인생 키워드를 찾아봐요.">
-<meta property="og:title" content="나의 인생 키워드 테스트 | 잡랩(ZOP LAB)"><meta property="og:description" content="질문 6개, 1~2분이면 끝나요. 무료예요."><meta property="og:image" content="https://zoplab.co.kr/img/hero_zopi.webp">
+<title>내 인생 키워드는 뭘까? | 잡랩(ZOP LAB)</title>
+<meta name="description" content="질문 6개, 1~2분. 무료로 가볍게 내 인생 키워드를 찾아봐요.">
+<meta property="og:title" content="내 인생 키워드는 뭘까? | 잡랩(ZOP LAB)"><meta property="og:description" content="질문 6개, 1~2분이면 끝나요. 무료예요."><meta property="og:image" content="https://zoplab.co.kr/img/hero_zopi.webp">
 <link rel="icon" href="/favicon.ico">
 <style>
 :root{--ink:#1f2a24;--gd:#b39c6d;--iv:#f3efe6;--mute:#6d726c;--txt:#3b433e;--soft:#d9d5ca;--sans:'Pretendard','Noto Sans KR','Noto Sans CJK KR',sans-serif;--ser:'Noto Serif KR','Noto Serif CJK KR',serif}
@@ -29,7 +29,7 @@ h1{font-family:var(--ser);color:var(--ink);font-size:28px;line-height:1.35;margi
 </style></head><body><main>
 <div class="top"><a href="/">ZOP LAB · 잡랩</a></div>
 <section id="start">
-<h1>나의 인생 키워드는<br>뭘까?</h1>
+<h1>내 인생 키워드는<br>뭘까?</h1>
 <img class="zopi" src="/img/hero_zopi.webp" alt="조피">
 <div class="bub">안녕, 나는 <b>조피</b>야. 질문 6개에 답하기만 하면 돼.<br>1~2분이면 끝! 무료고, 이름도 로그인도 필요 없어. 정답은 없으니까 부담 없이 가볍게 골라 줘.</div>
 <button class="btn" onclick="go()">시작하기</button>
@@ -37,9 +37,10 @@ h1{font-family:var(--ser);color:var(--ink);font-size:28px;line-height:1.35;margi
 </section>
 <section id="quiz" class="hide"><div class="bar"><i id="pg"></i></div><div class="small" id="no" style="text-align:left;margin:0"></div><div class="q" id="qt"></div><div id="ops"></div></section>
 <section id="res" class="hide">
-<div class="card" id="card"><div class="who">나의 인생 키워드</div><div class="kw" id="kw"></div><div class="sub" id="sub"></div>
+<div class="card" id="card"><div class="who">내 인생 키워드</div><div class="kw" id="kw"></div><div class="sub" id="sub"></div>
 <img class="zopi" src="/img/hero_zopi.webp" alt="조피"><div class="bub say" id="say" style="background:var(--iv)"></div><div class="url">zoplab.co.kr/test</div></div>
-<p class="small">화면을 캡처해서 친구에게 보여 줘도 좋아요</p>
+<button class="btn" id="save" onclick="saveImg()">이미지 저장</button>
+<p class="small">저장한 이미지를 친구에게 보여 줘도 좋아요 · 이미지는 내 기기에서만 만들어져요</p>
 <button class="btn ghost" onclick="go()">다시 해 보기</button>
 </section>
 </main>
@@ -59,11 +60,24 @@ const Q=[
 ['마음이 몽글해지는 순간은?',[['노을 지는 하늘을 볼 때','낭만'],['누군가 진심으로 고마워할 때','순수'],['소중한 사람들과 웃을 때','행복'],['어려운 걸 끝내 해냈을 때','도전']]],
 ['여행 가방에 꼭 넣는 건?',[['일기장이나 메모장','깨달음'],['이어폰과 좋아하는 노래','낭만'],['지도 대신 용기','모험'],['처음 보는 걸 찍을 카메라','호기심']]],
 ['10년 뒤의 나에게 한마디 한다면?',[['아직 그 마음 그대로지?','순수'],['오늘도 행복하게 웃고 있지?','행복'],['그때 해 보길 잘했지?','도전'],['멋진 장면 많이 모았지?','낭만']]]];
+let curK=null;
+function rr(x,a,b,w,h,r){x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()}
+function wrap(x,t,mw){const o=[];let l='';for(const ch of t){if(x.measureText(l+ch).width>mw&&l){o.push(l);l=ch}else l+=ch}if(l)o.push(l);return o}
+function makeCanvas(){const W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');const F="'Pretendard','Noto Sans KR',sans-serif";
+x.fillStyle='#1f2a24';x.fillRect(0,0,W,H);x.fillStyle='#f3ead8';x.strokeStyle='#b8975a';x.lineWidth=6;rr(x,80,120,920,1060,40);x.fill();x.stroke();
+x.textAlign='center';x.fillStyle='#7a6234';x.font='700 38px '+F;x.fillText('내 인생 키워드는',540,250);
+x.fillStyle='#1f2a24';x.font='800 150px '+F;x.fillText(curK,540,450);x.font='600 40px '+F;x.fillText(K[curK][0],540,550);
+x.fillStyle='#7a6234';x.font='700 34px '+F;x.fillText('조피의 한마디',540,680);x.fillStyle='#1f2a24';x.font='500 36px '+F;wrap(x,K[curK][1],760).forEach((l,n)=>x.fillText(l,540,750+n*56));
+x.fillStyle='#b8975a';x.font='700 32px '+F;x.fillText('zoplab.co.kr/test',540,1260);return c}
+async function saveImg(){if(!curK)return;try{await document.fonts.ready}catch(e){}const c=makeCanvas();
+c.toBlob(async bl=>{if(!bl)return;window._lastPng=bl;const f=new File([bl],'zoplab-life-keyword.png',{type:'image/png'});
+if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:'내 인생 키워드는 뭘까?'});return}catch(e){if(e&&e.name==='AbortError')return}}
+const a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='zoplab-life-keyword.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),5000)},'image/png')}
 let i=0,s={};const $=x=>document.getElementById(x);
 function show(id){['start','quiz','res'].forEach(x=>$(x).classList.toggle('hide',x!==id));scrollTo(0,0)}
 function go(){i=0;s={};show('quiz');draw()}
 function draw(){const q=Q[i];$('pg').style.width=(i/Q.length*100)+'%';$('no').textContent=(i+1)+' / '+Q.length;$('qt').textContent=q[0];$('ops').innerHTML='';
 q[1].forEach(o=>{const b=document.createElement('button');b.className='opt';b.textContent=o[0];b.onclick=()=>{s[o[1]]=(s[o[1]]||0)+1;i++;i<Q.length?draw():done()};$('ops').appendChild(b)})}
 function done(){const m=Math.max(...Object.values(s));const c=Object.keys(s).filter(k=>s[k]===m);const k=c[Math.floor(Math.random()*c.length)];
-$('kw').textContent=k;$('sub').textContent=K[k][0];$('say').innerHTML='<b>조피의 한마디</b><br>'+K[k][1];show('res')}
+curK=k;$('kw').textContent=k;$('sub').textContent=K[k][0];$('say').innerHTML='<b>조피의 한마디</b><br>'+K[k][1];show('res')}
 </script></body></html>
