@@ -286,13 +286,15 @@ new IntersectionObserver(function(es){atLast=es[0].isIntersecting;u()},{threshol
 <section class="zs zs-sec" id="insaengyeogwon-award" aria-label="인생여권 수상 안내"><style>
 #insaengyeogwon-award .iy-grid{display:grid;gap:28px;align-items:center;margin-top:8px}
 @media(min-width:800px){#insaengyeogwon-award .iy-grid{grid-template-columns:180px 1fr;gap:40px}}
-#insaengyeogwon-award .iy-emblem{margin:0 auto;width:min(160px,42vw);aspect-ratio:1;display:block;border-radius:12px;box-shadow:0 10px 28px rgba(31,42,36,.18);background:#1a1a1a}
-@media(min-width:800px){#insaengyeogwon-award .iy-emblem{width:180px;margin:0}}
+#insaengyeogwon-award .iy-emblem{margin:0 auto;width:min(160px,42vw);height:auto;aspect-ratio:1/1;object-fit:contain;display:block;border-radius:12px;box-shadow:0 10px 28px rgba(31,42,36,.18);background:#1a1a1a}
+@media(min-width:800px){#insaengyeogwon-award .iy-emblem{width:180px;height:auto;margin:0}}
+#insaengyeogwon-award.zs-sec{padding:48px 0}
+@media(min-width:800px){#insaengyeogwon-award.zs-sec{padding:64px 0}}
 #insaengyeogwon-award .iy-award{font-size:clamp(22px,3.2vw,30px);line-height:1.35;margin:0 0 14px;font-weight:800;letter-spacing:-.02em;color:var(--zs-ink,#1f2a24)}
 #insaengyeogwon-award .iy-intro{font-size:clamp(15px,1.6vw,17px);line-height:1.75;color:var(--zs-mute,#6d726c);margin:0 0 22px;max-width:560px}
 #insaengyeogwon-award .zs-btn.pri{background:var(--zs-gold,#b8975a);color:var(--zs-ink,#1f2a24)}
 </style><div class="zs-wrap"><div class="iy-grid zs-reveal">
-<img class="iy-emblem" src="/img/insaengyeogwon_award.webp" width="512" height="512" alt="2026 K-우수브랜드대상 엠블럼" decoding="async" loading="lazy">
+<img class="iy-emblem" src="/img/insaengyeogwon_award.webp" width="720" height="720" alt="2026 K-우수브랜드대상 엠블럼" decoding="async" loading="lazy">
 <div>
 <p class="zs-eye">잡랩 공식 브랜드 콘텐츠 · 인생여권</p>
 <h2 class="iy-award">2026 K-우수브랜드대상 · 전자책 출판·교육콘텐츠 부문</h2>
