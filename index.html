@@ -44,88 +44,6 @@ h2.big{font-family:var(--ser);font-weight:600;font-size:30px;line-height:1.45;ma
 .btn.line:hover{background:rgba(179,156,109,.12)}
 .btn.ink{border-color:var(--fo);color:var(--fo)}
 .btn.ink:hover{background:var(--fo);color:var(--iv)}
-/* header */
-header{position:sticky;top:0;z-index:10;background:rgba(31,42,36,.97);border-bottom:1px solid rgba(179,156,109,.25);backdrop-filter:blur(6px)}
-header .in{height:56px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 20px}
-header .logo{font-size:19px;letter-spacing:6px;color:var(--gd)}
-header .btn{height:32px;padding:0 16px;font-size:13px}
-/* hero */
-.hero{min-height:calc(100svh - 56px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px 64px;position:relative}
-.hero h1{font-size:64px;line-height:1;letter-spacing:12px;padding-left:12px;color:var(--gd)}
-.hero .rule{margin:34px auto 26px}
-.hero .ko{font-size:19px;font-weight:300;letter-spacing:10px;padding-left:10px}
-.hero .en{font-family:var(--wm);font-style:italic;font-size:17px;letter-spacing:2px;color:var(--gd);opacity:.9;margin-top:18px}
-.hero .btn{margin-top:52px;min-width:200px}
-/* intro video */
-.intro{padding:24px 16px 32px;text-align:center}
-.intro .vbox{position:relative;width:100%;max-width:min(360px,calc(80vh * 9 / 16));margin:0 auto}
-.intro video{display:block;width:100%;aspect-ratio:9/16;height:auto;max-height:80vh;border-radius:18px;background:#1f2a24;object-fit:cover;border:1px solid rgba(179,156,109,.35)}
-.intro .snd{position:absolute;right:12px;bottom:12px;height:34px;padding:0 14px;font-family:var(--sans);font-size:13px;letter-spacing:1px;color:var(--gd);background:rgba(31,42,36,.78);border:1px solid var(--gd);border-radius:17px;cursor:pointer}
-@media (min-width:760px){.intro{padding:40px 24px 48px}.intro .vbox{max-width:min(400px,calc(80vh * 9 / 16))}}
-/* one line */
-.oneline .q{font-family:var(--ser);font-size:27px;line-height:1.65;margin-top:30px}
-.oneline .by{font-family:var(--wm);font-style:italic;font-size:17px;color:var(--mute);letter-spacing:1px;margin-top:40px}
-/* why */
-.why{padding-top:0}
-.why .tl{margin-top:40px}
-.step{position:relative;padding:0 0 44px 44px}
-.step:last-child{padding-bottom:0}
-.step .dot{position:absolute;left:0;top:6px;width:11px;height:11px;border-radius:50%;border:1px solid var(--gd);background:var(--iv)}
-.step:last-child .dot{background:var(--gd)}
-.step:not(:last-child)::after{content:"";position:absolute;left:5px;top:24px;bottom:-4px;width:1px;background:var(--gd);opacity:.55}
-.step .k{font-size:12px;font-weight:500;letter-spacing:3px;color:var(--gd)}
-.step .t{font-size:18px;font-weight:500;margin-top:6px}
-.step .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
-/* featured book */
-.feat{background:var(--iv2);text-align:center;padding:88px 0 96px}
-.feat .cover{display:block;width:100%;max-width:280px;height:auto;margin:40px auto 0;filter:drop-shadow(0 14px 22px rgba(31,42,36,.16))}
-.feat .bt{font-size:14px;font-weight:400;letter-spacing:.5px;color:var(--mute);margin-top:32px}
-/* name */
-.row{display:flex;align-items:flex-start;padding:28px 0;border-top:1px solid rgba(179,156,109,.28)}
-.row:first-of-type{border-top:0}
-.row .ini{width:84px;flex:none;color:var(--gd);font-size:64px;line-height:.9}
-.row .ini.s{font-size:26px;line-height:2.2;letter-spacing:2px;opacity:.75}
-.row .w{font-family:var(--wm);font-size:24px;font-weight:500;letter-spacing:1px}
-.row .w b{color:var(--gd);font-weight:500}
-.row .d{font-size:14.5px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:4px}
-.name .rows{margin-top:36px}
-/* what */
-.what .lead{font-size:17px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:22px}
-.what .now{margin-top:56px}
-.work{border-top:1px solid rgba(31,42,36,.18);padding-top:26px;margin-top:22px}
-.work .h{display:flex;align-items:baseline;gap:14px}
-.work .h .n{font-size:20px;color:var(--gd)}
-.work .h .t{font-size:18px;font-weight:500}
-.work .tag,.work .d{margin-left:36px}
-.work .tag{font-size:13px;letter-spacing:1px;color:var(--gd);margin-top:6px}
-.work .d{font-size:15px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:6px}
-/* books */
-.books{background:var(--iv2)}
-.books .sub{font-size:15px;font-weight:300;color:var(--txt);margin-top:14px;line-height:1.7}
-.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:32px}
-.card{background:#faf8f2;border:1px solid rgba(179,156,109,.35);padding:20px 20px 18px;display:flex;flex-direction:column}
-.card .cat{font-size:11.5px;font-weight:500;letter-spacing:2px;color:var(--gd)}
-.card .t{font-size:17px;font-weight:600;line-height:1.5;margin-top:10px}
-.card .d{font-size:14px;font-weight:300;line-height:1.7;color:var(--txt);margin-top:8px;flex:1}
-.card .btn{margin-top:16px;height:40px;font-size:14px;width:100%}
-.books .more{display:flex;justify-content:space-between;align-items:center;margin-top:28px;font-size:13.5px;color:var(--mute)}
-.books .more a{color:var(--fo);font-weight:500;border-bottom:1px solid var(--gd);padding-bottom:2px;white-space:nowrap}
-/* sim (실기 연습) */
-.sim .d{font-size:17px;font-weight:300;line-height:1.75;color:var(--txt);margin-top:22px}
-.sim .note{font-size:13.5px;color:var(--mute);line-height:1.7;margin-top:12px}
-.sim .btn{margin-top:28px}
-.sim .promo{display:block;width:100%;max-width:300px;aspect-ratio:9/16;height:auto;border-radius:18px;background:#1f2a24;margin:0 0 36px;object-fit:cover}
-/* log */
-.log .d{font-size:17px;font-weight:300;line-height:1.75;color:var(--soft);margin-top:22px}
-.log .btn{margin-top:36px}
-.log .url{font-family:var(--wm);font-style:italic;font-size:15px;color:var(--gd);opacity:.8;margin-top:14px;letter-spacing:1px}
-/* promise */
-.plist{margin-top:44px;border-bottom:1px solid rgba(31,42,36,.18)}
-.prom{display:flex;align-items:baseline;gap:22px;border-top:1px solid rgba(31,42,36,.18);padding:24px 0}
-.prom .n{width:26px;flex:none;font-size:20px;color:var(--gd)}
-.prom .t{font-size:18px}
-.promise .end{font-family:var(--ser);font-size:23px;margin-top:48px}
-.promise .end span{color:var(--gd)}
 /* footer */
 footer{text-align:center;padding:88px 24px 48px}
 footer .logo{font-size:44px;letter-spacing:9px;padding-left:9px;color:var(--gd);line-height:1}
@@ -137,18 +55,6 @@ footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(179,156
 @media (min-width:760px){
  section{padding:128px 0}
  h2.big{font-size:40px}
- .hero h1{font-size:120px;letter-spacing:22px;padding-left:22px}
- .hero .ko{font-size:26px;letter-spacing:16px;padding-left:16px}
- .hero .en{font-size:22px}
- .oneline .q{font-size:40px}
- .feat{padding:128px 0 136px}
- .feat .cover{max-width:340px;margin-top:56px}
- .feat .bt{font-size:15px}
- .grid{grid-template-columns:1fr 1fr}
- .row .ini{width:130px;font-size:96px}
- .row .ini.s{font-size:38px}
- .row .w{font-size:30px}
- .row .d{font-size:16px}
 }
 footer .legal a{color:#9aa096}</style>
   <meta name="naver-site-verification" content="7abb8915045323d04c2e85bb21bc2cd0bcb6fa8e" />
@@ -160,7 +66,7 @@ footer .legal a{color:#9aa096}</style>
 <li><a href="/insaeng-passport/">인생여권</a></li>
 <li><a href="/author/">인생한권</a></li>
 <li><a href="/books/">잡랩북스</a></li>
-<li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/brand/">브랜드 소개·본질</a></li><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 연혁</a></li><li><a href="/about/#assistant">비서 소개</a></li><li><a href="/about/#office">사무실 소개</a></li><li><a href="/about/org/">조직도</a></li></ul></li>
+<li class="zn-has"><button class="zn-dd" type="button" aria-expanded="false" aria-controls="zn-sub-about">회사소개<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="zn-sub" id="zn-sub-about"><li><a href="/about/brand/">브랜드 소개·본질</a></li><li><a href="/about/">회사소개</a></li><li><a href="/about/#ceo">대표 연혁</a></li><li><a href="/about/#office">사무실 소개</a></li></ul></li>
 </ul></div></nav>
 
 <main id="top"><section id="ip-hero" aria-label="인생여권"><style>
@@ -177,238 +83,37 @@ footer .legal a{color:#9aa096}</style>
 #ip-hero .card a{margin-top:8px;align-self:flex-start;padding:12px 20px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none}
 #ip-hero .c1 a{background:#b8975a;color:#1f2a24}#ip-hero .c2 a{background:#1f2a24;color:#faf8f2}
 @media(max-width:600px){#ip-hero .two{grid-template-columns:1fr}#ip-hero .card a{align-self:stretch;text-align:center}}
-</style><p class="k">INSAENG PASSPORT</p><h1><span class="g">인생여권</span><br>당신의 이야기가 <span class="nw">책이 되는 곳</span></h1><p class="w">평범한 사람의 인생을 책으로 만드는 곳, 잡랩</p><p class="d">있는 자리에서 시작하는 일곱 나라의 여행, 그리고 <span class="nw">당신의 이야기 한 권.</span></p><div class="two"><div class="card c1"><div class="tag">① 읽기 · 소설</div><h2>인생여권 소설 소개</h2><p>일곱 나라를 지나는 장편소설 시리즈. 권별 이야기와 대표시를 볼 수 있어요.</p><a href="/insaeng-passport/">소설 소개 보기 →</a></div><div class="card c2"><div class="tag">② 쓰기 · 신청</div><h2>「내 인생 한 권」 신청</h2><p>내 이야기를 세 번의 1:1 만남으로, 작은 전자책 한 권으로.</p><a href="/author/">내 이야기 신청하기 →</a></div></div></section><section id="insaeng-video" style="background:#0f1f1a;padding:56px 16px;text-align:center"><p style="color:#d9b45a;font-weight:700;letter-spacing:.04em;margin:0 0 18px;font-size:15px">잡랩 공식 브랜드 콘텐츠 · 인생여권 공식 영상</p><video src="/video/insaeng_official.mp4?v=6" poster="/video/insaeng_official_poster.webp" autoplay muted loop playsinline controls preload="metadata" style="display:block;margin:0 auto;width:min(88vw,400px);aspect-ratio:9/16;max-height:82vh;height:auto;border-radius:18px;background:#000;box-shadow:0 12px 40px rgba(0,0,0,.45)"></video></section>
-<section id="insaengyeogwon-award" aria-label="인생여권 2026 K-우수브랜드대상"><style>
-#insaengyeogwon-award{background:radial-gradient(ellipse at 50% 30%,#2c3a31 0%,#141b17 70%);color:#f3ead8;min-height:calc(100svh - 64px);display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 18px 40px;box-sizing:border-box}
-#insaengyeogwon-award .iy-in{max-width:980px;width:100%;display:flex;flex-direction:column;align-items:center}
-#insaengyeogwon-award .iy-eye{font-size:clamp(13px,1.6vw,16px);letter-spacing:.18em;color:#e2c47a;font-weight:800;margin:0 0 16px}
-#insaengyeogwon-award .iy-emblem{width:min(88vw,460px);height:auto;aspect-ratio:1/1;object-fit:contain;display:block;border-radius:18px;box-shadow:0 0 0 2px #c9a24e,0 18px 60px rgba(226,196,122,.35)}
-#insaengyeogwon-award h2{font-size:clamp(34px,8.6vw,72px);line-height:1.15;margin:26px 0 8px;font-weight:900;letter-spacing:-.03em;background:linear-gradient(180deg,#fff1c4 0%,#e2c47a 55%,#b8913c 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-#insaengyeogwon-award .iy-sub{font-size:clamp(16px,2.4vw,22px);font-weight:700;color:#f3ead8;margin:0 0 14px}
-#insaengyeogwon-award .iy-intro{font-size:clamp(15px,2vw,19px);line-height:1.7;color:#f3ead8;margin:0 0 24px;max-width:620px}
-#insaengyeogwon-award .iy-btn{display:inline-block;background:#e2c47a;color:#141b17;font-weight:800;font-size:18px;padding:15px 30px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(226,196,122,.35)}
-</style><div class="iy-in">
-<p class="iy-eye">잡랩 공식 브랜드 콘텐츠 · 인생여권</p>
-<img class="iy-emblem" src="/img/insaengyeogwon_award.webp" width="720" height="720" alt="2026 K-우수브랜드대상 엠블럼" fetchpriority="high" decoding="async">
-<h2>2026 K-우수브랜드대상</h2>
-<p class="iy-sub">전자책 출판·교육콘텐츠 부문</p>
-<p class="iy-intro">인생여권은 평범한 사람의 모험을 한 권의 여권처럼 기록하는 잡랩의 대표 브랜드예요.</p>
-<div class="iy-btns" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center"><a class="iy-btn" href="/insaeng-passport/">와디즈 펀딩 11/24(화) 12:00 오픈 준비 중 · 인생여권 보기 →</a></div>
-</div></section>
-
-<div style="text-align:center;padding:14px 16px 0"><a class="zs-btn" href="/webtoon/night/" style="display:inline-block;background:#1f2a24;color:#f3ead8;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none">웹툰 「어느 밤의 상점」 1~30화 보기 →</a></div>
-<section id="wayfind" aria-label="길찾기"><style>
-#wayfind{background:#000;color:#fff;padding:28px 18px 30px;font-family:'Pretendard','Noto Sans KR',sans-serif;word-break:keep-all;border-bottom:1px solid rgba(216,181,106,.35)}
-#wayfind .in{max-width:880px;margin:0 auto}
-#wayfind h2{margin:0 0 16px;font-size:20px;font-weight:800;text-align:center;color:#fff}#wayfind h2 b{color:#d8b56a}
-#wayfind .g{display:grid;grid-template-columns:1fr 1fr;gap:10px}#wayfind .w.wide{grid-column:1/-1;min-height:60px}@media(min-width:800px){#wayfind .g{grid-template-columns:repeat(5,1fr)}#wayfind .w.wide{grid-column:auto;min-height:76px}#wayfind h2{font-size:24px}}
-#wayfind a.w,#wayfind .w{display:flex;flex-direction:column;justify-content:center;gap:4px;min-height:76px;padding:12px 14px;border-radius:14px;border:1px solid rgba(216,181,106,.45);background:#111;color:#fff;text-decoration:none;font-weight:800;font-size:16px;line-height:1.3}
-#wayfind a.w:hover,#wayfind a.w:focus-visible,#wayfind .w a:hover{border-color:#d8b56a;outline:none}
-#wayfind .w small{font-weight:500;font-size:12.5px;color:#a9ada6}
-#wayfind .w.pri{background:#d8b56a;color:#111;border-color:#d8b56a}#wayfind .w.pri small{color:#3a3020}
-#wayfind .w .two{display:flex;gap:6px;margin-top:2px}#wayfind .w .two a{flex:1;text-align:center;font-size:12.5px;font-weight:700;color:#d8b56a;border:1px solid rgba(216,181,106,.45);border-radius:999px;padding:4px 0;text-decoration:none}
-</style><div class="in"><h2>무엇을 하러 <b>오셨어요?</b></h2><div class="g">
-<a class="w" href="/lab/sim/">실기 연습<small>조리기능사 연습게임</small></a>
-<a class="w pri" href="#homestory">책 쓰기<small>내 인생 한 권 ↓</small></a>
-<div class="w">한 접시·맛길 노트<div class="two"><a href="/hanjeopsi/">한 접시</a><a href="/travel/">맛길 노트</a></div></div>
-<a class="w" href="/about/brand/">잡랩 소개<small>브랜드 소개·본질</small></a>
-<a class="w wide" href="/books/free/">무료전자책<small>대면 참여 혜택 · 156쪽</small></a>
+</style><p class="k">INSAENG PASSPORT</p><h1><span class="g">인생여권</span><br>당신의 이야기가 <span class="nw">책이 되는 곳</span></h1><p class="w">평범한 사람의 인생을 책으로 만드는 곳, 잡랩</p><p class="d">있는 자리에서 시작하는 일곱 나라의 여행, 그리고 <span class="nw">당신의 이야기 한 권.</span></p><div class="two"><div class="card c1"><div class="tag">① 읽기 · 소설</div><h2>인생여권 소설 소개</h2><p>일곱 나라를 지나는 장편소설 시리즈. 권별 이야기와 대표시를 볼 수 있어요.</p><a href="/insaeng-passport/">소설 소개 보기 →</a></div><div class="card c2"><div class="tag">② 쓰기 · 신청</div><h2>「내 인생 한 권」 신청</h2><p>내 이야기를 세 번의 1:1 만남으로, 작은 전자책 한 권으로.</p><a href="/author/">내 이야기 신청하기 →</a></div></div></section><section id="home4" aria-label="잡랩 바로가기"><style>
+#home4{word-break:keep-all;background:#f4ecda;color:#1f2a24;padding:48px 22px 56px}
+#home4 .in{max-width:880px;margin:0 auto}
+#home4 .k{font-size:12px;letter-spacing:3px;color:#8a7140;margin:0 0 10px;text-align:center}
+#home4 h2{font-family:"Noto Serif KR",serif;font-size:clamp(22px,5vw,30px);line-height:1.4;font-weight:700;margin:0 0 24px;text-align:center}
+#home4 .g{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#home4 a.b{display:flex;flex-direction:column;gap:8px;border-radius:16px;padding:22px 20px;background:#faf8f2;border:1px solid #e0d3b4;color:#1f2a24;text-decoration:none}
+#home4 a.b:hover,#home4 a.b:focus-visible{border-color:#b8975a;outline:none}
+#home4 .n{font-size:12px;letter-spacing:1px;color:#8a7140;font-weight:700}
+#home4 h3{font-size:20px;line-height:1.35;margin:0}
+#home4 p{margin:0;font-size:14px;line-height:1.6;color:#3b433e}
+#home4 .go{margin-top:auto;padding-top:6px;font-size:14px;font-weight:700;color:#1f2a24}
+#home4 a.b.one{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#1f2a24;border-color:#1f2a24;color:#faf8f2}
+#home4 a.b.one p{color:#d9d5ca}#home4 a.b.one .n{color:#d8bd85}#home4 a.b.one .go{margin:0;padding:0;color:#d8bd85}
+@media(max-width:600px){#home4 .g{grid-template-columns:1fr}}
+</style><div class="in"><p class="k">ZOP LAB</p><h2>잡랩에서 할 수 있는 일</h2><div class="g">
+<a class="b" href="/insaeng-passport/"><span class="n">01 · 읽기</span><h3>인생여권 소설 소개</h3><p>일곱 나라를 지나는 장편소설 시리즈. 권별 이야기와 대표시를 볼 수 있어요.</p><span class="go">소설 소개 보기 →</span></a>
+<a class="b" href="/author/"><span class="n">02 · 쓰기</span><h3>「내 인생 한 권」 신청</h3><p>평범한 사람도 책을 써요. 세 번의 1:1 만남으로 내 이야기를 작은 전자책 한 권으로.</p><span class="go">내 이야기 신청하기 →</span></a>
+<a class="b" href="/books/"><span class="n">03 · 책</span><h3>잡랩북스</h3><p>잡랩(ZOP LAB)이 낸 책을 표지와 짧은 소개로 모았어요.</p><span class="go">책 보러 가기 →</span></a>
+<a class="b" href="/about/"><span class="n">04 · 회사소개</span><h3>잡랩(ZOP LAB)</h3><p>인생여권을 만드는 곳이에요. 하는 일과 대표, 사무실을 소개해요.</p><span class="go">회사소개 보기 →</span></a>
 </div></div></section>
-<!-- SIM (실기 연습, 2026-10-18) -->
-<section class="sim"><div class="wrap">
- <video class="promo" id="simPromo" src="/img/sim/sim_reel.mp4" poster="/img/sim/sim_reel_poster.jpg" width="720" height="1280" playsinline muted controls preload="metadata" aria-label="조리기능사 실기 연습 소개 영상"></video>
- <script>(function(v){if(v)v.addEventListener('play',function(){v.muted=false},{once:true})})(document.getElementById('simPromo'))</script>
- <div class="lab">PRACTICE · 실기 연습</div>
- <h2 class="big">조리기능사 실기 연습</h2>
- <p class="d">실기를 준비하면서 ‘이런 연습 도구가 있었으면 좋았겠다’ 싶어서 만들었습니다.<br>학원 가기 어려운 날에도 솔솔 쌤이랑 북어구이 한 판 연습해 보세요.</p>
- <p class="note">공식 기준이나 정답이 아닌 연습용이며, 품목은 계속 업데이트됩니다.</p>
- <a href="/sim/bugeo/" class="btn ink">실기 연습 해보기 →</a>
-</div></section>
-<!-- BOOKS — titles verified against Groble product pages 2026-10-08 -->
-<section class="books" id="books"><div class="wrap">
- <div class="lab">BOOKS · 책</div>
- <h2 class="big">ZOP LAB의 책</h2>
- <p class="sub">외워지게 만드는 수험서와 부업 가이드.<br>가격과 구성은 상품 페이지에서 확인하세요.</p>
- <div class="grid">
-  <div class="card"><div class="cat">조리기능사 · 실기</div><div class="t">2026 조리기능사 실기 4종 요약 묶음 (한·양·중·일)</div><div class="d">공개과제 102개를 과제별 재료 분량 · 조리 순서 · 감점 포인트로 정리한 PDF 4권</div><a href="https://www.groble.im/products/a5DApJ" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">조리기능사</div><div class="t">아기도 외우는 조리기능사 필기+실기 3권</div><div class="d">필기 한 권 요약 + 암기송 부록집 + 실기 시험 당일 한 권</div><a href="https://www.groble.im/products/e7Y4iv" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">식육처리기능사 · 필기</div><div class="t">돼지도 놀란 식육처리기능사 필기 요약+암기송</div><div class="d">표로 정리한 필기 요약 + 폰으로 넘겨 보는 암기송 부록집</div><a href="https://www.groble.im/products/YWS7Az" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">식육처리기능사 · 실기</div><div class="t">식육처리기능사 실기 한 권 요약 (발골 사진)</div><div class="d">위생 · 감별 · 분할발골정형을 발골 과정 사진과 함께</div><a href="https://www.groble.im/products/CLXrEY" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">식육처리기능사 · 실기</div><div class="t">식육처리기능사 실기 요약+육가공 부록</div><div class="d">실기 한 권 요약 + 부록 E 육가공 공정 사진 노트</div><a href="https://www.groble.im/products/LF2DJS" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">식육처리기능사 · 세트</div><div class="t">돼지도 놀란 식육처리기능사 필기+실기 세트</div><div class="d">필기 요약 · 암기송 부록집 + 실기 한 권 요약</div><a href="https://www.groble.im/products/Shpvy5" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
-  <div class="card"><div class="cat">부업 가이드</div><div class="t">ZOP LAB 부업 가이드 4권 세트</div><div class="d">시작 → 판매 → 콘텐츠 → 반복 줄이기 순서로 정리한 방법 가이드 4권</div><a href="https://www.groble.im/products/6HhmWn" class="btn ink" target="_blank" rel="noopener">구매하기</a></div>
- </div>
- <div class="more"><a href="/link/">필기 암기송 0원 무료 샘플도 있어요. 받으러 가기 →</a></div>
-</div></section>
-<style>#homestory{font-family:'Pretendard','Noto Sans KR',sans-serif;word-break:keep-all}#homestory .steps{display:grid;gap:12px;margin-top:12px}
-#homestory .stp{text-align:center;padding:18px 12px;border-radius:14px;background:rgba(243,234,216,.06);border:1px solid rgba(184,151,90,.3)}
-#homestory .stp svg{width:64px;height:64px}
-#homestory .stp b{display:block;margin-top:8px;color:var(--iv)}
-#homestory .stp small{display:block;color:#a9ada6;margin-top:4px;line-height:1.5}
-#homestory .rv{text-align:center;margin-top:16px;font-size:14px}
-#homestory .rv a{color:var(--gd)}
-#homestory .stepi{display:flex;align-items:center;gap:6px;margin-bottom:28px}
-#homestory .stepi span{width:28px;height:6px;border-radius:9px;background:rgba(255,255,255,.15)}
-#homestory .stepi span.on{background:var(--gd)}
-#homestory .stepi em{font-style:normal;font-size:13px;color:var(--gd);margin-left:6px;font-weight:700}
-#homestory .st{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 120px;position:relative;overflow:hidden}
-#homestory .st.w{background:radial-gradient(120% 80% at 0% 0%,rgba(184,151,90,.18),transparent 55%),radial-gradient(90% 70% at 100% 100%,rgba(31,42,36,.10),transparent 60%),#faf7f0;color:#1f2a24}
-#homestory .st.g{background:linear-gradient(180deg,#e9e6df,#9a9d97);color:#1f2a24}
-#homestory .st.d{background:radial-gradient(1px 1px at 20% 30%,#fff8,transparent),radial-gradient(1px 1px at 70% 20%,#fff6,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff7,transparent),radial-gradient(1px 1px at 85% 60%,#fff5,transparent),radial-gradient(1px 1px at 10% 85%,#fff6,transparent),radial-gradient(80% 60% at 50% 40%,#2b3a31,#121a15);background-size:220px 220px,260px 260px,300px 300px,240px 240px,280px 280px,100% 100%;color:#f3ead8}
-#homestory .st.band{background:#faf7f0}
-#homestory .sl{font-family:'Noto Serif KR','Noto Serif CJK KR',serif;font-weight:900;font-size:clamp(30px,8.4vw,52px);line-height:1.55;margin:0;letter-spacing:-.5px}
-#homestory .sl.small{font-size:clamp(20px,5.4vw,28px);font-weight:600;color:#d9d5ca;margin-bottom:auto;margin-top:12vh}
-#homestory .sl mark{background:none;color:inherit;padding:0 .08em;background-image:linear-gradient(transparent 62%,rgba(232,196,74,.75) 62%,rgba(232,196,74,.75) 92%,transparent 92%)}
-#homestory .sl mark.r{color:#9c2f22;background-image:linear-gradient(transparent 62%,rgba(156,47,34,.22) 62%,rgba(156,47,34,.22) 92%,transparent 92%)}
-#homestory .sl mark.gd{color:#d8b56a;background-image:none}
-#homestory .xl{font-size:1.25em}
-#homestory .bandt{display:block;width:100vw;margin-left:calc(50% - 50vw);font-size:1.05em;padding:34px 0!important;background:#5a1f17!important;background:#1f2a24;color:#f3ead8;padding:22px 0}
-#homestory .vs1,#homestory .vs2{display:block}
-#homestory .vs{display:block;font-size:2.2em;color:rgba(31,42,36,.18);margin:12px 0;font-family:Georgia,serif}
-#homestory .vs2 b{color:#9c2f22}
-#homestory .ttl{display:block;font-size:1.25em;line-height:1.35}
-#homestory .ttl small{display:block;font-size:.32em;letter-spacing:.5em;color:#b8975a;font-family:'Pretendard',sans-serif;margin-bottom:14px}
-#homestory .ttl b{color:#d8b56a}
-#homestory .cue{font-size:44px;margin-top:36px;animation:bob 1.4s ease-in-out infinite;transform:rotate(180deg)}
-@keyframes bob{50%{translate:0 10px}}
-#homestory .hint{font-size:13px;color:#6d726c;margin-top:6px}
-#homestory .rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
-#homestory .rv.in{opacity:1;transform:none}
-#homestory .st.last{justify-content:flex-end;padding-bottom:0}
-@media (prefers-reduced-motion:reduce){#homestory .rv,#hs-x{opacity:1!important;transform:none!important;transition:none}#homestory .cue{animation:none}html{scroll-behavior:auto}}
-#homestory .st.m{background:radial-gradient(60% 40% at 20% 30%,rgba(255,255,255,.07),transparent 70%),linear-gradient(115deg,transparent 40%,rgba(216,181,106,.12) 47%,transparent 54%),linear-gradient(65deg,transparent 55%,rgba(255,255,255,.06) 60%,transparent 66%),radial-gradient(90% 70% at 70% 80%,#2a2a2a,#0d0f0e);color:#f3ead8}
-#homestory .sl .huge{display:block;font-size:2.6em;line-height:1;letter-spacing:.08em;color:#f3ead8;text-shadow:0 0 40px rgba(216,181,106,.35)}
-#homestory .pbadge{text-align:center;font-size:14px;color:#f3ead8;margin:14px auto 0;max-width:520px}
-#homestory .pbadge b{display:inline-block;background:#b8975a;color:#1f2a24;border-radius:999px;padding:2px 10px;margin-right:6px;font-size:12.5px}
-#homestory .pbadge s{opacity:.6}
-#homestory .pbadge.sm{font-size:12px;margin-top:8px}
-#homestory .pbadge.sm b{font-size:11px;padding:1px 8px}
-#homestory .st.p{background:#0d0f0e;min-height:60svh}
-#homestory .sl{font-size:clamp(34px,9.6vw,60px)!important}
-#homestory .sl .big{display:block;font-size:1.3em;line-height:1.3}
-#homestory .btn,#hs-bar .btn{height:auto;border:0;display:flex;align-items:center;justify-content:center;width:100%;min-height:60px;border-radius:14px;font-size:17px;font-weight:700;background:#b8975a;color:#1f2a24;text-decoration:none;max-width:520px;margin:0 auto}
-#homestory .skip{position:absolute;top:18px;right:18px;font-size:14px;color:#6d726c;text-decoration:underline}
-#hs-bar{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(18,26,21,.85) 35%);transition:opacity .3s}#hs-bar.off{opacity:0;pointer-events:none}
-#hs-bar .pbadge.sm{font-size:12px;color:#f3ead8;text-align:center;margin:8px 0 0}#hs-bar .pbadge b{background:#b8975a;color:#1f2a24;border-radius:999px;padding:1px 8px;margin-right:6px;font-size:11px}
-</style><div id="homestory"><section class="st w"><h2 class="sl rv">곧 당신은<br><mark class="r">사라집니다</mark></h2><div class="cue" aria-hidden="true">👆</div><a class="skip" href="#home-main">건너뛰기 ↓</a></section><section class="st m"><h2 class="sl rv"><mark class="gd">기록되지</mark><br>않는다면</h2></section><section class="st w"><h2 class="sl rv">"책을 많이<br>읽어라?"</h2></section><section class="st p"><h2 class="sl rv"></h2></section><section class="st m"><h2 class="sl rv"><span class="big"><mark class="gd">아닙니다</mark></span></h2></section><section class="st w"><h2 class="sl rv"><span class="big"><mark class="y">써야</mark><br>합니다</span></h2></section><section class="st w"><h2 class="sl rv">나를 알려면,<br>나를 <mark class="r">끄집어내</mark><br>써야 합니다</h2></section><section class="st w"><h2 class="sl rv"><span class="big">하루 <mark class="y">한 줄</mark>이면<br>됩니다</span></h2></section><section class="st g"><h2 class="sl rv">"왜?"<br><mark class="r">세 번</mark> 물으십시오</h2></section><section class="st w"><h2 class="sl rv"><mark class="y">진짜 나</mark>가<br>보입니다</h2></section><section class="st g"><h2 class="sl rv">AI가 <mark class="y">무엇이든</mark><br>써 주는 시대</h2></section><section class="st w"><h2 class="sl rv">AI가 유일하게<br><mark class="r">대체하지 못하는 것</mark></h2></section><section class="st p"><h2 class="sl rv"></h2></section><section class="st m"><h2 class="sl rv"><span class="huge">인간</span></h2></section><section class="st d"><h2 class="sl rv">그중에서<br><mark class="gd">인간의 경험</mark>이<br>곧 나를 살리는<br>길입니다</h2></section><section class="st w"><h2 class="sl rv">당신은 진정<br>자기자신에 대해<br>알고 있나요?</h2></section><section class="st m"><h2 class="sl rv"><span class="big">아뇨</span></h2></section><section class="st d"><h2 class="sl rv">대신<br><mark class="gd">도와드려요</mark></h2></section><section class="st d"><h2 class="sl rv">당신의 이야기가<br><mark class="gd">책</mark>이 되도록</h2></section><section class="st d"><h2 class="sl rv"><mark class="gd">당신만이</mark> 할 수 있는<br>바로 그 일</h2></section><section class="st d"><h2 class="sl rv"><span class="ttl"><small>ZOP LAB</small>잡랩<br><b>내 인생 한 권</b></span></h2></section><section class="st d"><h2 class="sl rv"><span class="big">지금 <mark class="gd">당신의 이야기</mark>가<br>펼쳐집니다</span></h2></section><section class="st d last" id="hs-last" style="justify-content:center;padding-bottom:120px"><p class="sl small" style="margin:0 0 28px">지금 알려드릴게요</p>
-<p class="pbadge"><b>1기 한정</b> 대면 1만 원 <s>3만 원</s> · 온라인 무료</p>
-<a class="btn" href="/author/test/?start=1" style="margin-top:14px">내 인생 한 권 신청하기 →</a>
-<p class="hs-compare" style="margin:20px auto 0;max-width:520px;font-size:14px;line-height:1.65;color:#e9e2d0;text-align:left;font-family:'Pretendard','Noto Sans KR',sans-serif">시중 유료 책쓰기 과정은 대부분 15만~50만 원대예요 (2026년 10월 자체 조사, 공개 가격 9곳). 내 인생 한 권은 1기 대면 1만 원, 온라인 무료.</p>
-<div class="hs-perks" style="margin:20px auto 0;max-width:520px;text-align:left;background:rgba(243,234,216,.06);border:1px solid rgba(216,181,106,.5);border-radius:18px;padding:18px 18px 16px;color:#f3ead8;font-family:'Pretendard','Noto Sans KR',sans-serif">
-<p style="margin:0 0 10px;font-size:13px;letter-spacing:2px;color:#d8b56a;font-weight:700">대면 참여 혜택</p>
-<ol style="margin:0;padding-left:0;list-style:none;font-size:15px;line-height:1.55">
-<li style="display:flex;gap:10px;padding:7px 0;border-top:1px solid rgba(216,181,106,.2)"><b style="color:#d8b56a">1</b><span>1기 대면 참여 1만 원 <small style="color:#a9ada6">(2기부터 3만 원)</small></span></li>
-<li style="display:flex;gap:10px;padding:7px 0;border-top:1px solid rgba(216,181,106,.2)"><b style="color:#d8b56a">2</b><span>완성한 책 전시회 참여 <small style="color:#a9ada6">(일정 추후 안내)</small></span></li>
-<li style="display:flex;gap:10px;padding:7px 0;border-top:1px solid rgba(216,181,106,.2)"><b style="color:#d8b56a">3</b><span>무료전자책 <a href="/books/free/" style="color:#f3ead8">『AI 자동화 프로그램 제작 가이드』</a> <small style="color:#a9ada6">(156쪽)</small></span></li>
-<li style="display:flex;gap:10px;padding:7px 0;border-top:1px solid rgba(216,181,106,.2)"><b style="color:#d8b56a">4</b><span>나만의 전자책 만들기</span></li>
-<li style="display:flex;gap:10px;padding:7px 0;border-top:1px solid rgba(216,181,106,.2)"><b style="color:#d8b56a">5</b><span>인생한권 프로그램이 끝난 뒤 컨설팅 체험 기회</span></li>
-</ol></div><p class="hs-gift" style="margin:14px auto 0;max-width:520px;font-size:14px;line-height:1.6;color:#e9e2d0;text-align:center">책 쓰러 왔다가 AI 자동화까지 배워 가기. 대면 참여자분께 <a href="/books/free/" style="color:#d8b56a;font-weight:700;text-decoration:underline">무료전자책</a>을 함께 드려요.</p>
-<p class="hint" style="margin-top:14px"><a href="#home-main" style="color:#a9ada6">잡랩 둘러보기 ↓</a></p></section></div><div id="hs-bar" class="off"><a class="btn" href="/author/test/?start=1">내 인생 한 권 신청하기</a><p class="pbadge sm"><b>1기 한정</b> 대면 1만 원 · 2기부터 3만 원 · 온라인 무료</p></div><script>(function(){var hs=document.getElementById('homestory'),bar=document.getElementById('hs-bar'),last=document.getElementById('hs-last');
-var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.35});hs.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
-var inS=false,atLast=false;function u(){bar.classList.toggle('off',!inS||atLast)}
-function sc(){var r=hs.getBoundingClientRect();inS=r.bottom>innerHeight*.5&&r.top<innerHeight*.5;u()}addEventListener('scroll',sc,{passive:true});sc();
-new IntersectionObserver(function(es){atLast=es[0].isIntersecting;u()},{threshold:.3}).observe(last);})();</script><div id="home-main" style="scroll-margin-top:64px"></div><section class="zs zs-hero big zs-hero-zopi"><div class="zs-wrap zs-herogrid"><div class="zs-herotext"><p class="zs-eye">ZOP LAB · 부업연구소</p><h2 class="zs-h1">몸으로 버는 하루를 살면서,<br>몸 없이도 버는 내일을 실험합니다.</h2><p class="zs-lead">잡랩은 조리기능사 실기 연습부터 책 프로젝트까지, 직접 해 본 것만 쉽게 정리하는 부업연구소예요.</p><div class="zs-btns"><a class="zs-btn pri" href="#services">하는 일 보기</a><a class="zs-btn ghost" href="/about/">회사소개</a></div></div><img class="zopi" src="/img/hero_zopi.webp" alt="손을 흔드는 조피 캐릭터" width="403" height="470" fetchpriority="high" decoding="async"></div></section>
-
-<!-- preview: 인생여권 · 2026 K-우수브랜드대상 (미배포) -->
-<section class="zs zs-sec alt" id="start"><style>#start .st-grid{display:grid;gap:16px;margin-top:28px}@media(min-width:900px){#start .st-grid{grid-template-columns:repeat(3,1fr)}}#start .st-n{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#1f2a24;color:#f3ead8;font-weight:700;font-size:15px;margin-bottom:12px}#start .zs-card.pri{border:2px solid #b8975a}#start .st-cta{margin-top:28px}#start .st-feat{margin-top:28px;background:#1f2a24;background-image:radial-gradient(rgba(243,234,216,.08) 1px,transparent 1px);background-size:14px 14px;color:#f3ead8;border-radius:20px;padding:32px 24px;border:1px solid rgba(184,151,90,.5)}#start .st-feat .eye{font-size:12px;letter-spacing:3px;color:#b8975a;font-weight:700}#start .st-feat h3{font-size:clamp(24px,5.5vw,34px);line-height:1.35;margin:10px 0 12px;color:#f3ead8}#start .st-feat p{color:#d9d5ca;line-height:1.75;max-width:640px}#start .st-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px}#start .st-chips span{font-size:13px;border:1px solid rgba(184,151,90,.55);color:#e9e2d0;padding:5px 12px;border-radius:999px}#start .st-feat .zs-btn{background:#b8975a;color:#1f2a24}@media(min-width:900px){#start .st-feat{padding:44px 48px}}#start .st-sub{margin-top:36px;font-weight:700;font-size:15px;color:#6d726c}</style><div class="zs-wrap"><div class="zs-reveal"><p class="zs-eye">START HERE · 처음이라면</p><h2 class="zs-h2">처음이라면 여기부터 👋</h2><p class="zs-lead">메뉴가 많아서 헷갈리죠? 잡랩에서 지금 제일 추천하는 건 이거예요.</p></div><div class="st-feat zs-reveal"><p class="eye">PICK · 내 인생 한 권</p><h3>그냥 일반인도 책을 써요.<br>내 이야기로 작은 전자책 한 권 📖</h3><p>작가만 쓰는 게 아니에요. 일과 살림에서 해 보고 배운 것, 살아온 이야기를 1:1로 질문받으며 직접 써서 내 책 한 권으로 남겨요. 대필은 없고, 원고의 권리는 쓴 사람에게 있어요.</p><div class="st-chips"><span>온라인 참여 무료</span><span>대면 1:1 · 60분 × 3회 (원주)</span><span style="background:#b8975a;color:#1f2a24;border-color:#b8975a;font-weight:700">1기 한정 대면 1만 원 <s style="opacity:.6">3만 원</s></span><span>만 32세 미만</span><span>모두 비매품</span></div><a class="zs-btn" href="/author/">내 인생 한 권 알아보기 →</a></div><p class="st-sub">가볍게 둘러보고 싶다면 👇</p><div class="st-grid"><a class="zs-card zs-reveal" href="/lab/sim/"><span class="st-n">1</span><span class="zs-tag">무료</span><h3>실기 연습게임부터 한 판</h3><p>한식·양식·중식·일식 조리기능사 실기 과제를 순서대로 눌러 보며 익혀요.</p><span class="zs-go">한 판 해 보기 →</span></a><a class="zs-card zs-reveal" href="/hanjeopsi/"><span class="st-n">2</span><span class="zs-tag">실험일지</span><h3>잡랩 한 접시 둘러보기</h3><p>맛 공부하러 다니며 찍은 음식 사진을 실기 기준으로 뜯어본 일지예요.</p><span class="zs-go">일지 보기 →</span></a><a class="zs-card zs-reveal" href="/travel/"><span class="st-n">3</span><span class="zs-tag">여행지</span><h3>맛길 노트로 지역 맛 공부</h3><p>6개 지역의 대표 음식과 전통 음식을 공식 자료로 정리하고, 이어지는 실기 과제까지 묶었어요.</p><span class="zs-go">노트 보기 →</span></a></div></div></section><section class="zs zs-sec" id="services"><div class="zs-wrap"><div class="zs-reveal"><p class="zs-eye">WHAT WE DO · 하는 일</p><h2 class="zs-h2">혼자 준비하는 사람을 위해<br>잡랩이 만든 것들</h2><p class="zs-lead">조리기능사 실기 연습부터 책 프로젝트까지, 직접 해 본 것만 쉽게 정리해요.</p></div><div class="zs-grid"><a class="zs-card zs-reveal" href="/lab/sim/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="11" r="1"/><circle cx="18" cy="13" r="1"/></svg></span><span class="zs-tag">무료</span><h3>실기 연습게임</h3><p>한식·양식·중식·일식 조리기능사 실기 과제를 순서대로 눌러 보며 익히는 연습 게임이에요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/hanjeopsi/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15h18"/><path d="M5 15a7 7 0 0 1 14 0"/><path d="M12 6v2"/><path d="M4 19h16"/></svg></span><span class="zs-tag">실험일지</span><h3>잡랩 한 접시 실험일지</h3><p>맛 공부하러 다니며 찍은 음식 사진을 실기 기준으로 분석한 일지 100편이에요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/author/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/></svg></span><span class="zs-tag">책 프로젝트</span><h3>내 인생 한 권</h3><p>평범한 사람의 이야기로 책 한 권을 만드는 프로젝트와 잡랩 북스 서가예요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal zs-bookcard" href="/books/"><span class="zs-tag">책 소개</span><h3>잡랩 북스에는 이런 책이 있어요</h3><p>세트 · 단권 · 무료 · 비매품 · 시집까지, 표지와 함께 한눈에 볼 수 있어요.</p><ul class="zs-shelf mini"><li><img src="/books/covers/set_cook4.webp" alt="조리기능사 실기 4종 요약 묶음 표지" loading="lazy"><span class="meta"><span class="zs-badge">세트</span><b>조리기능사 실기 4종 요약 묶음</b><span>세트</span></span></li><li><img src="/books/covers/dongumeong.webp" alt="몸이 버티는 동안, 돈 구멍을 만든다 표지" loading="lazy"><span class="meta"><span class="zs-badge">단권</span><b>몸이 버티는 동안, 돈 구멍을 만든다</b><span>단권</span></span></li><li><img src="/books/covers/free_sample6.webp" alt="실기 무료 샘플 6쪽 표지" loading="lazy"><span class="meta"><span class="zs-badge free">무료</span><b>실기 무료 샘플 6쪽</b><span>무료</span></span></li><li><img src="/books/covers/no003.png" alt="시집 『기다림』 표지" loading="lazy"><span class="meta"><span class="zs-badge">시집</span><b>시집 『기다림』</b><span>시집</span></span></li></ul><span class="zs-go">서가 보기 →</span></a><a class="zs-card zs-reveal" href="/webtoon/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><span class="zs-tag">웹툰</span><h3>잡랩 웹툰</h3><p>조리기능사 시험 준비 이야기를 조피와 함께 웹툰으로 풀었어요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/exhibition/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span><span class="zs-tag">사진전</span><h3>인생사진전 「기다림이 머문 자리」</h3><p>휴대폰 사진첩에 오래 머물던 하늘과 바다, 한 끼의 접시들에 짧은 시 한 편씩을 붙인 온라인 사진전이에요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/lab/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><span class="zs-tag">자료실</span><h3>조피 자료실</h3><p>D-day 카드, 체크리스트, 조피 만화 등 실기 준비 자료를 모아 뒀어요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/travel/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></span><span class="zs-tag">여행지</span><h3>잡랩 맛길 노트(여행지)</h3><p>강릉·경주·순천·영월·제주·포항, 6개 지역의 풍경과 대표 음식을 정리했어요.</p><span class="zs-go">바로 가기 →</span></a><a class="zs-card zs-reveal" href="/baeum/"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></svg></span><span class="zs-tag">배움 노트</span><h3>잡랩 배움 노트</h3><p>새로 배우고 공부한 것을 노트로 정리하고 있어요.</p><span class="zs-go">바로 가기 →</span></a></div></div></section><!-- ONE LINE (deck 02) -->
-<section class="oneline"><div class="wrap">
- <div class="lab">ONE LINE</div>
- <div class="rule" style="margin-top:16px"></div>
- <p class="q">몸으로 버는 하루를 살면서,<br>몸 없이도 버는 내일을<br>실험합니다.</p>
- <p class="by">— ZOP LAB, 부업연구소</p>
-</div></section>
-
-<!-- WHY (deck 03) -->
-<section class="why"><div class="wrap">
- <div class="lab">WHY · 시작한 이유</div>
- <h2 class="big">몸이 멈추면,<br>돈도 멈췄습니다.</h2>
- <div class="tl">
-  <div class="step"><span class="dot"></span><div class="k">01</div><div class="t">겨울, 에어컨 보조 일용직</div><div class="d">돈이 떨어져 일을 나갔지만,<br>비수기라 일이 거의 없었습니다.</div></div>
-  <div class="step"><span class="dot"></span><div class="k">02</div><div class="t">몸 쓰는 일</div><div class="d">몸으로 하는 일은<br>몸이 멈추면 돈도 같이 멈춥니다.</div></div>
-  <div class="step"><span class="dot"></span><div class="k">03</div><div class="t">그래서, 지금</div><div class="d">몸 쓰는 일은 당장 피할 수 없어도<br>몸을 쓰지 않고 조금씩 돈이 들어오는<br>파이프라인을 하나씩 깔고 있습니다.</div></div>
- </div>
-</div></section>
-
-<!-- FEATURED BOOK — 유페이퍼 판매 표지 + 판매 페이지 링크 (2026-10-19 승인·판매 개시), 가격 표기 없음 -->
-<section class="feat"><div class="wrap">
- <div class="lab">BOOK · 대표 책</div>
- <img class="cover" src="book-dongumeong-cover.webp" width="600" height="856" alt="「몸이 버티는 동안, 돈 구멍을 만든다」 표지">
- <p class="bt">「몸이 버티는 동안, 돈 구멍을 만든다」</p>
- <p class="bt" style="margin-top:8px">2026.10 잡랩 북스 출간</p>
- <a class="btn line" href="/books/" style="margin-top:24px;min-width:200px">책 보러 가기</a>
-</div></section>
-
-<!-- NAME (deck 04) -->
-<section class="name dark"><div class="wrap">
- <div class="lab">NAME · 이름의 뜻</div>
- <div class="rows">
-  <div class="row"><div class="ini wm">Z</div><div><div class="w"><b>Z</b>ero-inventory</div><div class="d">재고 없이 시작합니다.<br>창고도, 쌓아 둔 물건도 없이<br>전자책부터 시작했습니다.</div></div></div>
-  <div class="row"><div class="ini wm">O</div><div><div class="w"><b>O</b>nline</div><div class="d">출퇴근도, 가게도 없이.<br>자는 동안에도 팔립니다.</div></div></div>
-  <div class="row"><div class="ini wm">P</div><div><div class="w"><b>P</b>ipeline</div><div class="d">한 번의 대박보다,<br>작아도 계속 흐르는 수입을 만듭니다.</div></div></div>
-  <div class="row"><div class="ini wm s">LAB</div><div><div class="w">LAB</div><div class="d">정답을 아는 척하지 않습니다.<br>직접 해 보고, 실패까지 솔직하게 기록합니다.</div></div></div>
- </div>
-</div></section>
-
-<!-- WHAT (deck 05) -->
-<section class="what"><div class="wrap">
- <div class="lab">WHAT · 하는 일</div>
- <h2 class="big">귀찮은 걸 쉽게<br>만드는 연구소</h2>
- <p class="lead">조피가 직접 해 본 것만,<br>쉽고 웃기게 설명해요.</p>
- <div class="now">
-  <div class="lab">NOW · 지금 하고 있는 일</div>
-  <div class="work"><div class="h"><span class="n wm">01</span><span class="t">수험 전자책</span></div><div class="tag">ZOP LAB · 외워지게 만드는 수험서</div><div class="d">조리기능사 · 식육처리기능사<br>쉽게 외워지는 수험 전자책을 만듭니다.</div></div>
-  <div class="work"><div class="h"><span class="n wm">02</span><span class="t">ZOP LAB 부업 실험</span></div><div class="tag">실험 기록</div><div class="d">직접 해 보는 부업 과정을<br>잘된 것도 안 된 것도 그대로 기록합니다.</div></div>
- </div>
-</div></section>
-
-
-
-
-
-<!-- MY ONE BOOK (2026-10-22) -->
-<section class="sim"><div class="wrap">
- <div class="lab">MY ONE BOOK · 내 인생 한 권</div>
- <h2 class="big">내 이야기로 책 한 권, 「내 인생 한 권」</h2>
- <p class="d">평범한 사람도 책을 써요. 3번 만나 내 이야기를 전자책 한 권으로 완성해요.<br>원하시면 잡랩 북스 · 한 권 레이블 서가에 번호를 붙여 꽂아 드려요.</p>
- <p class="note">모든 책은 비매품이에요. 서가 공개는 선택이고, 동의한 항목만 올라가요.</p>
- <a href="/author/" class="btn ink">「내 인생 한 권」 신청하기 →</a>
- <p style="margin-top:12px"><a href="/books/" style="text-decoration:underline">잡랩 북스 서가 구경하기 →</a></p>
- <p style="margin-top:8px"><a href="/webtoon/" style="text-decoration:underline">조피 웹툰 보러 가기 →</a></p>
- <p style="margin-top:8px"><a href="/exhibition/" style="text-decoration:underline">온라인 사진전 「기다림이 머문 자리」 보러 가기 →</a></p>
-</div></section>
-
-<!-- LOG (new) -->
-<section class="log dark"><div class="wrap">
- <div class="lab">LOG · 실험 기록</div>
- <h2 class="big">잘된 것도, 안 된 것도.</h2>
- <p class="d">실험 과정은 블로그에 그대로 기록합니다.</p>
- <a href="https://blog.naver.com/zoplab" class="btn line" target="_blank" rel="noopener">블로그에서 기록 보기 →</a>
- <p class="url">blog.naver.com/zoplab</p>
-</div></section>
-
-<!-- PROMISE (deck 06) -->
-<section class="promise"><div class="wrap">
- <div class="lab">PROMISE · 약속</div>
- <h2 class="big">솔직한 것만<br>보여드립니다.</h2>
- <div class="plist">
-  <div class="prom"><span class="n wm">I</span><span class="t">과장하지 않습니다.</span></div>
-  <div class="prom"><span class="n wm">II</span><span class="t">가짜 후기를 쓰지 않습니다.</span></div>
-  <div class="prom"><span class="n wm">III</span><span class="t">가짜 마감으로 서두르게 하지 않습니다.</span></div>
- </div>
- <p class="end">진짜 기록, <span>진짜 결과.</span></p>
-</div></section>
+<section id="cafe-cta" aria-label="잡랩 카페" style="word-break:keep-all;background:#1f2a24;padding:40px 22px;text-align:center;border-top:1px solid rgba(184,151,90,.35)"><a href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener" style="display:inline-block;background:#b8975a;color:#1f2a24;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;text-decoration:none">더 많은 이야기는 잡랩 카페에서</a></section>
 </main>
 
-<!-- FOOTER (deck 07 closing) -->
-<section class="zs zs-sec alt" id="channels"><div class="zs-wrap"><div class="zs-reveal"><p class="zs-eye">CHANNELS · 잡랩 채널</p><h2 class="zs-h2">잡랩 채널</h2><p class="zs-lead">잡랩의 공식 채널이에요. 편한 곳에서 만나요.</p></div><div class="zs-grid zs-chgrid"><a class="zs-card zs-reveal zs-ch" href="https://blog.naver.com/zoplab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><h3>블로그</h3><p>네이버 블로그 · 실험 기록</p></a><a class="zs-card zs-reveal zs-ch" href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></span><h3>유튜브</h3><p>ZOP LAB | 부업연구소</p></a><a class="zs-card zs-reveal zs-ch" href="https://instagram.com/zoplab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></span><h3>인스타그램</h3><p>@zoplab</p></a><a class="zs-card zs-reveal zs-ch" href="https://www.threads.com/@zoplab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 11.5c-.5-3-2.5-4.5-5-4.5C8 7 6 9.5 6 12.5S8 18 12 18c3 0 5-1.7 5-4s-2-3.5-4.5-3.5S9 11.5 9 13s1.5 2 3 2c2.5 0 3.5-2 3.5-5"/></svg></span><h3>스레드</h3><p>@zoplab</p></a><a class="zs-card zs-reveal zs-ch" href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11a4 4 0 1 1-4-4"/><path d="M14 3c.5 2.5 2.5 4.5 5 4.5"/></svg></span><h3>틱톡</h3><p>@zop.lab</p></a><a class="zs-card zs-reveal zs-ch" href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg></span><h3>네이버 카페</h3><p>부업연구소 카페</p></a><a class="zs-card zs-reveal zs-ch" href="https://open.kakao.com/o/gc470ZRi" target="_blank" rel="noopener"><span class="zs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4C7 4 3 7.1 3 11c0 2.4 1.6 4.6 4 5.8L6 20l4-2.4c.7.1 1.3.2 2 .2 5 0 9-3.1 9-7s-4-6.8-9-6.8z"/></svg></span><h3>카카오톡 오픈채팅</h3><p>잡랩 조피 자료실 · 참여 코드 ZOPLAB</p></a></div></div></section><section class="zs zs-sec dark zs-cta"><div class="zs-wrap zs-reveal"><p class="zs-eye">CONTACT · 문의</p><h2 class="zs-h2">협찬·광고·협업 문의</h2><p class="zs-lead">메일로 편하게 남겨 주세요. 확인 후 답장드려요.</p><div class="zs-btns"><a class="zs-btn pri" href="mailto:contact@zoplab.co.kr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>contact@zoplab.co.kr</a><a class="zs-btn ghost" href="/about/">회사소개 보기</a></div></div></section><footer class="dark">
+<footer class="dark">
  <div class="logo wm">ZOP LAB</div>
  <div class="ko">부업연구소</div>
  <div class="rule"></div>
- <div class="links"><a href="https://zoplab.co.kr/link">zoplab.co.kr/link</a><br><a href="https://blog.naver.com/zoplab" target="_blank" rel="noopener">블로그</a> · <a href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener">유튜브</a> · <a href="https://cafe.naver.com/zoplab" target="_blank" rel="noopener">카페</a> · <a href="https://instagram.com/zoplab" target="_blank" rel="noopener">인스타그램</a> · <a href="https://www.threads.com/@zoplab" target="_blank" rel="noopener">스레드</a> · <a href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener">틱톡</a><br>협찬·광고 문의 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></div>
+ <div class="links"><a href="https://zoplab.co.kr/link">zoplab.co.kr/link</a><br><a href="https://blog.naver.com/zoplab" target="_blank" rel="noopener">블로그</a> · <a href="https://www.youtube.com/@zoplab" target="_blank" rel="noopener">유튜브</a> · <a href="https://instagram.com/zoplab" target="_blank" rel="noopener">인스타그램</a> · <a href="https://www.threads.com/@zoplab" target="_blank" rel="noopener">스레드</a> · <a href="https://www.tiktok.com/@zop.lab" target="_blank" rel="noopener">틱톡</a><br>협찬·광고 문의 <a href="mailto:contact@zoplab.co.kr">contact@zoplab.co.kr</a></div>
  <div class="en">Zero-inventory Online Pipeline LAB</div>
- <div class="team" style="margin:0 0 12px;display:grid;gap:8px;text-align:left;line-height:1.55">
-<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/sojang.jpg" alt="잡랩 소장 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>잡랩 소장</b> · ZOP LAB 대표 · 부업연구소 소장<br>· 조리기능사 실기 요약집 전자책 저자<br>· 2026.10 전자책 「몸이 버티는 동안, 돈 구멍을 만든다」 출간 (잡랩 북스) <a href="/books/" style="color:#b39c6d;text-decoration:underline;white-space:nowrap">책 보러 가기</a><br>· 조리기능사 (한식·양식·중식·일식), 식육처리기능사<br>· 호텔외식조리 전공, 한식당 주방 실무 경력<br>· 전자책 검수</div></div>
-<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #ddd6c8;border-radius:10px"><img src="/img/team/zopi_jr.jpg" alt="조피 캐릭터" width="56" height="56" style="border-radius:50%;flex:none"><div><b>조피</b> · 잡랩 홍보 담당 캐릭터<br>· 조리기능사 4종 요약집의 숫자와 규격을 2026 큐넷 공개과제로 하나하나 대조했어요<br>· 상세페이지, 자료실, 블로그 글 초안을 정리하고 있어요<br>· 잡랩 지출과 영수증 장부를 관리해요<br>· 좌우명: "우리는 숫자와 데이터를 믿는다"</div></div></div><div class="legal"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br><details class="zbiz" style="display:inline-block;text-align:inherit;margin:4px 0"><summary style="cursor:pointer;list-style:revert;text-decoration:underline">대표 잡랩 소장 · 사업자등록번호 471-46-01136 · 사업자 정보 ▾</summary><div style="margin-top:6px">상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 대표 잡랩 소장<br>호스팅서비스 제공자 GitHub Inc.</div></details><br>© 2026 ZOP LAB</div>
+<div class="legal"><a href="/privacy/"><b>개인정보처리방침</b></a> · <a href="/refund/">취소·환불 정책</a><br><details class="zbiz" style="display:inline-block;text-align:inherit;margin:4px 0"><summary style="cursor:pointer;list-style:revert;text-decoration:underline">대표 잡랩 소장 · 사업자등록번호 471-46-01136 · 사업자 정보 ▾</summary><div style="margin-top:6px">상호 잡랩(ZOP LAB) · 대표 서홍빈 · 사업자등록번호 471-46-01136<br>통신판매업 신고번호 제2026-강원원주-02257호<br>주소 강원특별자치도 원주시 이화6길 13, 201호<br>고객문의 010-4602-9965 · 이메일 contact@zoplab.co.kr · 개인정보보호책임자 대표 잡랩 소장<br>호스팅서비스 제공자 GitHub Inc.</div></details><br>© 2026 ZOP LAB</div>
 </footer>
 </body>
 </html>
